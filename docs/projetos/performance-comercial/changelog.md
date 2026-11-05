@@ -25,12 +25,18 @@ O formato segue o [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/). O
 - Projeto Power BI movido para `src/projeto/performance-comercial/` e renomeado de "Performace Comercial" para "Performance Comercial" (arquivo `.pbip` e pastas `.Report` e `.SemanticModel`) em `c116cef` e `2d2af2d`.
 - Dados movidos de `src/data/` para `data/`, na raiz (`3578022`). Os valores dos três parâmetros passaram a apontar para a nova pasta (`2d2af2d`). As consultas das tabelas `fVendas`, `fMetas`, `dClientes`, `dProdutos`, `dVendedores`, `dUnidades`, `dStatus` e `dPagamento` e a consulta `dCidades` não mudaram.
 - `README.md`: árvore de pastas, passo de abertura do projeto e endereço de clone corrigido.
-- Repositório no GitHub renomeado de `Performace-Comercial` para `Performance-Comercial` em 04/11/2026. Links do `README.md`, de [Sobre esta documentação](readme.md) e o exemplo de caminho em [Fontes de dados](fontes-de-dados.md#como-atualizar-o-valor-dos-parametros) atualizados. O botão de link da guia Capa e os parâmetros de caminho continuam com a grafia antiga (veja as [pendências](pendencias.md#pendencias-observadas-no-modelo)).
+- Repositório no GitHub renomeado de `Performace-Comercial` para `Performance-Comercial` em 04/11/2026. Links do `README.md`, de [Sobre esta documentação](readme.md) e o exemplo de caminho em [Fontes de dados](fontes-de-dados.md#como-atualizar-o-valor-dos-parametros) atualizados. O link do botão da guia Capa foi atualizado no Power BI Desktop em 05/11/2026. Os parâmetros de caminho continuam com a grafia antiga (veja as [pendências](pendencias.md#pendencias-observadas-no-modelo)).
 - A pasta `site/`, com a saída do MkDocs, deixou de ser versionada e entrou no `.gitignore` (`1b1008e`). A documentação é publicada na branch `gh-pages` por `mkdocs gh-deploy`.
 - Dependências de `mkdocs.yml` e `pyproject.toml`: plugins `awesome-nav`, `git-revision-date-localized` e `panzoom`, com o MkDocs fixado abaixo da versão 2.
 - Anotação `PBI_ResultType` das tabelas voltou de `Exception` para `Table` (`56b7cb6`), desfazendo a mudança de `2f2c698`, de 23/04/2026. Página ativa do relatório trocada de "Analítico antes" para a Capa.
+- Medidas `52 Rank Cidade`, `53 Max Y Visual 01 pg Vendedores` e `54 Nome Vendedor` movidas para a pasta de exibição `04. Auxiliares`, e as medidas `Context Medida z`, `Linha Anterior`, `Linha Atual`, `Seta para Cima`, `Seta para baixo  ( limit sup )` e `Seta para baixo  ( limit Inferior )`, da tabela `zMetricas`, para a pasta `Tooltip Rosca`. Nenhuma expressão mudou. Na documentação, a página *Sem pasta de exibição* deu lugar a [04. Auxiliares](medidas-dax/04-auxiliares.md) e [Tooltip Rosca](medidas-dax/tooltip-rosca.md).
+- Ao salvar, o Power BI Desktop atualizou as versões de schema do relatório e o `compatibilityLevel` do modelo (de 1601 para 1606), redimensionou um cartão da guia Comercial e ligou a largura automática de colunas de uma tabela da mesma guia.
 
 ### Corrigido
+
+No **relatório**:
+
+- Os visuais, marcadores e filtros que apontavam para 25 nomes antigos de medidas foram reapontados para os nomes atuais, em 89 arquivos (694 referências), entre eles `01 Faturamento`, `07 Comissao`, `09 Resultado`, `10 Margem`, `40 Meta`, `41 Porcentagem Meta` e `52 Rank Cidade`. A correspondência completa está em [Nomes antigos de medidas](medidas-dax/index.md#nomes-antigos-de-medidas-no-relatorio). Nenhuma medida mudou.
 
 Correções na **documentação** (o modelo não foi alterado):
 
@@ -46,9 +52,7 @@ Correções na **documentação** (o modelo não foi alterado):
 
 ### Problemas conhecidos (não corrigidos)
 
-- 25 nomes antigos de medidas no relatório, como `Faturamento` no lugar de `01 Faturamento` (ver [Nomes antigos de medidas](medidas-dax/index.md#nomes-antigos-de-medidas-no-relatorio)).
 - 3 botões apontam para marcadores inexistentes e 1 botão de navegação não tem destino (ver [Guias do relatório](guias-do-relatorio/index.md)).
-- 9 medidas sem pasta de exibição: `52 Rank Cidade`, `53 Max Y Visual 01 pg Vendedores`, `54 Nome Vendedor` e as 6 medidas de `zMetricas`.
 - O arquivo `.github/workflows/docs.yml` está vazio, e a documentação é publicada manualmente.
 
 ## [2.0.0] - 2026-01-30

@@ -15,7 +15,7 @@ Faturamento acumulado desde o início do ano até a data (YTD), limitado às dat
 <!-- gerado:inicio medida:20 Faturamento Acumulado -->
 - **Tabela:** `_Medidas`
 - **Formato:** padrão
-- **Usada nas guias:** nenhum visual
+- **Usada nas guias:** [Mapa Calor](../guias-do-relatorio/mapa-calor.md), *Mapa Calor antes*
 - **Depende de:** [`01 Faturamento`](01-principais.md#01-faturamento)
 - **É usada por:** nenhuma medida
 
@@ -39,7 +39,7 @@ Faturamento acumulado no ano, no mesmo período do ano anterior. *(descrição d
 <!-- gerado:inicio medida:21 Faturamento Acumulado LY -->
 - **Tabela:** `_Medidas`
 - **Formato:** padrão
-- **Usada nas guias:** nenhum visual
+- **Usada nas guias:** [Mapa Calor](../guias-do-relatorio/mapa-calor.md), *Mapa Calor antes*
 - **Depende de:** [`01 Faturamento`](01-principais.md#01-faturamento)
 - **É usada por:** nenhuma medida
 
@@ -63,9 +63,9 @@ Faturamento do mesmo período do ano anterior. *(descrição deduzida do código
 <!-- gerado:inicio medida:22 Faturamento LY -->
 - **Tabela:** `_Medidas`
 - **Formato:** `"R$"\ #,0;-"R$"\ #,0;"R$"\ #,0`
-- **Usada nas guias:** nenhum visual
+- **Usada nas guias:** [Mapa Calor](../guias-do-relatorio/mapa-calor.md), *Mapa Calor antes*
 - **Depende de:** [`01 Faturamento`](01-principais.md#01-faturamento)
-- **É usada por:** [`23 Faturamento YoY %`](#23-faturamento-yoy), [`Context Medida z`](sem-pasta.md#context-medida-z), [`Linha Anterior`](sem-pasta.md#linha-anterior), [`Seta para Cima`](sem-pasta.md#seta-para-cima), [`Seta para baixo  ( limit Inferior )`](sem-pasta.md#seta-para-baixo-limit-inferior), [`Seta para baixo  ( limit sup )`](sem-pasta.md#seta-para-baixo-limit-sup)
+- **É usada por:** [`23 Faturamento YoY %`](#23-faturamento-yoy), [`Context Medida z`](tooltip-rosca.md#context-medida-z), [`Linha Anterior`](tooltip-rosca.md#linha-anterior), [`Seta para Cima`](tooltip-rosca.md#seta-para-cima), [`Seta para baixo  ( limit Inferior )`](tooltip-rosca.md#seta-para-baixo-limit-inferior), [`Seta para baixo  ( limit sup )`](tooltip-rosca.md#seta-para-baixo-limit-sup)
 
 ```dax
 CALCULATE(
@@ -115,7 +115,7 @@ Variação percentual Month-over-Month do Faturamento
 <!-- gerado:inicio medida:24 Faturamento MoM % -->
 - **Tabela:** `_Medidas`
 - **Formato:** `0.00%;-0.00%;0.00%`
-- **Usada nas guias:** nenhum visual
+- **Usada nas guias:** [Comercial ](../guias-do-relatorio/comercial.md), *Comercial antes*
 - **Depende de:** [`01 Faturamento`](01-principais.md#01-faturamento)
 - **É usada por:** nenhuma medida
 

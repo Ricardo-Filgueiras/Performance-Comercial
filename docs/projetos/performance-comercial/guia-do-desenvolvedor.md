@@ -24,11 +24,11 @@ Convenções práticas para trabalhar no painel e na documentação. Para instal
 Prefira editar pelo Power BI Desktop e salvar. Editar o TMDL à mão funciona, mas confira no Desktop antes de commitar.
 
 !!! warning "Renomear medidas fora do Power BI Desktop"
-    O Power BI Desktop atualiza os visuais do relatório quando você renomeia uma medida. Se a renomeação for feita editando o TMDL ou por uma ferramenta externa, os visuais continuam apontando para o nome antigo. Hoje o relatório tem 25 nomes antigos desse tipo (ver [Nomes antigos de medidas](medidas-dax/index.md#nomes-antigos-de-medidas-no-relatorio)). Depois de renomear, abra o relatório e confira se algum visual mostra campo não encontrado.
+    O Power BI Desktop atualiza os visuais do relatório quando você renomeia uma medida. Se a renomeação for feita editando o TMDL ou por uma ferramenta externa, os visuais continuam apontando para o nome antigo. Isso já aconteceu neste projeto com 25 medidas, corrigidas em 05/11/2026 (ver [Nomes antigos de medidas](medidas-dax/index.md#nomes-antigos-de-medidas-no-relatorio)). Depois de renomear, abra o relatório e confira se algum visual mostra campo não encontrado.
 
 ## Regras para o modelo
 
-- **Nenhuma medida fica sem pasta de exibição ao final de uma tarefa.** Antes do commit, toda medida nova ou alterada está numa pasta. Hoje 9 medidas estão sem pasta (ver [Sem pasta de exibição](medidas-dax/sem-pasta.md)); a documentação só registra isso.
+- **Nenhuma medida fica sem pasta de exibição ao final de uma tarefa.** Antes do commit, toda medida nova ou alterada está numa pasta. Hoje todas as medidas estão numa pasta; as auxiliares ficam em [04. Auxiliares](medidas-dax/04-auxiliares.md) e as da dica da rosca em [Tooltip Rosca](medidas-dax/tooltip-rosca.md).
 - **Não renomeie pastas de exibição nem guias sem necessidade.** Renomear quebra o vínculo com a documentação sem avisar. Se precisar reorganizar, crie uma pasta nova, mova as medidas e registre no changelog.
 - **Documente a medida no próprio modelo.** No TMDL, `///` antes de `measure` vira a descrição exibida no Power BI, e um comentário `//` na primeira linha da expressão explica a conta. Exemplo real do projeto:
 
@@ -147,8 +147,8 @@ Se houver linhas, corrija a planilha de origem ou acrescente uma linha "Desconhe
 
 **Comparação com o ano anterior volta em branco.** Confira se o relacionamento de `fVendas[Data Pedido]` com `dCalendario` está ativo, se o calendário cobre o período do dado (vai de 01/01/2018 a 31/12/2021) e se a coluna `Datas com Venda` está sendo usada como o modelo espera.
 
-!!! info "Consultas não executadas"
-    As consultas DAX de diagnóstico desta seção são sugestões gerais e **não foram executadas** neste projeto. Rode cada uma no Power BI Desktop quando precisar e ajuste, se for o caso.
+!!! info "Resultado em 05/11/2026"
+    As consultas foram rodadas no modelo em 05/11/2026. As 7 dimensões (`dClientes`, `dProdutos`, `dVendedores`, `dUnidades`, `dStatus`, `dPagamento` e `dCalendario`) têm chave única. Nenhuma das 19.999 linhas de `fVendas` e das 528 linhas de `fMetas` fica sem correspondente nas dimensões ligadas a elas. Rode de novo quando os dados mudarem.
 
 ## Ao alterar o painel
 

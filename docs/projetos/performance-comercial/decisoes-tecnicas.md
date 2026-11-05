@@ -78,7 +78,7 @@ Registro de decisões de arquitetura do painel no formato ADR (*Architecture Dec
 
 **Decisão.** Nomear tabelas pelo prefixo do papel (`f`, `d`, `_` e `z`) e as medidas com número e descrição (`01 Faturamento`), organizadas nas pastas de exibição `01.Principais`, `02. Temporais`, `03. Formatações` e `.Visuais SVG`. As faixas 80 a 89 (rankings) e 90 a 99 (testes) ficam reservadas, por decisão do desenvolvedor em 21/10/2026, embora nenhuma medida as use. Os detalhes estão no [Guia do desenvolvedor](guia-do-desenvolvedor.md#nomes).
 
-**Consequências.** As medidas ficam fáceis de achar e de ordenar. Mas a renomeação não chegou a todos os visuais do relatório: 25 nomes antigos continuam em uso (ver [Nomes antigos de medidas](medidas-dax/index.md#nomes-antigos-de-medidas-no-relatorio)), e 9 medidas ficaram sem pasta de exibição.
+**Consequências.** As medidas ficam fáceis de achar e de ordenar. Mas a renomeação não chegou aos visuais do relatório, que ficaram com 25 nomes antigos até 05/11/2026 (ver [Nomes antigos de medidas](medidas-dax/index.md#nomes-antigos-de-medidas-no-relatorio)), e 9 medidas ficaram sem pasta de exibição até a mesma data, quando foram para `04. Auxiliares` e `Tooltip Rosca`.
 
 ## ADR-007: Cartões e tabelas desenhados com medidas SVG e visual HTML
 
@@ -111,7 +111,7 @@ Registro de decisões de arquitetura do painel no formato ADR (*Architecture Dec
 
 **Decisão.** Manter essas guias no relatório, de propósito, para que o desenvolvedor acompanhe a evolução do projeto. A documentação as trata como histórico (ver [Guias anteriores](arquivo/guias-anteriores.md)).
 
-**Consequências.** O relatório fica maior (72 dos 171 visuais estão nas guias "antes") e as guias anteriores usam os nomes antigos de medidas e dois marcadores inexistentes (ver [Guias do relatório](guias-do-relatorio/index.md)).
+**Consequências.** O relatório fica maior (72 dos 171 visuais estão nas guias "antes") e as guias anteriores usavam os nomes antigos de medidas (corrigidos em 05/11/2026) e dois marcadores inexistentes (ver [Guias do relatório](guias-do-relatorio/index.md)).
 
 ## ADR-010: Manter o relacionamento inativo por `Data Envio`
 

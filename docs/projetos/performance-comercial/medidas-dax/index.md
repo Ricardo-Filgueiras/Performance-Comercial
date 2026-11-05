@@ -1,6 +1,6 @@
 # Medidas DAX
 
-Catálogo das medidas do modelo, com uma página para cada **pasta de exibição**. As medidas sem pasta ficam em [Sem pasta de exibição](sem-pasta.md). Medidas de teste e sem uso em visuais estão listadas no [Arquivo](../arquivo/index.md).
+Catálogo das medidas do modelo, com uma página para cada **pasta de exibição**. Todas as medidas estão numa pasta. Medidas de teste e sem uso em visuais estão listadas no [Arquivo](../arquivo/index.md).
 
 Para cada medida: tabela onde está, formato, guias em que aparece, de quais medidas depende, quais medidas a usam e o código DAX copiado do modelo.
 
@@ -11,7 +11,8 @@ Para cada medida: tabela onde está, formato, guias em que aparece, de quais med
 | 01.Principais | 16 | [01.Principais](01-principais.md) |
 | 02. Temporais | 16 | [02. Temporais](02-temporais.md) |
 | 03. Formatações | 2 | [03. Formatações](03-formatacoes.md) |
-| *Sem pasta de exibição* | 9 | [Sem pasta de exibição](sem-pasta.md) |
+| 04. Auxiliares | 3 | [04. Auxiliares](04-auxiliares.md) |
+| Tooltip Rosca | 6 | [Tooltip Rosca](tooltip-rosca.md) |
 | **Total** | 50 | |
 
 ### Todas as medidas (A–Z)
@@ -52,9 +53,9 @@ Para cada medida: tabela onde está, formato, guias em que aparece, de quais med
 | [42 Diferença Meta](01-principais.md#42-diferenca-meta) | 01.Principais | `_Medidas` |
 | [50 Eixo Y max Grafico Comercial](03-formatacoes.md#50-eixo-y-max-grafico-comercial) | 03. Formatações | `_Medidas` |
 | [51 Faturamento formatação de texto](03-formatacoes.md#51-faturamento-formatacao-de-texto) | 03. Formatações | `_Medidas` |
-| [52 Rank Cidade](sem-pasta.md#52-rank-cidade) | — | `_Medidas` |
-| [53 Max Y Visual 01 pg Vendedores](sem-pasta.md#53-max-y-visual-01-pg-vendedores) | — | `_Medidas` |
-| [54 Nome Vendedor](sem-pasta.md#54-nome-vendedor) | — | `_Medidas` |
+| [52 Rank Cidade](04-auxiliares.md#52-rank-cidade) | 04. Auxiliares | `_Medidas` |
+| [53 Max Y Visual 01 pg Vendedores](04-auxiliares.md#53-max-y-visual-01-pg-vendedores) | 04. Auxiliares | `_Medidas` |
+| [54 Nome Vendedor](04-auxiliares.md#54-nome-vendedor) | 04. Auxiliares | `_Medidas` |
 | [60 SVG Cartao Faturamento v1](visuais-svg.md#60-svg-cartao-faturamento-v1) | .Visuais SVG | `_Medidas` |
 | [61 SVG Cartao Margem v1](visuais-svg.md#61-svg-cartao-margem-v1) | .Visuais SVG | `_Medidas` |
 | [62 SVG Cartao Resultado v1](visuais-svg.md#62-svg-cartao-resultado-v1) | .Visuais SVG | `_Medidas` |
@@ -62,19 +63,19 @@ Para cada medida: tabela onde está, formato, guias em que aparece, de quais med
 | [64 SVG Tabela HTML Content Lite v1](visuais-svg.md#64-svg-tabela-html-content-lite-v1) | .Visuais SVG | `_Medidas` |
 | [65 SVG Percentual Meta Velocimetro](visuais-svg.md#65-svg-percentual-meta-velocimetro) | .Visuais SVG | `_Medidas` |
 | [66 Meta Cor](visuais-svg.md#66-meta-cor) | .Visuais SVG | `_Medidas` |
-| [Context Medida z](sem-pasta.md#context-medida-z) | — | `zMetricas` |
-| [Linha Anterior](sem-pasta.md#linha-anterior) | — | `zMetricas` |
-| [Linha Atual](sem-pasta.md#linha-atual) | — | `zMetricas` |
-| [Seta para baixo  ( limit Inferior )](sem-pasta.md#seta-para-baixo-limit-inferior) | — | `zMetricas` |
-| [Seta para baixo  ( limit sup )](sem-pasta.md#seta-para-baixo-limit-sup) | — | `zMetricas` |
-| [Seta para Cima](sem-pasta.md#seta-para-cima) | — | `zMetricas` |
+| [Context Medida z](tooltip-rosca.md#context-medida-z) | Tooltip Rosca | `zMetricas` |
+| [Linha Anterior](tooltip-rosca.md#linha-anterior) | Tooltip Rosca | `zMetricas` |
+| [Linha Atual](tooltip-rosca.md#linha-atual) | Tooltip Rosca | `zMetricas` |
+| [Seta para baixo  ( limit Inferior )](tooltip-rosca.md#seta-para-baixo-limit-inferior) | Tooltip Rosca | `zMetricas` |
+| [Seta para baixo  ( limit sup )](tooltip-rosca.md#seta-para-baixo-limit-sup) | Tooltip Rosca | `zMetricas` |
+| [Seta para Cima](tooltip-rosca.md#seta-para-cima) | Tooltip Rosca | `zMetricas` |
 <!-- gerado:fim catalogo -->
 
 ## Nomes antigos de medidas no relatório
 
-O modelo renomeou as medidas com prefixo numérico (por exemplo, `Faturamento` virou `01 Faturamento`) no commit `23c7839`, de 02/02/2026. A maior parte dos visuais do relatório ainda aponta para o nome antigo. A tabela mostra cada nome antigo, a medida atual correspondente (inferida pelo nome) e as guias em que aparece.
+O modelo renomeou as medidas com prefixo numérico (por exemplo, `Faturamento` virou `01 Faturamento`) no commit `23c7839`, de 02/02/2026. A renomeação foi feita fora do Power BI Desktop, e os visuais do relatório continuaram apontando para o nome antigo até 05/11/2026, quando os 25 nomes foram trocados pelos atuais nos arquivos do relatório (visuais, marcadores e filtros). Depois da troca, nenhum campo do relatório aponta para uma medida inexistente, e o relatório abriu sem erro no Power BI Desktop. A tabela fica como registro da correspondência usada.
 
-| Nome no relatório | Medida atual (inferida) | Guias |
+| Nome antigo | Medida atual | Guias |
 |---|---|---|
 | `Abatimento` | `08 Abatimento` | [Analítico](../guias-do-relatorio/analitico.md), [Analítico antes](../arquivo/guias-anteriores.md) |
 | `cartao  faturamento svg v1` | `60 SVG Cartao Faturamento v1` | [Vendedores](../guias-do-relatorio/vendedores.md), [Comercial antes](../arquivo/guias-anteriores.md), [Vendedores antes](../arquivo/guias-anteriores.md) |
@@ -101,7 +102,3 @@ O modelo renomeou as medidas com prefixo numérico (por exemplo, `Faturamento` v
 | `rank cidade` | `52 Rank Cidade` | [Comercial](../guias-do-relatorio/comercial.md), [Comercial antes](../arquivo/guias-anteriores.md) |
 | `Resultado` | `09 Resultado` | [Analítico](../guias-do-relatorio/analitico.md), [Vendedores](../guias-do-relatorio/vendedores.md), [Comercial antes](../arquivo/guias-anteriores.md), [Analítico antes](../arquivo/guias-anteriores.md), [Vendedores antes](../arquivo/guias-anteriores.md) |
 | `tabela hml contente lite v1` | `64 SVG Tabela HTML Content Lite v1` | [Comercial antes](../arquivo/guias-anteriores.md) |
-
-!!! pendente "Relatório com nomes antigos de medidas"
-    25 nomes de medida usados em visuais do relatório não existem no modelo atual. Isso aparece no Power BI como campo não encontrado. As páginas desta documentação ligam cada nome antigo à medida atual pelo nome, mas essa ligação é uma dedução. Confirme abrindo o relatório no Power BI Desktop e, se for o caso, reaponte os visuais para as medidas atuais.
-

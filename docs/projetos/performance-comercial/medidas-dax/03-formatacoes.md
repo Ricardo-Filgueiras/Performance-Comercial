@@ -12,7 +12,7 @@ Maior faturamento mensal no contexto selecionado, multiplicado por 1,5. Pelo nom
 <!-- gerado:inicio medida:50 Eixo Y max Grafico Comercial -->
 - **Tabela:** `_Medidas`
 - **Formato:** padrão
-- **Usada nas guias:** nenhum visual
+- **Usada nas guias:** [Comercial ](../guias-do-relatorio/comercial.md), *Comercial antes*
 - **Depende de:** [`01 Faturamento`](01-principais.md#01-faturamento)
 - **É usada por:** nenhuma medida
 

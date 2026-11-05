@@ -15,7 +15,7 @@ Página de entrada do relatório. É a única guia que aparece na barra de guias
 | Botão | Destino |
 |---|---|
 | Botão de link | https://www.linkedin.com/in/ricardo-filgueiras-b4607b232/ |
-| Botão de link | https://github.com/Ricardo-Filgueiras/Performace-Comercial |
+| Botão de link | https://github.com/Ricardo-Filgueiras/Performance-Comercial |
 | Botão de link | https://www.youtube.com/@ricardofilgueiras_datascience |
 
 ??? info "Detalhes técnicos"

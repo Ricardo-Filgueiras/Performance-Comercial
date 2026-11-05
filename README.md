@@ -16,7 +16,7 @@ O modelo semântico segue arquitetura **Star Schema** com medidas DAX organizada
 
 | Camada | Tecnologia |
 |---|---|
-| Relatório e modelo semântico | Power BI (formato PBIP) |
+| Relatório e modelo semântico | Power BI em formato PBIP: relatório em PBIR (um `visual.json` por visual) e modelo em TMDL (um `.tmdl` por tabela) |
 | Documentação | MkDocs Material |
 | Gerenciador de pacotes Python | uv |
 | Versionamento | Git / GitHub |

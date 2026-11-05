@@ -26,7 +26,7 @@ Dica de ferramenta: não tem navegação. Aparece quando o mouse passa sobre um 
 
     **Tipos de visual:** `card` (1), `lineClusteredColumnComboChart` (1).
 
-    **Medidas usadas:** [`54 Nome Vendedor`](../medidas-dax/sem-pasta.md#54-nome-vendedor) (no relatório, pelo nome antigo `nome vendedor`), [`Context Medida z`](../medidas-dax/sem-pasta.md#context-medida-z), [`Linha Anterior`](../medidas-dax/sem-pasta.md#linha-anterior), [`Linha Atual`](../medidas-dax/sem-pasta.md#linha-atual), [`Seta para Cima`](../medidas-dax/sem-pasta.md#seta-para-cima), [`Seta para baixo  ( limit Inferior )`](../medidas-dax/sem-pasta.md#seta-para-baixo-limit-inferior), [`Seta para baixo  ( limit sup )`](../medidas-dax/sem-pasta.md#seta-para-baixo-limit-sup).
+    **Medidas usadas:** [`54 Nome Vendedor`](../medidas-dax/04-auxiliares.md#54-nome-vendedor), [`Context Medida z`](../medidas-dax/tooltip-rosca.md#context-medida-z), [`Linha Anterior`](../medidas-dax/tooltip-rosca.md#linha-anterior), [`Linha Atual`](../medidas-dax/tooltip-rosca.md#linha-atual), [`Seta para Cima`](../medidas-dax/tooltip-rosca.md#seta-para-cima), [`Seta para baixo  ( limit Inferior )`](../medidas-dax/tooltip-rosca.md#seta-para-baixo-limit-inferior), [`Seta para baixo  ( limit sup )`](../medidas-dax/tooltip-rosca.md#seta-para-baixo-limit-sup).
 
     **Colunas usadas:**
 

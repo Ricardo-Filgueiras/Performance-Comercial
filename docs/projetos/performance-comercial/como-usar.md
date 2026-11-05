@@ -76,4 +76,3 @@ Esta página descreve as jornadas de quem usa o painel: em que momento da rotina
 - Os valores consideram só as **vendas válidas**. A **quantidade de vendas** conta vendas válidas e inválidas, então não se refere ao mesmo conjunto que o faturamento (ver [Vendas válidas](regras-de-negocio.md#vendas-validas)).
 - As margens são **razões** em porcentagem. A variação da margem contra o ano anterior é relativa, e não a diferença em pontos percentuais.
 - Os dados são fictícios e vão só até 31/12/2021.
-- Alguns visuais do relatório ainda apontam para nomes antigos de medidas e podem mostrar campo não encontrado (ver [Nomes antigos de medidas](medidas-dax/index.md#nomes-antigos-de-medidas-no-relatorio)).

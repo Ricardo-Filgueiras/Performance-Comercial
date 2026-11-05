@@ -98,7 +98,7 @@ As três dependem do contexto de filtro do visual: período, vendedor, cidade e 
 
 - A diferença para a meta **não diz** se o faturamento ficou acima ou abaixo da meta, porque usa valor absoluto.
 - A cor usa dois limites fixos no código (60% e 10%). Entre 10% e 60%, a cor é cinza.
-- `42 Diferença Meta` e `66 Meta Cor` não são usadas por outras medidas. Aparecem em visuais da guia Vendedores pelo nome antigo (ver [Nomes antigos de medidas](medidas-dax/index.md#nomes-antigos-de-medidas-no-relatorio)).
+- `42 Diferença Meta` e `66 Meta Cor` não são usadas por outras medidas. Aparecem em visuais da guia Vendedores.
 
 Os limites de 60% e 10% da cor da meta e o uso de valor absoluto na diferença para a meta são **intencionais** (confirmado pelo desenvolvedor).
 

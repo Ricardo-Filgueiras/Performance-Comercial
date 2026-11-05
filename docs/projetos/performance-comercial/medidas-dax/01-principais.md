@@ -15,9 +15,9 @@ Soma de `Qtde × Valor Unit` das vendas válidas (`Id Status = 1`). *(descriçã
 <!-- gerado:inicio medida:01 Faturamento -->
 - **Tabela:** `_Medidas`
 - **Formato:** `"R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00`
-- **Usada nas guias:** [Comercial ](../guias-do-relatorio/comercial.md), *TooltiposTabela*
+- **Usada nas guias:** [Comercial ](../guias-do-relatorio/comercial.md), [Analítico](../guias-do-relatorio/analitico.md), [Mapa Calor](../guias-do-relatorio/mapa-calor.md), [Vendedores](../guias-do-relatorio/vendedores.md), *Comercial antes*, *Analítico antes*, *Mapa Calor antes*, *Vendedores antes*, *TooltiposGrafico01*, *TooltiposTabela*
 - **Depende de:** nenhuma medida
-- **É usada por:** [`03 Lucro Bruto`](#03-lucro-bruto), [`04 Margem Bruta`](#04-margem-bruta), [`09 Resultado`](#09-resultado), [`10 Margem`](#10-margem), [`20 Faturamento Acumulado`](02-temporais.md#20-faturamento-acumulado), [`21 Faturamento Acumulado LY`](02-temporais.md#21-faturamento-acumulado-ly), [`22 Faturamento LY`](02-temporais.md#22-faturamento-ly), [`23 Faturamento YoY %`](02-temporais.md#23-faturamento-yoy), [`24 Faturamento MoM %`](02-temporais.md#24-faturamento-mom), [`41 Porcentagem Meta`](#41-porcentagem-meta), [`42 Diferença Meta`](#42-diferenca-meta), [`50 Eixo Y max Grafico Comercial`](03-formatacoes.md#50-eixo-y-max-grafico-comercial), [`51 Faturamento formatação de texto`](03-formatacoes.md#51-faturamento-formatacao-de-texto), [`52 Rank Cidade`](sem-pasta.md#52-rank-cidade), [`53 Max Y Visual 01 pg Vendedores`](sem-pasta.md#53-max-y-visual-01-pg-vendedores), [`Context Medida z`](sem-pasta.md#context-medida-z), [`Linha Atual`](sem-pasta.md#linha-atual), [`Seta para Cima`](sem-pasta.md#seta-para-cima), [`Seta para baixo  ( limit Inferior )`](sem-pasta.md#seta-para-baixo-limit-inferior), [`Seta para baixo  ( limit sup )`](sem-pasta.md#seta-para-baixo-limit-sup)
+- **É usada por:** [`03 Lucro Bruto`](#03-lucro-bruto), [`04 Margem Bruta`](#04-margem-bruta), [`09 Resultado`](#09-resultado), [`10 Margem`](#10-margem), [`20 Faturamento Acumulado`](02-temporais.md#20-faturamento-acumulado), [`21 Faturamento Acumulado LY`](02-temporais.md#21-faturamento-acumulado-ly), [`22 Faturamento LY`](02-temporais.md#22-faturamento-ly), [`23 Faturamento YoY %`](02-temporais.md#23-faturamento-yoy), [`24 Faturamento MoM %`](02-temporais.md#24-faturamento-mom), [`41 Porcentagem Meta`](#41-porcentagem-meta), [`42 Diferença Meta`](#42-diferenca-meta), [`50 Eixo Y max Grafico Comercial`](03-formatacoes.md#50-eixo-y-max-grafico-comercial), [`51 Faturamento formatação de texto`](03-formatacoes.md#51-faturamento-formatacao-de-texto), [`52 Rank Cidade`](04-auxiliares.md#52-rank-cidade), [`53 Max Y Visual 01 pg Vendedores`](04-auxiliares.md#53-max-y-visual-01-pg-vendedores), [`Context Medida z`](tooltip-rosca.md#context-medida-z), [`Linha Atual`](tooltip-rosca.md#linha-atual), [`Seta para Cima`](tooltip-rosca.md#seta-para-cima), [`Seta para baixo  ( limit Inferior )`](tooltip-rosca.md#seta-para-baixo-limit-inferior), [`Seta para baixo  ( limit sup )`](tooltip-rosca.md#seta-para-baixo-limit-sup)
 
 ```dax
     CALCULATE(
@@ -158,7 +158,7 @@ Soma de `Qtde × Comissão Unit` das vendas válidas. *(descrição deduzida do 
 <!-- gerado:inicio medida:07 Comissao -->
 - **Tabela:** `_Medidas`
 - **Formato:** `"R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00`
-- **Usada nas guias:** nenhum visual
+- **Usada nas guias:** [Vendedores](../guias-do-relatorio/vendedores.md), *Vendedores antes*
 - **Depende de:** nenhuma medida
 - **É usada por:** [`08 Abatimento`](#08-abatimento), [`33 Comissao LY`](02-temporais.md#33-comissao-ly), [`34 Comissao YoY %`](02-temporais.md#34-comissao-yoy), [`35 Comissao MoM %`](02-temporais.md#35-comissao-mom)
 
@@ -182,7 +182,7 @@ Soma de custo, despesa, impostos e comissão. *(descrição deduzida do código)
 <!-- gerado:inicio medida:08 Abatimento -->
 - **Tabela:** `_Medidas`
 - **Formato:** `"R$"\ #,0;-"R$"\ #,0;"R$"\ #,0`
-- **Usada nas guias:** nenhum visual
+- **Usada nas guias:** [Analítico](../guias-do-relatorio/analitico.md), *Analítico antes*
 - **Depende de:** [`02 Custo`](#02-custo), [`05 Despesa`](#05-despesa), [`06 Impostos`](#06-impostos), [`07 Comissao`](#07-comissao)
 - **É usada por:** [`09 Resultado`](#09-resultado)
 
@@ -200,7 +200,7 @@ Faturamento menos o abatimento (custo, despesa, impostos e comissão). *(descri�
 <!-- gerado:inicio medida:09 Resultado -->
 - **Tabela:** `_Medidas`
 - **Formato:** `"R$"\ #,0;-"R$"\ #,0;"R$"\ #,0`
-- **Usada nas guias:** [Comercial ](../guias-do-relatorio/comercial.md)
+- **Usada nas guias:** [Comercial ](../guias-do-relatorio/comercial.md), [Analítico](../guias-do-relatorio/analitico.md), [Vendedores](../guias-do-relatorio/vendedores.md), *Comercial antes*, *Analítico antes*, *Vendedores antes*
 - **Depende de:** [`01 Faturamento`](#01-faturamento), [`08 Abatimento`](#08-abatimento)
 - **É usada por:** [`10 Margem`](#10-margem), [`29 Resultado LM`](02-temporais.md#29-resultado-lm), [`30 Resultado LY`](02-temporais.md#30-resultado-ly), [`31 Resultado YoY %`](02-temporais.md#31-resultado-yoy), [`32 Resultado MoM %`](02-temporais.md#32-resultado-mom)
 
@@ -218,7 +218,7 @@ Margem Líquida (%) = (Resultado / Faturamento) com tratamento de divisão por z
 <!-- gerado:inicio medida:10 Margem -->
 - **Tabela:** `_Medidas`
 - **Formato:** `0.00%;-0.00%;0.00%`
-- **Usada nas guias:** [Comercial ](../guias-do-relatorio/comercial.md), *TooltiposTabela*
+- **Usada nas guias:** [Comercial ](../guias-do-relatorio/comercial.md), [Analítico](../guias-do-relatorio/analitico.md), [Vendedores](../guias-do-relatorio/vendedores.md), *Comercial antes*, *Analítico antes*, *Vendedores antes*, *TooltiposTabela*
 - **Depende de:** [`01 Faturamento`](#01-faturamento), [`09 Resultado`](#09-resultado)
 - **É usada por:** [`25 Margem LM`](02-temporais.md#25-margem-lm), [`26 Margem LY`](02-temporais.md#26-margem-ly), [`27 Margem YoY %`](02-temporais.md#27-margem-yoy), [`28 Margem MoM %`](02-temporais.md#28-margem-mom)
 
@@ -242,7 +242,7 @@ Contagem de números de venda distintos (`Num Venda`). *(descrição deduzida do
 <!-- gerado:inicio medida:11 Qtde Vendas -->
 - **Tabela:** `_Medidas`
 - **Formato:** `#,0`
-- **Usada nas guias:** nenhum visual
+- **Usada nas guias:** [Analítico](../guias-do-relatorio/analitico.md), *Analítico antes*
 - **Depende de:** nenhuma medida
 - **É usada por:** nenhuma medida
 
@@ -261,7 +261,7 @@ Quantidade de clientes únicos com vendas efetivadas (Status = 1)
 <!-- gerado:inicio medida:12 Positivação Clientes -->
 - **Tabela:** `_Medidas`
 - **Formato:** `0`
-- **Usada nas guias:** nenhum visual
+- **Usada nas guias:** [Analítico](../guias-do-relatorio/analitico.md), [Vendedores](../guias-do-relatorio/vendedores.md), *Analítico antes*, *Vendedores antes*
 - **Depende de:** nenhuma medida
 - **É usada por:** nenhuma medida
 
@@ -284,7 +284,7 @@ Quantidade de produtos únicos vendidos (Status = 1)
 <!-- gerado:inicio medida:13 Positivação Produtos -->
 - **Tabela:** `_Medidas`
 - **Formato:** `0`
-- **Usada nas guias:** nenhum visual
+- **Usada nas guias:** [Analítico](../guias-do-relatorio/analitico.md), *Analítico antes*
 - **Depende de:** nenhuma medida
 - **É usada por:** nenhuma medida
 
@@ -306,7 +306,7 @@ Soma de `Valor Meta`, a meta de vendas dos vendedores. *(descrição deduzida do
 <!-- gerado:inicio medida:40 Meta -->
 - **Tabela:** `_Medidas`
 - **Formato:** `"R$"\ #,0;-"R$"\ #,0;"R$"\ #,0`
-- **Usada nas guias:** nenhum visual
+- **Usada nas guias:** [Vendedores](../guias-do-relatorio/vendedores.md), *Vendedores antes*, *TooltiposGrafico01*
 - **Depende de:** nenhuma medida
 - **É usada por:** [`41 Porcentagem Meta`](#41-porcentagem-meta), [`42 Diferença Meta`](#42-diferenca-meta)
 
@@ -324,7 +324,7 @@ Percentual de atingimento: Faturamento / Meta
 <!-- gerado:inicio medida:41 Porcentagem Meta -->
 - **Tabela:** `_Medidas`
 - **Formato:** `0.00%;-0.00%;0.00%`
-- **Usada nas guias:** *TooltiposTabela*
+- **Usada nas guias:** [Vendedores](../guias-do-relatorio/vendedores.md), *Vendedores antes*, *TooltiposGrafico01*, *TooltiposTabela*
 - **Depende de:** [`01 Faturamento`](#01-faturamento), [`40 Meta`](#40-meta)
 - **É usada por:** [`66 Meta Cor`](visuais-svg.md#66-meta-cor)
 
@@ -352,7 +352,7 @@ Diferença, em valor absoluto, entre a meta e o faturamento. *(descrição deduz
 <!-- gerado:inicio medida:42 Diferença Meta -->
 - **Tabela:** `_Medidas`
 - **Formato:** `"R$"\ #,0;-"R$"\ #,0;"R$"\ #,0`
-- **Usada nas guias:** nenhum visual
+- **Usada nas guias:** [Vendedores](../guias-do-relatorio/vendedores.md), *Vendedores antes*
 - **Depende de:** [`01 Faturamento`](#01-faturamento), [`40 Meta`](#40-meta)
 - **É usada por:** nenhuma medida
 

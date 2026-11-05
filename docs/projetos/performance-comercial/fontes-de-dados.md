@@ -50,8 +50,7 @@ Os arquivos `data/Metas/Catalogo.pdf` e a pasta `data/imagens/` ficam no reposit
 !!! warning "Dependência do nome do primeiro arquivo de metas"
     A consulta `fMetas` usa o texto `Meta 2018.xlsx` como **nome de coluna** em duas etapas (tipo e extração do ano). Essa coluna recebe esse nome porque o arquivo `Meta 2018.xlsx` é o primeiro da pasta. Se ele for renomeado ou removido, a consulta falha. A coluna também só funciona para arquivos com nome no formato `Meta AAAA.xlsx`.
 
-!!! pendente "A confirmar"
-    A consulta `fMetas` lê 15 colunas de cada planilha de meta (`Column1` a `Column15`). Confirmar se todas as planilhas têm esse mesmo formato (Id do vendedor, nome do vendedor e os 12 meses).
+A consulta `fMetas` lê até 15 colunas de cada planilha de meta (`Column1` a `Column15`). Conferido em 05/11/2026: as 4 planilhas (2018 a 2021) têm as mesmas 14 colunas com dados, que são o Id do vendedor, o nome do vendedor e os 12 meses. A de 2018 tem uma coluna vazia a mais e linhas em branco no fim, que a consulta descarta. O resultado tem 528 linhas: 11 vendedores, 12 meses e 4 anos.
 
 ## Parâmetros
 

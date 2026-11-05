@@ -12,7 +12,7 @@ Desenha, em SVG, a variação do faturamento contra o ano anterior (`23 Faturame
 <!-- gerado:inicio medida:60 SVG Cartao Faturamento v1 -->
 - **Tabela:** `_Medidas`
 - **Formato:** padrão
-- **Usada nas guias:** [Comercial ](../guias-do-relatorio/comercial.md)
+- **Usada nas guias:** [Comercial ](../guias-do-relatorio/comercial.md), [Vendedores](../guias-do-relatorio/vendedores.md), *Comercial antes*, *Vendedores antes*
 - **Depende de:** [`23 Faturamento YoY %`](02-temporais.md#23-faturamento-yoy)
 - **É usada por:** nenhuma medida
 
@@ -63,7 +63,7 @@ Desenha, em SVG, a variação da margem contra o ano anterior (`27 Margem YoY %`
 <!-- gerado:inicio medida:61 SVG Cartao Margem v1 -->
 - **Tabela:** `_Medidas`
 - **Formato:** padrão
-- **Usada nas guias:** nenhum visual
+- **Usada nas guias:** [Comercial ](../guias-do-relatorio/comercial.md), [Vendedores](../guias-do-relatorio/vendedores.md), *Comercial antes*, *Vendedores antes*
 - **Depende de:** [`27 Margem YoY %`](02-temporais.md#27-margem-yoy)
 - **É usada por:** nenhuma medida
 
@@ -114,7 +114,7 @@ Desenha, em SVG, a variação do resultado contra o ano anterior (`31 Resultado 
 <!-- gerado:inicio medida:62 SVG Cartao Resultado v1 -->
 - **Tabela:** `_Medidas`
 - **Formato:** padrão
-- **Usada nas guias:** nenhum visual
+- **Usada nas guias:** [Comercial ](../guias-do-relatorio/comercial.md), [Vendedores](../guias-do-relatorio/vendedores.md), *Comercial antes*, *Vendedores antes*
 - **Depende de:** [`31 Resultado YoY %`](02-temporais.md#31-resultado-yoy)
 - **É usada por:** nenhuma medida
 
@@ -165,7 +165,7 @@ Desenha, em SVG, a variação da comissão contra o ano anterior (`34 Comissao Y
 <!-- gerado:inicio medida:63 SVG Cartao Comissao v1 -->
 - **Tabela:** `_Medidas`
 - **Formato:** padrão
-- **Usada nas guias:** nenhum visual
+- **Usada nas guias:** [Vendedores](../guias-do-relatorio/vendedores.md), *Vendedores antes*
 - **Depende de:** [`34 Comissao YoY %`](02-temporais.md#34-comissao-yoy)
 - **É usada por:** nenhuma medida
 
@@ -216,7 +216,7 @@ Desenha, em SVG, uma linha de tabela por cidade, com o faturamento abreviado e a
 <!-- gerado:inicio medida:64 SVG Tabela HTML Content Lite v1 -->
 - **Tabela:** `_Medidas`
 - **Formato:** padrão
-- **Usada nas guias:** [Comercial ](../guias-do-relatorio/comercial.md)
+- **Usada nas guias:** [Comercial ](../guias-do-relatorio/comercial.md), *Comercial antes*
 - **Depende de:** [`27 Margem YoY %`](02-temporais.md#27-margem-yoy), [`51 Faturamento formatação de texto`](03-formatacoes.md#51-faturamento-formatacao-de-texto)
 - **É usada por:** nenhuma medida
 
@@ -307,7 +307,7 @@ Cor da meta conforme o percentual atingido: verde a partir de 60%, vermelho abai
 <!-- gerado:inicio medida:66 Meta Cor -->
 - **Tabela:** `_Medidas`
 - **Formato:** padrão
-- **Usada nas guias:** nenhum visual
+- **Usada nas guias:** [Vendedores](../guias-do-relatorio/vendedores.md), *Vendedores antes*
 - **Depende de:** [`41 Porcentagem Meta`](01-principais.md#41-porcentagem-meta)
 - **É usada por:** nenhuma medida
 
