@@ -37,11 +37,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Faturamento"
+                  "Property": "01 Faturamento"
                 }
               },
-              "queryRef": "_Medidas.Faturamento",
-              "nativeQueryRef": "Faturamento"
+              "queryRef": "_Medidas.01 Faturamento",
+              "nativeQueryRef": "01 Faturamento"
             },
             {
               "field": {
@@ -51,11 +51,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Margem"
+                  "Property": "10 Margem"
                 }
               },
-              "queryRef": "_Medidas.Margem",
-              "nativeQueryRef": "Margem"
+              "queryRef": "_Medidas.10 Margem",
+              "nativeQueryRef": "10 Margem"
             }
           ]
         }
@@ -70,7 +70,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Faturamento"
+                "Property": "01 Faturamento"
               }
             },
             "direction": "Descending"
@@ -105,7 +105,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Faturamento"
+            "metadata": "_Medidas.01 Faturamento"
           }
         },
         {
@@ -119,7 +119,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Margem"
+            "metadata": "_Medidas.10 Margem"
           }
         }
       ],
@@ -164,7 +164,7 @@
                 }
               }
             ],
-            "metadata": "_Medidas.Faturamento"
+            "metadata": "_Medidas.01 Faturamento"
           }
         }
       ],
@@ -318,7 +318,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Faturamento"
+            "metadata": "_Medidas.01 Faturamento"
           }
         },
         {
@@ -402,7 +402,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Margem"
+            "metadata": "_Medidas.10 Margem"
           }
         }
       ],

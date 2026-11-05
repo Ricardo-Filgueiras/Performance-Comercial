@@ -42,10 +42,10 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Faturamento Acumulado"
+                  "Property": "20 Faturamento Acumulado"
                 }
               },
-              "queryRef": "_Medidas.Faturamento Acumulado",
+              "queryRef": "_Medidas.20 Faturamento Acumulado",
               "nativeQueryRef": "  Atual  ",
               "displayName": "  Atual  "
             },
@@ -57,10 +57,10 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Faturamento Acumulado LY"
+                  "Property": "21 Faturamento Acumulado LY"
                 }
               },
-              "queryRef": "_Medidas.Faturamento Acumulado LY",
+              "queryRef": "_Medidas.21 Faturamento Acumulado LY",
               "nativeQueryRef": "Anterior",
               "displayName": "Anterior"
             }

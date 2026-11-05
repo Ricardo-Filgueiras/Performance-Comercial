@@ -42,11 +42,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Positivação Clientes"
+                  "Property": "12 Positivação Clientes"
                 }
               },
-              "queryRef": "_Medidas.Positivação Clientes",
-              "nativeQueryRef": "Positivação Clientes"
+              "queryRef": "_Medidas.12 Positivação Clientes",
+              "nativeQueryRef": "12 Positivação Clientes"
             }
           ]
         }
@@ -61,7 +61,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Positivação Clientes"
+                "Property": "12 Positivação Clientes"
               }
             },
             "direction": "Descending"
@@ -150,7 +150,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Faturamento"
+            "metadata": "_Medidas.01 Faturamento"
           }
         },
         {
@@ -168,7 +168,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Positivação Clientes"
+            "metadata": "_Medidas.12 Positivação Clientes"
           }
         }
       ],

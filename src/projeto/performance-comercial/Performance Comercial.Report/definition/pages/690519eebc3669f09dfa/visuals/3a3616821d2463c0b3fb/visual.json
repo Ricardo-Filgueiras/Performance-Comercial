@@ -23,11 +23,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Meta"
+                  "Property": "40 Meta"
                 }
               },
-              "queryRef": "_Medidas.Meta",
-              "nativeQueryRef": "Meta"
+              "queryRef": "_Medidas.40 Meta",
+              "nativeQueryRef": "40 Meta"
             },
             {
               "field": {
@@ -37,11 +37,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Diferença Meta"
+                  "Property": "42 Diferença Meta"
                 }
               },
               "queryRef": "_Medidas.Diferenca",
-              "nativeQueryRef": "Diferença Meta"
+              "nativeQueryRef": "42 Diferença Meta"
             }
           ]
         }
@@ -56,7 +56,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Meta"
+                "Property": "40 Meta"
               }
             },
             "direction": "Descending"
@@ -158,7 +158,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Meta"
+            "metadata": "_Medidas.40 Meta"
           }
         },
         {
@@ -203,7 +203,7 @@
                               "Entity": "_Medidas"
                             }
                           },
-                          "Property": "Diferença Meta"
+                          "Property": "42 Diferença Meta"
                         }
                       },
                       "FillRule": {

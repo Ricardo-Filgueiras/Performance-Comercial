@@ -40,7 +40,7 @@
                 }
               },
               "queryRef": "_Medidas.01 Faturamento",
-              "nativeQueryRef": "Faturamento",
+              "nativeQueryRef": "01 Faturamento",
               "displayName": "Faturamento"
             },
             {
@@ -55,7 +55,7 @@
                 }
               },
               "queryRef": "_Medidas.10 Margem",
-              "nativeQueryRef": "Margem",
+              "nativeQueryRef": "10 Margem",
               "displayName": "Margem"
             },
             {
@@ -86,7 +86,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Faturamento"
+                "Property": "01 Faturamento"
               }
             },
             "direction": "Descending"
@@ -107,7 +107,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Faturamento"
+            "metadata": "_Medidas.01 Faturamento"
           }
         },
         {
@@ -121,7 +121,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Margem"
+            "metadata": "_Medidas.10 Margem"
           }
         },
         {
@@ -149,7 +149,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Porcentagem Meta"
+            "metadata": "_Medidas.41 Porcentagem Meta"
           }
         },
         {
@@ -222,7 +222,7 @@
                 }
               }
             ],
-            "metadata": "_Medidas.Faturamento"
+            "metadata": "_Medidas.01 Faturamento"
           }
         },
         {
@@ -258,7 +258,7 @@
                                     "Entity": "_Medidas"
                                   }
                                 },
-                                "Property": "Porcentagem Meta"
+                                "Property": "41 Porcentagem Meta"
                               }
                             },
                             "Right": {
@@ -276,7 +276,7 @@
                                                     "Entity": "_Medidas"
                                                   }
                                                 },
-                                                "Property": "Porcentagem Meta"
+                                                "Property": "41 Porcentagem Meta"
                                               }
                                             },
                                             "Scope": [
@@ -305,7 +305,7 @@
                                                     "Entity": "_Medidas"
                                                   }
                                                 },
-                                                "Property": "Porcentagem Meta"
+                                                "Property": "41 Porcentagem Meta"
                                               }
                                             },
                                             "Scope": [
@@ -345,7 +345,7 @@
                                         "Entity": "_Medidas"
                                       }
                                     },
-                                    "Property": "Porcentagem Meta"
+                                    "Property": "41 Porcentagem Meta"
                                   }
                                 },
                                 "Right": {
@@ -363,7 +363,7 @@
                                                         "Entity": "_Medidas"
                                                       }
                                                     },
-                                                    "Property": "Porcentagem Meta"
+                                                    "Property": "41 Porcentagem Meta"
                                                   }
                                                 },
                                                 "Scope": [
@@ -392,7 +392,7 @@
                                                         "Entity": "_Medidas"
                                                       }
                                                     },
-                                                    "Property": "Porcentagem Meta"
+                                                    "Property": "41 Porcentagem Meta"
                                                   }
                                                 },
                                                 "Scope": [
@@ -423,7 +423,7 @@
                                         "Entity": "_Medidas"
                                       }
                                     },
-                                    "Property": "Porcentagem Meta"
+                                    "Property": "41 Porcentagem Meta"
                                   }
                                 },
                                 "Right": {
@@ -441,7 +441,7 @@
                                                         "Entity": "_Medidas"
                                                       }
                                                     },
-                                                    "Property": "Porcentagem Meta"
+                                                    "Property": "41 Porcentagem Meta"
                                                   }
                                                 },
                                                 "Scope": [
@@ -470,7 +470,7 @@
                                                         "Entity": "_Medidas"
                                                       }
                                                     },
-                                                    "Property": "Porcentagem Meta"
+                                                    "Property": "41 Porcentagem Meta"
                                                   }
                                                 },
                                                 "Scope": [
@@ -510,7 +510,7 @@
                                     "Entity": "_Medidas"
                                   }
                                 },
-                                "Property": "Porcentagem Meta"
+                                "Property": "41 Porcentagem Meta"
                               }
                             },
                             "Right": {
@@ -528,7 +528,7 @@
                                                     "Entity": "_Medidas"
                                                   }
                                                 },
-                                                "Property": "Porcentagem Meta"
+                                                "Property": "41 Porcentagem Meta"
                                               }
                                             },
                                             "Scope": [
@@ -557,7 +557,7 @@
                                                     "Entity": "_Medidas"
                                                   }
                                                 },
-                                                "Property": "Porcentagem Meta"
+                                                "Property": "41 Porcentagem Meta"
                                               }
                                             },
                                             "Scope": [
@@ -598,7 +598,7 @@
                 }
               }
             ],
-            "metadata": "_Medidas.Porcentagem Meta"
+            "metadata": "_Medidas.41 Porcentagem Meta"
           }
         }
       ],
@@ -738,7 +738,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Faturamento"
+            "metadata": "_Medidas.01 Faturamento"
           }
         },
         {
@@ -822,7 +822,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Margem"
+            "metadata": "_Medidas.10 Margem"
           }
         }
       ],

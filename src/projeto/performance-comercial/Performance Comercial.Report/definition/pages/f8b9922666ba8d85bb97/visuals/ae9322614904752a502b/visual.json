@@ -41,11 +41,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Faturamento"
+                  "Property": "01 Faturamento"
                 }
               },
-              "queryRef": "_Medidas.Faturamento",
-              "nativeQueryRef": "Faturamento"
+              "queryRef": "_Medidas.01 Faturamento",
+              "nativeQueryRef": "01 Faturamento"
             },
             {
               "field": {
@@ -55,11 +55,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Meta"
+                  "Property": "40 Meta"
                 }
               },
-              "queryRef": "_Medidas.Meta",
-              "nativeQueryRef": "Meta"
+              "queryRef": "_Medidas.40 Meta",
+              "nativeQueryRef": "40 Meta"
             },
             {
               "field": {
@@ -69,11 +69,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Porcentagem Meta"
+                  "Property": "41 Porcentagem Meta"
                 }
               },
-              "queryRef": "_Medidas.Porcentagem Meta",
-              "nativeQueryRef": "Porcentagem Meta"
+              "queryRef": "_Medidas.41 Porcentagem Meta",
+              "nativeQueryRef": "41 Porcentagem Meta"
             }
           ]
         }
@@ -289,7 +289,7 @@
                               "Entity": "_Medidas"
                             }
                           },
-                          "Property": "Porcentagem Meta"
+                          "Property": "41 Porcentagem Meta"
                         }
                       },
                       "FillRule": {
@@ -341,7 +341,7 @@
                 }
               }
             ],
-            "metadata": "_Medidas.Porcentagem Meta"
+            "metadata": "_Medidas.41 Porcentagem Meta"
           }
         },
         {
@@ -362,7 +362,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Porcentagem Meta"
+            "metadata": "_Medidas.41 Porcentagem Meta"
           }
         }
       ],
@@ -413,7 +413,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Porcentagem Meta"
+            "metadata": "_Medidas.41 Porcentagem Meta"
           }
         }
       ],

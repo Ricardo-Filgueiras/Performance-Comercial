@@ -23,11 +23,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "tabela hml contente lite v1"
+                  "Property": "64 SVG Tabela HTML Content Lite v1"
                 }
               },
-              "queryRef": "_Medidas.tabela hml contente lite v1",
-              "nativeQueryRef": "tabela hml contente lite v1"
+              "queryRef": "_Medidas.64 SVG Tabela HTML Content Lite v1",
+              "nativeQueryRef": "64 SVG Tabela HTML Content Lite v1"
             }
           ]
         },
@@ -55,11 +55,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Faturamento"
+                  "Property": "01 Faturamento"
                 }
               },
-              "queryRef": "_Medidas.Faturamento",
-              "nativeQueryRef": "Faturamento"
+              "queryRef": "_Medidas.01 Faturamento",
+              "nativeQueryRef": "01 Faturamento"
             }
           ]
         }
@@ -74,7 +74,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Faturamento"
+                "Property": "01 Faturamento"
               }
             },
             "direction": "Descending"
@@ -144,7 +144,7 @@
                 "Entity": "_Medidas"
               }
             },
-            "Property": "rank cidade"
+            "Property": "52 Rank Cidade"
           }
         },
         "type": "Advanced",
@@ -169,7 +169,7 @@
                           "Source": "_"
                         }
                       },
-                      "Property": "rank cidade"
+                      "Property": "52 Rank Cidade"
                     }
                   },
                   "Right": {

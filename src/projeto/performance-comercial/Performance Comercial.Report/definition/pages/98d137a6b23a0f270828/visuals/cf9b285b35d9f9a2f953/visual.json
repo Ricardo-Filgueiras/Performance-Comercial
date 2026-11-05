@@ -91,7 +91,7 @@
                 }
               },
               "queryRef": "_Medidas.01 Faturamento",
-              "nativeQueryRef": "Faturamento",
+              "nativeQueryRef": "01 Faturamento",
               "displayName": "Faturamento"
             }
           ]
@@ -205,7 +205,7 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Faturamento MoM %"
+                  "Property": "24 Faturamento MoM %"
                 }
               }
             }
@@ -235,7 +235,7 @@
                               "Entity": "_Medidas"
                             }
                           },
-                          "Property": "Faturamento MoM %"
+                          "Property": "24 Faturamento MoM %"
                         }
                       },
                       "FillRule": {
@@ -308,7 +308,7 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Eixo Y max Grafico Comercial"
+                  "Property": "50 Eixo Y max Grafico Comercial"
                 }
               }
             },
@@ -392,7 +392,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Faturamento"
+            "metadata": "_Medidas.01 Faturamento"
           }
         }
       ]

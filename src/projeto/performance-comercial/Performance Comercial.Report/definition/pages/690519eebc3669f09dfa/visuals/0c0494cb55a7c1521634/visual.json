@@ -23,11 +23,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Faturamento"
+                  "Property": "01 Faturamento"
                 }
               },
-              "queryRef": "_Medidas.Faturamento",
-              "nativeQueryRef": "Faturamento"
+              "queryRef": "_Medidas.01 Faturamento",
+              "nativeQueryRef": "01 Faturamento"
             },
             {
               "field": {
@@ -37,11 +37,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Resultado"
+                  "Property": "09 Resultado"
                 }
               },
-              "queryRef": "_Medidas.Resultado",
-              "nativeQueryRef": "Resultado"
+              "queryRef": "_Medidas.09 Resultado",
+              "nativeQueryRef": "09 Resultado"
             },
             {
               "field": {
@@ -51,11 +51,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Margem"
+                  "Property": "10 Margem"
                 }
               },
-              "queryRef": "_Medidas.Margem",
-              "nativeQueryRef": "Margem"
+              "queryRef": "_Medidas.10 Margem",
+              "nativeQueryRef": "10 Margem"
             },
             {
               "field": {
@@ -65,11 +65,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Comissao"
+                  "Property": "07 Comissao"
                 }
               },
-              "queryRef": "_Medidas.Comissao",
-              "nativeQueryRef": "Comissao"
+              "queryRef": "_Medidas.07 Comissao",
+              "nativeQueryRef": "07 Comissao"
             }
           ]
         }
@@ -84,7 +84,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Faturamento"
+                "Property": "01 Faturamento"
               }
             },
             "direction": "Descending"
@@ -167,7 +167,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Faturamento"
+            "metadata": "_Medidas.01 Faturamento"
           }
         },
         {
@@ -208,7 +208,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Resultado"
+            "metadata": "_Medidas.09 Resultado"
           }
         },
         {
@@ -249,7 +249,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Margem"
+            "metadata": "_Medidas.10 Margem"
           }
         },
         {
@@ -302,7 +302,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Comissao"
+            "metadata": "_Medidas.07 Comissao"
           }
         }
       ],
@@ -350,7 +350,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Resultado"
+            "metadata": "_Medidas.09 Resultado"
           }
         },
         {
@@ -499,7 +499,7 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "cartao  faturamento svg v1"
+                  "Property": "60 SVG Cartao Faturamento v1"
                 }
               }
             },
@@ -539,7 +539,7 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "cartao  resultado svg v1"
+                  "Property": "62 SVG Cartao Resultado v1"
                 }
               }
             }
@@ -552,7 +552,7 @@
                 }
               }
             ],
-            "metadata": "_Medidas.Resultado"
+            "metadata": "_Medidas.09 Resultado"
           }
         },
         {
@@ -565,7 +565,7 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "cartao  margem svg v1"
+                  "Property": "61 SVG Cartao Margem v1"
                 }
               }
             }
@@ -578,7 +578,7 @@
                 }
               }
             ],
-            "metadata": "_Medidas.Margem"
+            "metadata": "_Medidas.10 Margem"
           }
         },
         {
@@ -591,7 +591,7 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "cartao comissao svg v1"
+                  "Property": "63 SVG Cartao Comissao v1"
                 }
               }
             }
@@ -604,7 +604,7 @@
                 }
               }
             ],
-            "metadata": "_Medidas.Comissao"
+            "metadata": "_Medidas.07 Comissao"
           }
         }
       ],

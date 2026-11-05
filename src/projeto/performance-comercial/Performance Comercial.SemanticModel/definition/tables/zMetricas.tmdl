@@ -18,6 +18,7 @@ table zMetricas
 			RETURN
 			    _selecao
 			```
+		displayFolder: Tooltip Rosca
 		lineageTag: 6ddeb8b1-ebe8-49cb-abf5-df7800c34437
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -26,6 +27,7 @@ table zMetricas
 			
 			
 			[22 Faturamento LY]
+		displayFolder: Tooltip Rosca
 		lineageTag: 890aa2b0-332c-41d5-8e64-75eb435db791
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -36,6 +38,7 @@ table zMetricas
 			
 			RETURN
 			    IF(  _selecao in {"Atual", ""} , [01 Faturamento] )
+		displayFolder: Tooltip Rosca
 		lineageTag: 4aeb6b31-a2ff-4327-859e-4494edc24804
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -53,6 +56,7 @@ table zMetricas
 			        _atual 
 			    )
 			```
+		displayFolder: Tooltip Rosca
 		lineageTag: 68376de0-7938-4f5f-948f-8cd017739b5c
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -71,6 +75,7 @@ table zMetricas
 			    )
 			```
 		formatString: 0
+		displayFolder: Tooltip Rosca
 		lineageTag: f730d612-e8d7-4a11-aca5-ec01757e23ce
 
 	measure 'Seta para baixo  ( limit Inferior )' = ```
@@ -86,6 +91,7 @@ table zMetricas
 			        _atual 
 			    )
 			```
+		displayFolder: Tooltip Rosca
 		lineageTag: 4fb11e9e-8b45-4673-a51a-abd3e673e51c
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}

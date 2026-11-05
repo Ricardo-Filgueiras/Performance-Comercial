@@ -87,11 +87,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Faturamento"
+                  "Property": "01 Faturamento"
                 }
               },
-              "queryRef": "_Medidas.Faturamento",
-              "nativeQueryRef": "Faturamento"
+              "queryRef": "_Medidas.01 Faturamento",
+              "nativeQueryRef": "01 Faturamento"
             },
             {
               "field": {
@@ -101,11 +101,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Abatimento"
+                  "Property": "08 Abatimento"
                 }
               },
-              "queryRef": "_Medidas.Abatimento",
-              "nativeQueryRef": "Abatimento"
+              "queryRef": "_Medidas.08 Abatimento",
+              "nativeQueryRef": "08 Abatimento"
             },
             {
               "field": {
@@ -115,11 +115,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Resultado"
+                  "Property": "09 Resultado"
                 }
               },
-              "queryRef": "_Medidas.Resultado",
-              "nativeQueryRef": "Resultado"
+              "queryRef": "_Medidas.09 Resultado",
+              "nativeQueryRef": "09 Resultado"
             },
             {
               "field": {
@@ -129,11 +129,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Margem"
+                  "Property": "10 Margem"
                 }
               },
-              "queryRef": "_Medidas.Margem",
-              "nativeQueryRef": "Margem"
+              "queryRef": "_Medidas.10 Margem",
+              "nativeQueryRef": "10 Margem"
             },
             {
               "field": {
@@ -143,11 +143,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Qtde Vendas"
+                  "Property": "11 Qtde Vendas"
                 }
               },
-              "queryRef": "_Medidas.Qtde Vendas",
-              "nativeQueryRef": "Qtde Vendas"
+              "queryRef": "_Medidas.11 Qtde Vendas",
+              "nativeQueryRef": "11 Qtde Vendas"
             },
             {
               "field": {
@@ -157,11 +157,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Positivação Produtos"
+                  "Property": "13 Positivação Produtos"
                 }
               },
-              "queryRef": "_Medidas.Positivação Produtos",
-              "nativeQueryRef": "Positivação Produtos"
+              "queryRef": "_Medidas.13 Positivação Produtos",
+              "nativeQueryRef": "13 Positivação Produtos"
             },
             {
               "field": {
@@ -171,11 +171,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Positivação Clientes"
+                  "Property": "12 Positivação Clientes"
                 }
               },
-              "queryRef": "_Medidas.Positivação Clientes",
-              "nativeQueryRef": "Positivação Clientes"
+              "queryRef": "_Medidas.12 Positivação Clientes",
+              "nativeQueryRef": "12 Positivação Clientes"
             }
           ]
         }
@@ -190,7 +190,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Qtde Vendas"
+                "Property": "11 Qtde Vendas"
               }
             },
             "direction": "Descending"
@@ -272,7 +272,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Faturamento"
+            "metadata": "_Medidas.01 Faturamento"
           }
         },
         {
@@ -286,7 +286,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Abatimento"
+            "metadata": "_Medidas.08 Abatimento"
           }
         },
         {
@@ -300,7 +300,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Resultado"
+            "metadata": "_Medidas.09 Resultado"
           }
         },
         {
@@ -314,7 +314,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Margem"
+            "metadata": "_Medidas.10 Margem"
           }
         },
         {
@@ -328,7 +328,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Qtde Vendas"
+            "metadata": "_Medidas.11 Qtde Vendas"
           }
         },
         {
@@ -342,7 +342,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Positivação Produtos"
+            "metadata": "_Medidas.13 Positivação Produtos"
           }
         },
         {
@@ -356,7 +356,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Positivação Clientes"
+            "metadata": "_Medidas.12 Positivação Clientes"
           }
         }
       ],
@@ -401,7 +401,7 @@
                 }
               }
             ],
-            "metadata": "_Medidas.Faturamento"
+            "metadata": "_Medidas.01 Faturamento"
           }
         },
         {
@@ -437,7 +437,7 @@
                                     "Entity": "_Medidas"
                                   }
                                 },
-                                "Property": "Margem"
+                                "Property": "10 Margem"
                               }
                             },
                             "Right": {
@@ -455,7 +455,7 @@
                                                     "Entity": "_Medidas"
                                                   }
                                                 },
-                                                "Property": "Margem"
+                                                "Property": "10 Margem"
                                               }
                                             },
                                             "Scope": [
@@ -484,7 +484,7 @@
                                                     "Entity": "_Medidas"
                                                   }
                                                 },
-                                                "Property": "Margem"
+                                                "Property": "10 Margem"
                                               }
                                             },
                                             "Scope": [
@@ -524,7 +524,7 @@
                                         "Entity": "_Medidas"
                                       }
                                     },
-                                    "Property": "Margem"
+                                    "Property": "10 Margem"
                                   }
                                 },
                                 "Right": {
@@ -542,7 +542,7 @@
                                                         "Entity": "_Medidas"
                                                       }
                                                     },
-                                                    "Property": "Margem"
+                                                    "Property": "10 Margem"
                                                   }
                                                 },
                                                 "Scope": [
@@ -571,7 +571,7 @@
                                                         "Entity": "_Medidas"
                                                       }
                                                     },
-                                                    "Property": "Margem"
+                                                    "Property": "10 Margem"
                                                   }
                                                 },
                                                 "Scope": [
@@ -602,7 +602,7 @@
                                         "Entity": "_Medidas"
                                       }
                                     },
-                                    "Property": "Margem"
+                                    "Property": "10 Margem"
                                   }
                                 },
                                 "Right": {
@@ -620,7 +620,7 @@
                                                         "Entity": "_Medidas"
                                                       }
                                                     },
-                                                    "Property": "Margem"
+                                                    "Property": "10 Margem"
                                                   }
                                                 },
                                                 "Scope": [
@@ -649,7 +649,7 @@
                                                         "Entity": "_Medidas"
                                                       }
                                                     },
-                                                    "Property": "Margem"
+                                                    "Property": "10 Margem"
                                                   }
                                                 },
                                                 "Scope": [
@@ -689,7 +689,7 @@
                                     "Entity": "_Medidas"
                                   }
                                 },
-                                "Property": "Margem"
+                                "Property": "10 Margem"
                               }
                             },
                             "Right": {
@@ -707,7 +707,7 @@
                                                     "Entity": "_Medidas"
                                                   }
                                                 },
-                                                "Property": "Margem"
+                                                "Property": "10 Margem"
                                               }
                                             },
                                             "Scope": [
@@ -736,7 +736,7 @@
                                                     "Entity": "_Medidas"
                                                   }
                                                 },
-                                                "Property": "Margem"
+                                                "Property": "10 Margem"
                                               }
                                             },
                                             "Scope": [
@@ -777,7 +777,7 @@
                 }
               }
             ],
-            "metadata": "_Medidas.Margem"
+            "metadata": "_Medidas.10 Margem"
           }
         }
       ],
@@ -917,7 +917,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Faturamento"
+            "metadata": "_Medidas.01 Faturamento"
           }
         },
         {
@@ -1001,7 +1001,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Abatimento"
+            "metadata": "_Medidas.08 Abatimento"
           }
         },
         {
@@ -1085,7 +1085,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Resultado"
+            "metadata": "_Medidas.09 Resultado"
           }
         },
         {
@@ -1113,7 +1113,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Margem"
+            "metadata": "_Medidas.10 Margem"
           }
         },
         {
@@ -1141,7 +1141,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Qtde Vendas"
+            "metadata": "_Medidas.11 Qtde Vendas"
           }
         },
         {
@@ -1169,7 +1169,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Positivação Produtos"
+            "metadata": "_Medidas.13 Positivação Produtos"
           }
         },
         {
@@ -1197,7 +1197,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Positivação Clientes"
+            "metadata": "_Medidas.12 Positivação Clientes"
           }
         }
       ],

@@ -672,6 +672,7 @@ table _Medidas
 			)
 			```
 		formatString: 0
+		displayFolder: 04. Auxiliares
 		lineageTag: 4fc7e5c3-129b-421a-aa82-2f2ddcb14e26
 
 	measure '21 Faturamento Acumulado LY' = ```
@@ -740,6 +741,7 @@ table _Medidas
 			    ), [01 Faturamento] * 1.5
 			
 			)
+		displayFolder: 04. Auxiliares
 		lineageTag: 39c3ea4a-9f40-47d6-bb26-b642b786bc06
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -768,6 +770,7 @@ table _Medidas
 		lineageTag: 925fa1f9-930e-4970-9534-81fa14c2acd4
 
 	measure '54 Nome Vendedor' = SELECTEDVALUE( dVendedores[Vendedor] )
+		displayFolder: 04. Auxiliares
 		lineageTag: ca2c3a36-16ce-4f61-ad24-914ce6167eae
 
 	/// Margem Bruta (%) = (Faturamento - Custo) / Faturamento

@@ -42,11 +42,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Faturamento"
+                  "Property": "01 Faturamento"
                 }
               },
-              "queryRef": "_Medidas.Faturamento",
-              "nativeQueryRef": "Faturamento"
+              "queryRef": "_Medidas.01 Faturamento",
+              "nativeQueryRef": "01 Faturamento"
             }
           ]
         }
@@ -61,7 +61,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Faturamento"
+                "Property": "01 Faturamento"
               }
             },
             "direction": "Descending"
@@ -150,7 +150,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Faturamento"
+            "metadata": "_Medidas.01 Faturamento"
           }
         }
       ],
@@ -186,7 +186,7 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "max Y visual 01 pg Vendedores"
+                  "Property": "53 Max Y Visual 01 pg Vendedores"
                 }
               }
             }

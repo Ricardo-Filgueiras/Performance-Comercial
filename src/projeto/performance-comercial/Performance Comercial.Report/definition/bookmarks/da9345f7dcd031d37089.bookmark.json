@@ -85,7 +85,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 0
@@ -100,7 +100,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Abatimento"
+                      "Property": "08 Abatimento"
                     }
                   },
                   "howCreated": 0
@@ -115,7 +115,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Resultado"
+                      "Property": "09 Resultado"
                     }
                   },
                   "howCreated": 0
@@ -130,7 +130,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Margem"
+                      "Property": "10 Margem"
                     }
                   },
                   "howCreated": 0
@@ -145,7 +145,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Qtde Vendas"
+                      "Property": "11 Qtde Vendas"
                     }
                   },
                   "howCreated": 0
@@ -160,7 +160,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Positivação Produtos"
+                      "Property": "13 Positivação Produtos"
                     }
                   },
                   "howCreated": 0
@@ -175,7 +175,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Positivação Clientes"
+                      "Property": "12 Positivação Clientes"
                     }
                   },
                   "howCreated": 0
@@ -195,7 +195,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Qtde Vendas"
+                      "Property": "11 Qtde Vendas"
                     }
                   }
                 }
@@ -344,7 +344,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 1
@@ -461,7 +461,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 1
@@ -531,7 +531,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 1
@@ -601,7 +601,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 1
@@ -671,7 +671,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 1

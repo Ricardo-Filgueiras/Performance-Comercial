@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "ee08c96499fcd05ff42d",
   "position": {
     "x": 9.5104895104894922,
@@ -123,7 +123,7 @@
             "autoSizeColumnWidth": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -204,7 +204,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Faturamento"
+            "metadata": "_Medidas.01 Faturamento"
           }
         },
         {
@@ -265,7 +265,7 @@
                 "Entity": "_Medidas"
               }
             },
-            "Property": "rank cidade"
+            "Property": "52 Rank Cidade"
           }
         },
         "type": "Advanced",

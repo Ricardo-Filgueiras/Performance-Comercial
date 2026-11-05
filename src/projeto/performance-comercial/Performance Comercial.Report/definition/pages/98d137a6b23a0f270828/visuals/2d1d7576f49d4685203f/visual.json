@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "2d1d7576f49d4685203f",
   "position": {
-    "x": 136,
-    "y": 107.33333333333333,
+    "x": 141.60919540229887,
+    "y": 108.50574712643679,
     "z": 0,
-    "height": 124,
-    "width": 664
+    "height": 123.21839080459772,
+    "width": 658.39080459770116
   },
   "visual": {
     "visualType": "cardVisual",
@@ -112,7 +112,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Faturamento"
+            "metadata": "_Medidas.01 Faturamento"
           }
         },
         {
@@ -177,7 +177,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Faturamento"
+            "metadata": "_Medidas.01 Faturamento"
           }
         },
         {
@@ -218,7 +218,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Resultado"
+            "metadata": "_Medidas.09 Resultado"
           }
         },
         {
@@ -259,7 +259,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Margem"
+            "metadata": "_Medidas.10 Margem"
           }
         }
       ],
@@ -307,7 +307,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Resultado"
+            "metadata": "_Medidas.09 Resultado"
           }
         },
         {
@@ -468,7 +468,7 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "cartao  resultado svg v1"
+                  "Property": "62 SVG Cartao Resultado v1"
                 }
               }
             }
@@ -481,7 +481,7 @@
                 }
               }
             ],
-            "metadata": "_Medidas.Resultado"
+            "metadata": "_Medidas.09 Resultado"
           }
         },
         {
@@ -494,7 +494,7 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "cartao  margem svg v1"
+                  "Property": "61 SVG Cartao Margem v1"
                 }
               }
             }
@@ -507,7 +507,7 @@
                 }
               }
             ],
-            "metadata": "_Medidas.Margem"
+            "metadata": "_Medidas.10 Margem"
           }
         }
       ]

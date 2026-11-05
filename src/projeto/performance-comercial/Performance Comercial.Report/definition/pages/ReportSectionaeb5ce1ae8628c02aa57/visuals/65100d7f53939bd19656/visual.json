@@ -261,7 +261,7 @@
                 "Entity": "_Medidas"
               }
             },
-            "Property": "Faturamento"
+            "Property": "01 Faturamento"
           }
         },
         "type": "Advanced",
@@ -288,7 +288,7 @@
                               "Source": "_"
                             }
                           },
-                          "Property": "Faturamento"
+                          "Property": "01 Faturamento"
                         }
                       },
                       "Right": {

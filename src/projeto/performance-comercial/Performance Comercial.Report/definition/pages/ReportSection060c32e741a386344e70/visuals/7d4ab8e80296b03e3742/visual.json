@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "7d4ab8e80296b03e3742",
   "position": {
     "x": 65,
@@ -89,7 +89,7 @@
             "webUrl": {
               "expr": {
                 "Literal": {
-                  "Value": "'https://github.com/Ricardo-Filgueiras/Performace-Comercial'"
+                  "Value": "'https://github.com/Ricardo-Filgueiras/Performance-Comercial'"
                 }
               }
             }

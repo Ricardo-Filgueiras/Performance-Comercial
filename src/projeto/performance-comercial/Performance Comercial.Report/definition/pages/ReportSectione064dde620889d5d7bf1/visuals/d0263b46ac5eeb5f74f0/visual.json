@@ -42,10 +42,10 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Faturamento"
+                  "Property": "01 Faturamento"
                 }
               },
-              "queryRef": "_Medidas.Faturamento",
+              "queryRef": "_Medidas.01 Faturamento",
               "nativeQueryRef": "  Atual  ",
               "displayName": "  Atual  "
             },
@@ -57,10 +57,10 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Faturamento LY"
+                  "Property": "22 Faturamento LY"
                 }
               },
-              "queryRef": "_Medidas.Faturamento LY",
+              "queryRef": "_Medidas.22 Faturamento LY",
               "nativeQueryRef": "Anterior",
               "displayName": "Anterior"
             }
@@ -196,7 +196,7 @@
             }
           },
           "selector": {
-            "metadata": "_Medidas.Faturamento LY"
+            "metadata": "_Medidas.22 Faturamento LY"
           }
         }
       ]

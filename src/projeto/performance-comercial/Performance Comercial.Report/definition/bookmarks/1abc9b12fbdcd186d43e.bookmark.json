@@ -40,7 +40,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 0
@@ -55,7 +55,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Margem"
+                      "Property": "10 Margem"
                     }
                   },
                   "howCreated": 0
@@ -75,7 +75,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   }
                 }
@@ -137,7 +137,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 0
@@ -157,7 +157,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   }
                 }
@@ -211,7 +211,7 @@
                                     "Source": "_"
                                   }
                                 },
-                                "Property": "rank cidade"
+                                "Property": "52 Rank Cidade"
                               }
                             },
                             "Right": {
@@ -231,7 +231,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "rank cidade"
+                      "Property": "52 Rank Cidade"
                     }
                   },
                   "howCreated": 1
@@ -246,7 +246,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "tabela hml contente lite v1"
+                      "Property": "64 SVG Tabela HTML Content Lite v1"
                     }
                   },
                   "howCreated": 0
@@ -276,7 +276,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 0
@@ -296,7 +296,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   }
                 }
@@ -332,7 +332,7 @@
                                         "Source": "_"
                                       }
                                     },
-                                    "Property": "rank cidade"
+                                    "Property": "52 Rank Cidade"
                                   }
                                 },
                                 "Right": {
@@ -352,7 +352,7 @@
                                         "Source": "_"
                                       }
                                     },
-                                    "Property": "rank cidade"
+                                    "Property": "52 Rank Cidade"
                                   }
                                 },
                                 "Right": {
@@ -374,7 +374,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "rank cidade"
+                      "Property": "52 Rank Cidade"
                     }
                   },
                   "howCreated": 1
@@ -404,7 +404,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 0
@@ -424,7 +424,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   }
                 }
@@ -444,7 +444,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 0
@@ -459,7 +459,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Resultado"
+                      "Property": "09 Resultado"
                     }
                   },
                   "howCreated": 0
@@ -474,7 +474,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Margem"
+                      "Property": "10 Margem"
                     }
                   },
                   "howCreated": 0
@@ -494,7 +494,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   }
                 }
@@ -574,7 +574,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 0
@@ -663,7 +663,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 0
@@ -683,7 +683,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   }
                 }
@@ -717,7 +717,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 1
@@ -787,7 +787,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 1
@@ -857,7 +857,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 1
@@ -927,7 +927,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 1
@@ -997,7 +997,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 1

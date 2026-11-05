@@ -76,7 +76,7 @@
                 }
               },
               "queryRef": "_Medidas.01 Faturamento",
-              "nativeQueryRef": "Faturamento",
+              "nativeQueryRef": "01 Faturamento",
               "displayName": "Faturamento"
             }
           ]

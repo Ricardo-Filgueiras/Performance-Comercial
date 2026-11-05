@@ -262,7 +262,7 @@
                 "Entity": "_Medidas"
               }
             },
-            "Property": "Faturamento"
+            "Property": "01 Faturamento"
           }
         },
         "type": "Advanced",

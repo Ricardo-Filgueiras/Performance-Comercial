@@ -42,11 +42,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Resultado"
+                  "Property": "09 Resultado"
                 }
               },
-              "queryRef": "_Medidas.Resultado",
-              "nativeQueryRef": "Resultado"
+              "queryRef": "_Medidas.09 Resultado",
+              "nativeQueryRef": "09 Resultado"
             }
           ]
         }
@@ -61,7 +61,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Resultado"
+                "Property": "09 Resultado"
               }
             },
             "direction": "Descending"
@@ -107,7 +107,7 @@
                                       "Entity": "_Medidas"
                                     }
                                   },
-                                  "Property": "Resultado"
+                                  "Property": "09 Resultado"
                                 }
                               },
                               "Right": {
@@ -134,7 +134,7 @@
                                       "Entity": "_Medidas"
                                     }
                                   },
-                                  "Property": "Resultado"
+                                  "Property": "09 Resultado"
                                 }
                               },
                               "Right": {

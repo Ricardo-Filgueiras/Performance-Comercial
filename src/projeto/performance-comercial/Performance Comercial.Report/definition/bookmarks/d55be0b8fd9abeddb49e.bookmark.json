@@ -46,7 +46,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 0
@@ -115,7 +115,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 0
@@ -202,7 +202,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 0
@@ -256,7 +256,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento Acumulado"
+                      "Property": "20 Faturamento Acumulado"
                     }
                   },
                   "howCreated": 0
@@ -271,7 +271,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento Acumulado LY"
+                      "Property": "21 Faturamento Acumulado LY"
                     }
                   },
                   "howCreated": 0
@@ -325,7 +325,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 0
@@ -340,7 +340,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento LY"
+                      "Property": "22 Faturamento LY"
                     }
                   },
                   "howCreated": 0
@@ -415,7 +415,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 1
@@ -532,7 +532,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 1
@@ -602,7 +602,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 1
@@ -672,7 +672,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 1
@@ -742,7 +742,7 @@
                           "Entity": "_Medidas"
                         }
                       },
-                      "Property": "Faturamento"
+                      "Property": "01 Faturamento"
                     }
                   },
                   "howCreated": 1

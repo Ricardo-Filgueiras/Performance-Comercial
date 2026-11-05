@@ -23,11 +23,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Faturamento"
+                  "Property": "01 Faturamento"
                 }
               },
-              "queryRef": "_Medidas.Faturamento",
-              "nativeQueryRef": "Faturamento"
+              "queryRef": "_Medidas.01 Faturamento",
+              "nativeQueryRef": "01 Faturamento"
             },
             {
               "field": {
@@ -37,11 +37,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Porcentagem Meta"
+                  "Property": "41 Porcentagem Meta"
                 }
               },
-              "queryRef": "_Medidas.Porcentagem Meta",
-              "nativeQueryRef": "Porcentagem Meta"
+              "queryRef": "_Medidas.41 Porcentagem Meta",
+              "nativeQueryRef": "41 Porcentagem Meta"
             },
             {
               "field": {
@@ -51,11 +51,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Meta Cor"
+                  "Property": "66 Meta Cor"
                 }
               },
-              "queryRef": "_Medidas.Meta Cor",
-              "nativeQueryRef": "Meta Cor"
+              "queryRef": "_Medidas.66 Meta Cor",
+              "nativeQueryRef": "66 Meta Cor"
             }
           ]
         }
@@ -70,7 +70,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Faturamento"
+                "Property": "01 Faturamento"
               }
             },
             "direction": "Descending"
