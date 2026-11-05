@@ -226,6 +226,13 @@
                   "Value": "'PageNavigation'"
                 }
               }
+            },
+            "navigationSection": {
+              "expr": {
+                "Literal": {
+                  "Value": "'98d137a6b23a0f270828'"
+                }
+              }
             }
           }
         }

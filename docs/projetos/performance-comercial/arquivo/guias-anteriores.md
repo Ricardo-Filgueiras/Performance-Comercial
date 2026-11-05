@@ -4,7 +4,7 @@ Quatro guias do relatório guardam a versão anterior das guias de análise. O d
 
 | Guia | Versão atual | Visuais | Observação |
 |---|---|---:|---|
-| Comercial antes | [Comercial](../guias-do-relatorio/comercial.md) | 23 | Tem os botões "desempenho on" e "rank on" com marcadores inexistentes. |
+| Comercial antes | [Comercial](../guias-do-relatorio/comercial.md) | 23 | Os botões "desempenho on" e "rank on" apontavam para marcadores inexistentes; corrigidos em 05/11/2026. |
 | Analítico antes | [Analítico](../guias-do-relatorio/analitico.md) | 13 | Mesma matriz da versão atual, sem o menu recolhível. |
 | Mapa Calor antes | [Mapa Calor](../guias-do-relatorio/mapa-calor.md) | 18 | Mesmos gráficos da versão atual, sem o menu recolhível. |
 | Vendedores antes | [Vendedores](../guias-do-relatorio/vendedores.md) | 18 | Mesmos visuais da versão atual, sem o menu recolhível. |

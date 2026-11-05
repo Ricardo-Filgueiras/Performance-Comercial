@@ -18,16 +18,16 @@ Visão geral do desempenho comercial: quanto se faturou, com que resultado e mar
 | Botão | Destino |
 |---|---|
 | Botão de menu | [Capa](capa.md) |
+| Botão de menu | Comercial (a própria guia) |
 | Botão de menu | [Analítico](analitico.md) |
 | Botão de menu | [Mapa Calor](mapa-calor.md) |
 | Botão de menu | [Vendedores](vendedores.md) |
-| Botão de marcador | marcador **inexistente** `b665145e7737d486954d` |
 | Botão de marcador | marcador `GeralCidadesTab` |
 | Botão de marcador | marcador `MenuComInVisivel01` |
 | Botão de marcador | marcador `MenuComVisivel01` |
 | Botão de marcador | marcador `RankCidVisivel` |
 
-Também existem: 2 botão(ões) sem ação definida, usado(s) apenas como rótulo ou moldura; 1 botão de navegação sem página de destino definida.
+Também existem: 2 botão(ões) sem ação definida, usado(s) apenas como rótulo ou moldura.
 
 ??? info "Detalhes técnicos"
 

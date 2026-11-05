@@ -3010,6 +3010,16 @@ cultureInfo pt-BR
 			          "21 faturamento acumulado LY": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "Anterior": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -3518,6 +3528,16 @@ cultureInfo pt-BR
 			          "22 faturamento LY": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "Anterior": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -3569,6 +3589,16 @@ cultureInfo pt-BR
 			        {
 			          "20 faturamento acumulado": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Atual": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -3934,6 +3964,16 @@ cultureInfo pt-BR
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Atual": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -4040,19 +4080,7 @@ cultureInfo pt-BR
 			          "ConceptualProperty": "Faturamento"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Atual": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "table_medidas.faturamento_ly": {
 			      "Definition": {
@@ -4061,19 +4089,7 @@ cultureInfo pt-BR
 			          "ConceptualProperty": "Faturamento LY"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Anterior": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "table_medidas.faturamento_acumulado": {
 			      "Definition": {
@@ -4082,19 +4098,7 @@ cultureInfo pt-BR
 			          "ConceptualProperty": "Faturamento Acumulado"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Atual": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "table_medidas.faturamento_acumulado_ly": {
 			      "Definition": {
@@ -4103,19 +4107,7 @@ cultureInfo pt-BR
 			          "ConceptualProperty": "Faturamento Acumulado LY"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Anterior": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    }
 			  },
 			  "Relationships": {

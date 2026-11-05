@@ -111,7 +111,7 @@ Registro de decisões de arquitetura do painel no formato ADR (*Architecture Dec
 
 **Decisão.** Manter essas guias no relatório, de propósito, para que o desenvolvedor acompanhe a evolução do projeto. A documentação as trata como histórico (ver [Guias anteriores](arquivo/guias-anteriores.md)).
 
-**Consequências.** O relatório fica maior (72 dos 171 visuais estão nas guias "antes") e as guias anteriores usavam os nomes antigos de medidas (corrigidos em 05/11/2026) e dois marcadores inexistentes (ver [Guias do relatório](guias-do-relatorio/index.md)).
+**Consequências.** O relatório fica maior (72 dos 171 visuais estão nas guias "antes") e as guias anteriores usavam os nomes antigos de medidas (corrigidos em 05/11/2026) e dois marcadores inexistentes, também corrigidos em 05/11/2026 (ver [Guias do relatório](guias-do-relatorio/index.md#problemas-encontrados-nos-botoes)).
 
 ## ADR-010: Manter o relacionamento inativo por `Data Envio`
 

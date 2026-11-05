@@ -9,7 +9,7 @@ O formato segue o [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/). O
 **Migração do projeto para o portal de documentação**, com a reescrita da documentação e a reorganização das pastas, em 21/10/2026. **Nenhuma medida DAX foi alterada.** Comparado com o commit `6cf9c4c`, o projeto Power BI só tem 14 arquivos de texto com mudança de conteúdo (22 linhas acrescentadas e 15 removidas), todas listadas em "Alterado".
 
 !!! pendente "Linha de base e tags"
-    Ponto de partida previsto: a tag `performance-comercial/baseline-pre-documentacao`. Ela **ainda não foi criada**. O repositório também não tem a tag `performance-comercial/v2.0.0`. As datas e os commits abaixo vêm do histórico do Git.
+    Ponto de partida: a tag `performance-comercial/baseline-pre-documentacao`, criada em 05/11/2026 no commit `6cf9c4c`. O repositório ainda não tem a tag `performance-comercial/v2.0.0`. As datas e os commits abaixo vêm do histórico do Git.
 
 ### Adicionado
 
@@ -37,6 +37,7 @@ O formato segue o [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/). O
 No **relatório**:
 
 - Os visuais, marcadores e filtros que apontavam para 25 nomes antigos de medidas foram reapontados para os nomes atuais, em 89 arquivos (694 referências), entre eles `01 Faturamento`, `07 Comissao`, `09 Resultado`, `10 Margem`, `40 Meta`, `41 Porcentagem Meta` e `52 Rank Cidade`. A correspondência completa está em [Nomes antigos de medidas](medidas-dax/index.md#nomes-antigos-de-medidas-no-relatorio). Nenhuma medida mudou.
+- Botões sem destino ou com marcador inexistente: na guia Comercial, "Botão desempenho on" passou a apontar para `RankCidVisivel` e o botão de menu "geral" para a própria guia; na Comercial antes, "Botão desempenho on" e "botão rank on" passaram a apontar para `Desempenho Por Cidade v1` e `Rank Todas cidades v1`, e o botão de menu "geral" para a própria guia (ver [Guias do relatório](guias-do-relatorio/index.md#problemas-encontrados-nos-botoes)).
 
 Correções na **documentação** (o modelo não foi alterado):
 
@@ -52,7 +53,6 @@ Correções na **documentação** (o modelo não foi alterado):
 
 ### Problemas conhecidos (não corrigidos)
 
-- 3 botões apontam para marcadores inexistentes e 1 botão de navegação não tem destino (ver [Guias do relatório](guias-do-relatorio/index.md)).
 - O arquivo `.github/workflows/docs.yml` está vazio, e a documentação é publicada manualmente.
 
 ## [2.0.0] - 2026-01-30

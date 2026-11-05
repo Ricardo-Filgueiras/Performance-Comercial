@@ -21,8 +21,11 @@ O nome do arquivo de cada página foi escolhido pelo assunto da guia, não pelo 
 
 ## Problemas encontrados nos botões
 
-!!! pendente "Botões com destino inexistente ou indefinido"
-    - Na guia [Comercial](comercial.md), o botão "Botão desempenho on" aponta para o marcador `b665145e7737d486954d`, que não existe entre os marcadores do relatório.
-    - Na guia [Comercial](comercial.md), um botão de navegação de página (junto ao menu lateral) não tem página de destino definida.
-    - Nas guias anteriores, "Botão desempenho on" e "botão rank on" apontam para os marcadores `b665145e7737d486954d` e `51958de021a70cbce700`, também inexistentes (ver [Guias anteriores](../arquivo/guias-anteriores.md)).
-    O efeito no relatório não foi testado. Abra as guias no Power BI Desktop e confira o comportamento dos botões.
+Corrigidos em 05/11/2026. Cada botão passou a seguir o padrão dos botões que já funcionavam:
+
+- Na guia [Comercial](comercial.md), o botão "Botão desempenho on" apontava para o marcador inexistente `b665145e7737d486954d` e passou a apontar para `RankCidVisivel`, a visão do grupo em que ele está (o par simétrico, no outro grupo, aponta para `GeralCidadesTab`).
+- Na guia Comercial, o botão do menu lateral com o ícone "geral" não tinha destino e passou a levar à própria guia, como nas outras guias.
+- Na guia Comercial antes, "Botão desempenho on" e "botão rank on" apontavam para os marcadores inexistentes `b665145e7737d486954d` e `51958de021a70cbce700` e passaram a apontar para `Desempenho Por Cidade v1` e `Rank Todas cidades v1`. O botão do menu lateral da mesma guia também não tinha destino e passou a levar a ela.
+
+!!! info "Marcadores da Comercial antes"
+    Os marcadores `Desempenho Por Cidade v1` e `Rank Todas cidades v1` estão configurados para valer só para um visual cada. Por isso a troca de visão na Comercial antes pode não funcionar por completo. A guia é mantida como histórico, e a configuração não foi alterada.

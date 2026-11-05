@@ -10,8 +10,7 @@ Ao responder uma pendência: atualize a página de origem, tire o aviso e mova a
 
 | # | Pendência | Página | Afeta números? | Dono | Prioridade |
 |---:|---|---|---|---|---|
-| 3 | Conferir os botões do relatório: 3 apontam para marcadores inexistentes (`b665145e7737d486954d` e `51958de021a70cbce700`) e 1 botão de navegação da guia Comercial não tem destino | [Guias do relatório](guias-do-relatorio/index.md#problemas-encontrados-nos-botoes) | não | Desenvolvedor | média |
-| 4 | Criar a tag de linha de base `performance-comercial/baseline-pre-documentacao` e a tag `performance-comercial/v2.0.0`. Nenhuma das duas existe | [Changelog](changelog.md) | não | Desenvolvedor | média |
+| 4 | Criar a tag `performance-comercial/v2.0.0`, que marca a versão de 30/01/2026 no changelog. Falta escolher o commit | [Changelog](changelog.md) | não | Desenvolvedor | baixa |
 | 5 | Revisar a descrição das 42 medidas escritas a partir do código (as 8 medidas com `///` usam o texto do modelo), em especial `50 Eixo Y max Grafico Comercial`, `53 Max Y Visual 01 pg Vendedores` e `65 SVG Percentual Meta Velocimetro` | [Medidas DAX](medidas-dax/index.md) | não | Desenvolvedor | média |
 | 6 | Revisar os textos "Para que serve" e "Como ler" das 8 páginas de guia, deduzidos dos visuais | [Guias do relatório](guias-do-relatorio/index.md) | não | Desenvolvedor | baixa |
 | 7 | Revisar as jornadas de uso, deduzidas dos visuais e não testadas com usuários | [Como usar](como-usar.md) | não | Desenvolvedor | baixa |
@@ -35,6 +34,7 @@ Problemas notados no modelo ou no relatório que a documentação não corrige (
 | 8 | A pasta local e os valores dos três parâmetros de caminho usam a grafia antiga "Performace-Comercial". Funciona, mas quem renomear a pasta precisa atualizar os parâmetros | [Fontes de dados](fontes-de-dados.md#parametros) |
 | 9 | `Catalogo.pdf` e a pasta `data/imagens/` estão no repositório, mas nenhuma consulta os usa | [Fontes de dados](fontes-de-dados.md#consultas-sem-uso-aparente) |
 | 10 | A documentação anterior, em `arquivo/`, usa os nomes antigos de medidas. É um histórico mantido de propósito. O relatório, inclusive as guias "antes", já usa os nomes atuais | [Guias anteriores](arquivo/guias-anteriores.md) |
+| 11 | Os marcadores `Desempenho Por Cidade v1` e `Rank Todas cidades v1`, da Comercial antes, valem só para um visual cada, e a troca de visão nessa guia pode não funcionar por completo. Mantido como histórico | [Guias do relatório](guias-do-relatorio/index.md#problemas-encontrados-nos-botoes) |
 
 ## Resolvidas
 
@@ -68,3 +68,5 @@ Respostas do desenvolvedor durante a reescrita da documentação.
 | 24 | As dimensões têm chave única (pendência 11)? | Sim, as 7. Nenhuma linha de `fVendas` ou `fMetas` fica sem correspondente nas dimensões | 2026-11-05 |
 | 25 | 9 medidas sem pasta de exibição (observação 1) | `52 Rank Cidade`, `53 Max Y Visual 01 pg Vendedores` e `54 Nome Vendedor` foram para `04. Auxiliares`; as 6 de `zMetricas`, para `Tooltip Rosca`. Ficaram fora de uma pasta "Arquivadas" porque estão em uso | 2026-11-05 |
 | 26 | Botão de link da Capa com o endereço antigo do repositório (observação 8) | Atualizado pelo desenvolvedor no Power BI Desktop | 2026-11-05 |
+| 27 | Botões com marcador inexistente ou sem destino (pendência 3) | Corrigidos os 5: "Botão desempenho on" da Comercial → `RankCidVisivel`; "Botão desempenho on" e "botão rank on" da Comercial antes → `Desempenho Por Cidade v1` e `Rank Todas cidades v1`; o botão de menu "geral" das duas guias → a própria guia | 2026-11-05 |
+| 28 | Criar a tag de linha de base (pendência 4) | `performance-comercial/baseline-pre-documentacao` criada no commit `6cf9c4c` e enviada ao GitHub. A tag `performance-comercial/v2.0.0` continua pendente | 2026-11-05 |
