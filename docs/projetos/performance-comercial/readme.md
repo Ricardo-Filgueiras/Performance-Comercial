@@ -22,7 +22,7 @@ Os números vêm do script de levantamento, rodado sobre o projeto em 21/10/2026
 ## Links
 
 - **Painel publicado** no Power BI Service: [abrir o painel](https://app.powerbi.com/view?r=eyJrIjoiNjRlNmRhYzktODY2Yy00MTI2LWIyYTYtMDczNTFjNTkyZDMzIiwidCI6ImVhNmIyNzRlLTE4MmYtNDc0Yy04YWMwLTQzOWM5ZTE1Yjg3ZSJ9)
-- **Repositório:** [Performace-Comercial no GitHub](https://github.com/Ricardo-Filgueiras/Performace-Comercial)
+- **Repositório:** [Performance-Comercial no GitHub](https://github.com/Ricardo-Filgueiras/Performance-Comercial)
 - **Autor:** Ricardo Filgueiras, no [LinkedIn](https://www.linkedin.com/in/ricardo-filgueiras-b4607b232/)
 
 ## Termos usados

@@ -155,4 +155,4 @@ Registro de decisões de arquitetura do painel no formato ADR (*Architecture Dec
 
 **Decisão.** Mover o projeto Power BI para `src/projeto/performance-comercial/`, corrigir o nome do projeto para "Performance Comercial" e mover os dados para `data/`, na raiz. O slug da documentação é `performance-comercial`.
 
-**Consequências.** O caminho tem um nível a mais que o padrão do kit (`src/projeto/<slug>/` em vez de `src/<slug>/`). O nome do repositório no GitHub e o da pasta local ainda usam a grafia antiga, "Performace-Comercial". O resto do projeto usa "Performance".
+**Consequências.** O caminho tem um nível a mais que o padrão do kit (`src/projeto/<slug>/` em vez de `src/<slug>/`). O repositório no GitHub foi renomeado para "Performance-Comercial" em 04/11/2026, e o endereço da documentação publicada passou a ser `https://ricardo-filgueiras.github.io/Performance-Comercial/` (o endereço antigo dá 404). A pasta local do desenvolvedor e os valores dos parâmetros de caminho ainda usam a grafia antiga, "Performace-Comercial".

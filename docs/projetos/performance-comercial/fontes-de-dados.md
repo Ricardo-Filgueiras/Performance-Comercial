@@ -67,7 +67,7 @@ Os três ficam no grupo de consultas **Parâmetros de dados**. Os valores são c
 
 Os arquivos de dados são planilhas Excel guardadas na pasta `data/` do repositório, junto com o projeto. Os parâmetros guardam o caminho dessa pasta no seu computador. Depois de clonar o repositório, faça uma vez:
 
-1. Clone o repositório e anote o caminho da pasta `data/`, por exemplo `C:\Users\voce\repos\Performace-Comercial\data`.
+1. Clone o repositório e anote o caminho da pasta `data/`, por exemplo `C:\Users\voce\repos\Performance-Comercial\data`.
 2. Abra o arquivo `src/projeto/performance-comercial/Performance Comercial.pbip` no Power BI Desktop.
 3. Na guia **Página Inicial**, clique em **Transformar dados** e escolha **Editar parâmetros**.
 4. Preencha os três parâmetros com o caminho de cada subpasta:

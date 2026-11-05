@@ -1,6 +1,6 @@
 # Performance Comercial
 
-Projeto de análise de performance comercial desenvolvido em Power BI (formato `.pbip`), versionado com Git e documentado com MkDocs. **[Veja a documentação publicada](https://ricardo-filgueiras.github.io/Performace-Comercial/)** e como ela foi construída.
+Projeto de análise de performance comercial desenvolvido em Power BI (formato `.pbip`), versionado com Git e documentado com MkDocs. **[Veja a documentação publicada](https://ricardo-filgueiras.github.io/Performance-Comercial/)** e como ela foi construída.
 
 ---
 
@@ -27,7 +27,7 @@ O modelo semântico segue arquitetura **Star Schema** com medidas DAX organizada
 ## Estrutura de pastas
 
 ```
-Performace-Comercial/
+Performance-Comercial/
 ├── data/                          # Dados do painel (planilhas Excel)
 │   ├── Dimensões/
 │   ├── Extrações/
@@ -60,18 +60,18 @@ Performace-Comercial/
 
 ### Ver a documentação publicada
 
-A documentação do projeto está no ar, publicada com GitHub Pages: **https://ricardo-filgueiras.github.io/Performace-Comercial/**
+A documentação do projeto está no ar, publicada com GitHub Pages: **https://ricardo-filgueiras.github.io/Performance-Comercial/**
 
 Ela foi escrita a partir dos arquivos do modelo e do relatório, conferida com um script de levantamento e validada com `mkdocs build --strict`. Para ver como ela é construída e mantida:
 
 | Quero ver | Página |
 |---|---|
-| O que o painel resolve e para quem | [Escopo](https://ricardo-filgueiras.github.io/Performace-Comercial/projetos/performance-comercial/escopo/) |
-| Cada guia do relatório | [Guias do relatório](https://ricardo-filgueiras.github.io/Performace-Comercial/projetos/performance-comercial/guias-do-relatorio/) |
-| O código e as dependências das 50 medidas | [Medidas DAX](https://ricardo-filgueiras.github.io/Performace-Comercial/projetos/performance-comercial/medidas-dax/) |
-| Por que o projeto é como é | [Decisões técnicas](https://ricardo-filgueiras.github.io/Performace-Comercial/projetos/performance-comercial/decisoes-tecnicas/) |
-| Como trabalhar no projeto e na documentação | [Guia do desenvolvedor](https://ricardo-filgueiras.github.io/Performace-Comercial/projetos/performance-comercial/guia-do-desenvolvedor/) |
-| A visão geral da documentação | [Sobre esta documentação](https://ricardo-filgueiras.github.io/Performace-Comercial/projetos/performance-comercial/readme/) |
+| O que o painel resolve e para quem | [Escopo](https://ricardo-filgueiras.github.io/Performance-Comercial/projetos/performance-comercial/escopo/) |
+| Cada guia do relatório | [Guias do relatório](https://ricardo-filgueiras.github.io/Performance-Comercial/projetos/performance-comercial/guias-do-relatorio/) |
+| O código e as dependências das 50 medidas | [Medidas DAX](https://ricardo-filgueiras.github.io/Performance-Comercial/projetos/performance-comercial/medidas-dax/) |
+| Por que o projeto é como é | [Decisões técnicas](https://ricardo-filgueiras.github.io/Performance-Comercial/projetos/performance-comercial/decisoes-tecnicas/) |
+| Como trabalhar no projeto e na documentação | [Guia do desenvolvedor](https://ricardo-filgueiras.github.io/Performance-Comercial/projetos/performance-comercial/guia-do-desenvolvedor/) |
+| A visão geral da documentação | [Sobre esta documentação](https://ricardo-filgueiras.github.io/Performance-Comercial/projetos/performance-comercial/readme/) |
 
 ### Rodar localmente
 
@@ -97,7 +97,7 @@ O comando faz o build e faz push do conteúdo estático para a branch `gh-pages`
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/Ricardo-Filgueiras/Performace-Comercial.git
+   git clone https://github.com/Ricardo-Filgueiras/Performance-Comercial.git
    ```
 2. Abra o arquivo `src/projeto/performance-comercial/Performance Comercial.pbip` no **Power BI Desktop** (versão 2.146+).
 3. Atualize o valor dos três parâmetros de caminho (`Caminho_Extracao`, `Caminho_Dimensoes` e `Caminho_Meta`) para a pasta `data/` da sua cópia. O passo a passo está em [Como atualizar o valor dos parâmetros](docs/projetos/performance-comercial/fontes-de-dados.md#como-atualizar-o-valor-dos-parametros).

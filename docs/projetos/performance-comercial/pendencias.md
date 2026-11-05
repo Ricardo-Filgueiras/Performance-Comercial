@@ -36,7 +36,7 @@ Problemas notados no modelo ou no relatório que a documentação não corrige (
 | 5 | O calendário tem data final fixa (31/12/2021). Vendas posteriores ficariam sem data. Hoje não existem, e isso é intencional | [Modelo de dados](modelo-de-dados.md#dcalendario) |
 | 6 | A pasta `01.Principais` não tem espaço depois do ponto, e `02. Temporais` e `03. Formatações` têm | [Guia do desenvolvedor](guia-do-desenvolvedor.md#nomes) |
 | 7 | O arquivo `.github/workflows/docs.yml` está vazio. A documentação é publicada manualmente, com `mkdocs gh-deploy` | [Decisões técnicas](decisoes-tecnicas.md#adr-012-documentacao-com-mkdocs-material-em-um-portal-por-projeto) |
-| 8 | O nome do repositório no GitHub e o da pasta local ainda usam a grafia antiga "Performace-Comercial" | [Decisões técnicas](decisoes-tecnicas.md#adr-013-organizacao-das-pastas-do-repositorio) |
+| 8 | O botão de link da guia Capa ainda aponta para o endereço antigo do repositório (`github.com/Ricardo-Filgueiras/Performace-Comercial`). Funciona porque o GitHub redireciona repositórios renomeados, mas o link pode ser atualizado no Power BI Desktop. A pasta local e os valores dos parâmetros de caminho também usam a grafia antiga | [Capa](guias-do-relatorio/capa.md) |
 | 9 | `Catalogo.pdf` e a pasta `data/imagens/` estão no repositório, mas nenhuma consulta os usa | [Fontes de dados](fontes-de-dados.md#consultas-sem-uso-aparente) |
 | 10 | As 4 guias "antes" e a documentação anterior usam os nomes antigos de medidas. É um histórico mantido de propósito | [Guias anteriores](arquivo/guias-anteriores.md) |
 
@@ -66,3 +66,4 @@ Respostas do desenvolvedor durante a reescrita da documentação.
 | 18 | O arquivo `LICENSE` deve ser criado? | Sim, criado com a licença MIT | 2026-10-21 |
 | 19 | As páginas antigas podem ser apagadas depois de migradas? | Sim, inclusive `docs/requisitos.md` | 2026-10-21 |
 | 20 | Slug e estrutura de pastas | Slug `performance-comercial`; projeto em `src/projeto/performance-comercial/`; dados em `data/` | 2026-10-21 |
+| 21 | O nome do repositório no GitHub vai continuar com a grafia antiga "Performace-Comercial"? | Não: renomeado para `Performance-Comercial` em 04/11/2026. A documentação passou para `https://ricardo-filgueiras.github.io/Performance-Comercial/` | 2026-11-05 |
