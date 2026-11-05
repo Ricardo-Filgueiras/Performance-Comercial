@@ -1119,6 +1119,8 @@
       
         
       
+        
+      
     
     
     
@@ -1266,6 +1268,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../medidas-dax/04-auxiliares/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 auxiliares
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../medidas-dax/visuais-svg/" class="md-nav__link">
         
   
@@ -1294,14 +1324,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../medidas-dax/sem-pasta/" class="md-nav__link">
+      <a href="../medidas-dax/tooltip-rosca/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Sem pasta de exibição
+    Tooltip rosca
   
 
     
@@ -2176,36 +2206,12 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: right;">1</td>
-<td>Os visuais do relatório usam 25 nomes antigos de medidas que não existem no modelo (por exemplo, <code>Faturamento</code>). Abrir o relatório no Power BI Desktop, conferir os campos não encontrados e reapontar os visuais para as medidas atuais</td>
-<td><a href="../medidas-dax/#nomes-antigos-de-medidas-no-relatorio">Medidas DAX</a></td>
-<td>sim</td>
-<td>Desenvolvedor</td>
-<td>alta</td>
-</tr>
-<tr>
-<td style="text-align: right;">2</td>
-<td>Confirmar que todas as planilhas de meta têm o mesmo formato: 15 colunas, com o Id do vendedor, o nome do vendedor e os 12 meses</td>
-<td><a href="../fontes-de-dados/#transformacoes-no-power-query">Fontes de dados</a></td>
-<td>sim</td>
-<td>Desenvolvedor</td>
-<td>média</td>
-</tr>
-<tr>
-<td style="text-align: right;">3</td>
-<td>Conferir os botões do relatório: 3 apontam para marcadores inexistentes (<code>b665145e7737d486954d</code> e <code>51958de021a70cbce700</code>) e 1 botão de navegação da guia Comercial não tem destino</td>
-<td><a href="../guias-do-relatorio/#problemas-encontrados-nos-botoes">Guias do relatório</a></td>
-<td>não</td>
-<td>Desenvolvedor</td>
-<td>média</td>
-</tr>
-<tr>
 <td style="text-align: right;">4</td>
-<td>Criar a tag de linha de base <code>performance-comercial/baseline-pre-documentacao</code> e a tag <code>performance-comercial/v2.0.0</code>. Nenhuma das duas existe</td>
+<td>Criar a tag <code>performance-comercial/v2.0.0</code>, que marca a versão de 30/01/2026 no changelog. Falta escolher o commit</td>
 <td><a href="../changelog/">Changelog</a></td>
 <td>não</td>
 <td>Desenvolvedor</td>
-<td>média</td>
+<td>baixa</td>
 </tr>
 <tr>
 <td style="text-align: right;">5</td>
@@ -2256,14 +2262,6 @@
 <td>baixa</td>
 </tr>
 <tr>
-<td style="text-align: right;">11</td>
-<td>Rodar, no Power BI Desktop, as consultas DAX de diagnóstico sugeridas e conferir se as dimensões têm chave única. Os dados não foram lidos</td>
-<td><a href="../guia-do-desenvolvedor/#solucao-de-problemas">Guia do desenvolvedor</a></td>
-<td>sim</td>
-<td>Desenvolvedor</td>
-<td>baixa</td>
-</tr>
-<tr>
 <td style="text-align: right;">12</td>
 <td>Conferir o titular (Ricardo Filgueiras) e o ano (2025) escolhidos para a licença MIT</td>
 <td><code>LICENSE</code>, na raiz do repositório</td>
@@ -2274,7 +2272,7 @@
 </tbody>
 </table>
 <h2 id="pendencias-observadas-no-modelo">Pendências observadas no modelo<a class="headerlink" href="#pendencias-observadas-no-modelo" title="Permanent link">&para;</a></h2>
-<p>Problemas notados no modelo ou no relatório que a documentação não corrige (princípio: a documentação se adapta ao modelo). Nada abaixo foi alterado.</p>
+<p>Problemas notados no modelo ou no relatório que a documentação não corrige (princípio: a documentação se adapta ao modelo). Os itens resolvidos saem desta tabela e vão para <em>Resolvidas</em>.</p>
 <table>
 <thead>
 <tr>
@@ -2284,11 +2282,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: right;">1</td>
-<td>9 medidas estão sem pasta de exibição: <code>52 Rank Cidade</code>, <code>53 Max Y Visual 01 pg Vendedores</code>, <code>54 Nome Vendedor</code> e as 6 medidas de <code>zMetricas</code></td>
-<td><a href="../medidas-dax/sem-pasta/">Sem pasta de exibição</a></td>
-</tr>
 <tr>
 <td style="text-align: right;">2</td>
 <td>8 medidas não têm nenhum uso, nem em visuais nem em outras medidas: <code>03 Lucro Bruto</code>, <code>04 Margem Bruta</code>, <code>25 Margem LM</code>, <code>28 Margem MoM %</code>, <code>29 Resultado LM</code>, <code>32 Resultado MoM %</code>, <code>35 Comissao MoM %</code> e <code>65 SVG Percentual Meta Velocimetro</code>. Manter ou remover é decisão do desenvolvedor</td>
@@ -2321,8 +2314,8 @@
 </tr>
 <tr>
 <td style="text-align: right;">8</td>
-<td>O botão de link da guia Capa ainda aponta para o endereço antigo do repositório (<code>github.com/Ricardo-Filgueiras/Performace-Comercial</code>). Funciona porque o GitHub redireciona repositórios renomeados, mas o link pode ser atualizado no Power BI Desktop. A pasta local e os valores dos parâmetros de caminho também usam a grafia antiga</td>
-<td><a href="../guias-do-relatorio/capa/">Capa</a></td>
+<td>A pasta local e os valores dos três parâmetros de caminho usam a grafia antiga "Performace-Comercial". Funciona, mas quem renomear a pasta precisa atualizar os parâmetros</td>
+<td><a href="../fontes-de-dados/#parametros">Fontes de dados</a></td>
 </tr>
 <tr>
 <td style="text-align: right;">9</td>
@@ -2331,8 +2324,13 @@
 </tr>
 <tr>
 <td style="text-align: right;">10</td>
-<td>As 4 guias "antes" e a documentação anterior usam os nomes antigos de medidas. É um histórico mantido de propósito</td>
+<td>A documentação anterior, em <code>arquivo/</code>, usa os nomes antigos de medidas. É um histórico mantido de propósito. O relatório, inclusive as guias "antes", já usa os nomes atuais</td>
 <td><a href="../arquivo/guias-anteriores/">Guias anteriores</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td>Os marcadores <code>Desempenho Por Cidade v1</code> e <code>Rank Todas cidades v1</code>, da Comercial antes, valem só para um visual cada, e a troca de visão nessa guia pode não funcionar por completo. Mantido como histórico</td>
+<td><a href="../guias-do-relatorio/#problemas-encontrados-nos-botoes">Guias do relatório</a></td>
 </tr>
 </tbody>
 </table>
@@ -2474,6 +2472,48 @@
 <td>Não: renomeado para <code>Performance-Comercial</code> em 04/11/2026. A documentação passou para <code>https://ricardo-filgueiras.github.io/Performance-Comercial/</code></td>
 <td>2026-11-05</td>
 </tr>
+<tr>
+<td style="text-align: right;">22</td>
+<td>Os visuais usam 25 nomes antigos de medidas (pendência 1)?</td>
+<td>Corrigido: os 25 nomes foram trocados pelos atuais em 89 arquivos do relatório (694 referências em visuais, marcadores e filtros). Nenhum campo aponta para medida inexistente, e o relatório abriu sem erro no Power BI Desktop</td>
+<td>2026-11-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">23</td>
+<td>As planilhas de meta têm o mesmo formato (pendência 2)?</td>
+<td>Sim: as 4 têm as mesmas 14 colunas com dados. A de 2018 tem uma coluna e linhas vazias a mais, que a consulta descarta. <code>fMetas</code> tem 528 linhas (11 vendedores × 12 meses × 4 anos)</td>
+<td>2026-11-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">24</td>
+<td>As dimensões têm chave única (pendência 11)?</td>
+<td>Sim, as 7. Nenhuma linha de <code>fVendas</code> ou <code>fMetas</code> fica sem correspondente nas dimensões</td>
+<td>2026-11-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">25</td>
+<td>9 medidas sem pasta de exibição (observação 1)</td>
+<td><code>52 Rank Cidade</code>, <code>53 Max Y Visual 01 pg Vendedores</code> e <code>54 Nome Vendedor</code> foram para <code>04. Auxiliares</code>; as 6 de <code>zMetricas</code>, para <code>Tooltip Rosca</code>. Ficaram fora de uma pasta "Arquivadas" porque estão em uso</td>
+<td>2026-11-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">26</td>
+<td>Botão de link da Capa com o endereço antigo do repositório (observação 8)</td>
+<td>Atualizado pelo desenvolvedor no Power BI Desktop</td>
+<td>2026-11-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">27</td>
+<td>Botões com marcador inexistente ou sem destino (pendência 3)</td>
+<td>Corrigidos os 5: "Botão desempenho on" da Comercial → <code>RankCidVisivel</code>; "Botão desempenho on" e "botão rank on" da Comercial antes → <code>Desempenho Por Cidade v1</code> e <code>Rank Todas cidades v1</code>; o botão de menu "geral" das duas guias → a própria guia</td>
+<td>2026-11-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">28</td>
+<td>Criar a tag de linha de base (pendência 4)</td>
+<td><code>performance-comercial/baseline-pre-documentacao</code> criada no commit <code>6cf9c4c</code> e enviada ao GitHub. A tag <code>performance-comercial/v2.0.0</code> continua pendente</td>
+<td>2026-11-05</td>
+</tr>
 </tbody>
 </table>
 
@@ -2498,7 +2538,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 de novembro de 2026 15:21:35 UTC">5 de novembro de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 de novembro de 2026 17:23:26 UTC">5 de novembro de 2026</span>
   </span>
 
     

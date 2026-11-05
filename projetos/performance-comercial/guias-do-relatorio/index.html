@@ -1119,6 +1119,8 @@
       
         
       
+        
+      
     
     
     
@@ -1266,6 +1268,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../medidas-dax/04-auxiliares/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 auxiliares
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../medidas-dax/visuais-svg/" class="md-nav__link">
         
   
@@ -1294,14 +1324,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../medidas-dax/sem-pasta/" class="md-nav__link">
+      <a href="../medidas-dax/tooltip-rosca/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Sem pasta de exibição
+    Tooltip rosca
   
 
     
@@ -2133,14 +2163,15 @@
 <h2 id="guias-ocultas">Guias ocultas<a class="headerlink" href="#guias-ocultas" title="Permanent link">&para;</a></h2>
 <p>11 das 12 guias estão marcadas como <strong>ocultas</strong> (<code>HiddenInViewMode</code>): só a Capa aparece na barra de guias de quem lê o relatório. As quatro guias de análise (Comercial, Analítico, Mapa Calor e Vendedores) ficam ocultas na barra, mas são o conteúdo principal: o navegador de páginas da Capa e os botões de menu levam a elas. As três páginas de dica de ferramenta são ocultas por natureza. As quatro versões "antes" também estão ocultas e fora do navegador.</p>
 <h2 id="problemas-encontrados-nos-botoes">Problemas encontrados nos botões<a class="headerlink" href="#problemas-encontrados-nos-botoes" title="Permanent link">&para;</a></h2>
-<div class="admonition pendente">
-<p class="admonition-title">Botões com destino inexistente ou indefinido</p>
+<p>Corrigidos em 05/11/2026. Cada botão passou a seguir o padrão dos botões que já funcionavam:</p>
 <ul>
-<li>Na guia <a href="comercial/">Comercial</a>, o botão "Botão desempenho on" aponta para o marcador <code>b665145e7737d486954d</code>, que não existe entre os marcadores do relatório.</li>
-<li>Na guia <a href="comercial/">Comercial</a>, um botão de navegação de página (junto ao menu lateral) não tem página de destino definida.</li>
-<li>Nas guias anteriores, "Botão desempenho on" e "botão rank on" apontam para os marcadores <code>b665145e7737d486954d</code> e <code>51958de021a70cbce700</code>, também inexistentes (ver <a href="../arquivo/guias-anteriores/">Guias anteriores</a>).
-O efeito no relatório não foi testado. Abra as guias no Power BI Desktop e confira o comportamento dos botões.</li>
+<li>Na guia <a href="comercial/">Comercial</a>, o botão "Botão desempenho on" apontava para o marcador inexistente <code>b665145e7737d486954d</code> e passou a apontar para <code>RankCidVisivel</code>, a visão do grupo em que ele está (o par simétrico, no outro grupo, aponta para <code>GeralCidadesTab</code>).</li>
+<li>Na guia Comercial, o botão do menu lateral com o ícone "geral" não tinha destino e passou a levar à própria guia, como nas outras guias.</li>
+<li>Na guia Comercial antes, "Botão desempenho on" e "botão rank on" apontavam para os marcadores inexistentes <code>b665145e7737d486954d</code> e <code>51958de021a70cbce700</code> e passaram a apontar para <code>Desempenho Por Cidade v1</code> e <code>Rank Todas cidades v1</code>. O botão do menu lateral da mesma guia também não tinha destino e passou a levar a ela.</li>
 </ul>
+<div class="admonition info">
+<p class="admonition-title">Marcadores da Comercial antes</p>
+<p>Os marcadores <code>Desempenho Por Cidade v1</code> e <code>Rank Todas cidades v1</code> estão configurados para valer só para um visual cada. Por isso a troca de visão na Comercial antes pode não funcionar por completo. A guia é mantida como histórico, e a configuração não foi alterada.</p>
 </div>
 
 
@@ -2164,7 +2195,7 @@ O efeito no relatório não foi testado. Abra as guias no Power BI Desktop e con
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="21 de outubro de 2026 16:52:19 UTC">21 de outubro de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 de novembro de 2026 17:23:26 UTC">5 de novembro de 2026</span>
   </span>
 
     

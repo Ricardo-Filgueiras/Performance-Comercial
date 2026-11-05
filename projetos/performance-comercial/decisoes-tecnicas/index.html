@@ -1119,6 +1119,8 @@
       
         
       
+        
+      
     
     
     
@@ -1266,6 +1268,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../medidas-dax/04-auxiliares/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 auxiliares
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../medidas-dax/visuais-svg/" class="md-nav__link">
         
   
@@ -1294,14 +1324,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../medidas-dax/sem-pasta/" class="md-nav__link">
+      <a href="../medidas-dax/tooltip-rosca/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Sem pasta de exibição
+    Tooltip rosca
   
 
     
@@ -2439,7 +2469,7 @@
 </ul>
 <p><strong>Contexto.</strong> As medidas tinham nomes sem numeração (por exemplo, <code>Faturamento</code>). A documentação da época, de 30/01/2026, descreve o sistema de numeração como parte da versão 2.0.</p>
 <p><strong>Decisão.</strong> Nomear tabelas pelo prefixo do papel (<code>f</code>, <code>d</code>, <code>_</code> e <code>z</code>) e as medidas com número e descrição (<code>01 Faturamento</code>), organizadas nas pastas de exibição <code>01.Principais</code>, <code>02. Temporais</code>, <code>03. Formatações</code> e <code>.Visuais SVG</code>. As faixas 80 a 89 (rankings) e 90 a 99 (testes) ficam reservadas, por decisão do desenvolvedor em 21/10/2026, embora nenhuma medida as use. Os detalhes estão no <a href="../guia-do-desenvolvedor/#nomes">Guia do desenvolvedor</a>.</p>
-<p><strong>Consequências.</strong> As medidas ficam fáceis de achar e de ordenar. Mas a renomeação não chegou a todos os visuais do relatório: 25 nomes antigos continuam em uso (ver <a href="../medidas-dax/#nomes-antigos-de-medidas-no-relatorio">Nomes antigos de medidas</a>), e 9 medidas ficaram sem pasta de exibição.</p>
+<p><strong>Consequências.</strong> As medidas ficam fáceis de achar e de ordenar. Mas a renomeação não chegou aos visuais do relatório, que ficaram com 25 nomes antigos até 05/11/2026 (ver <a href="../medidas-dax/#nomes-antigos-de-medidas-no-relatorio">Nomes antigos de medidas</a>), e 9 medidas ficaram sem pasta de exibição até a mesma data, quando foram para <code>04. Auxiliares</code> e <code>Tooltip Rosca</code>.</p>
 <h2 id="adr-007-cartoes-e-tabelas-desenhados-com-medidas-svg-e-visual-html">ADR-007: Cartões e tabelas desenhados com medidas SVG e visual HTML<a class="headerlink" href="#adr-007-cartoes-e-tabelas-desenhados-com-medidas-svg-e-visual-html" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Data:</strong> 2025-10-24 (cartões SVG) e 2025-10-27 (visual de conteúdo HTML)</li>
@@ -2463,7 +2493,7 @@
 </ul>
 <p><strong>Contexto.</strong> O relatório guarda quatro guias com a versão anterior das guias de análise: "Comercial antes", "Analítico antes", "Mapa Calor antes" e "Vendedores antes". Elas ficam fora do navegador de páginas da Capa.</p>
 <p><strong>Decisão.</strong> Manter essas guias no relatório, de propósito, para que o desenvolvedor acompanhe a evolução do projeto. A documentação as trata como histórico (ver <a href="../arquivo/guias-anteriores/">Guias anteriores</a>).</p>
-<p><strong>Consequências.</strong> O relatório fica maior (72 dos 171 visuais estão nas guias "antes") e as guias anteriores usam os nomes antigos de medidas e dois marcadores inexistentes (ver <a href="../guias-do-relatorio/">Guias do relatório</a>).</p>
+<p><strong>Consequências.</strong> O relatório fica maior (72 dos 171 visuais estão nas guias "antes") e as guias anteriores usavam os nomes antigos de medidas (corrigidos em 05/11/2026) e dois marcadores inexistentes, também corrigidos em 05/11/2026 (ver <a href="../guias-do-relatorio/#problemas-encontrados-nos-botoes">Guias do relatório</a>).</p>
 <h2 id="adr-010-manter-o-relacionamento-inativo-por-data-envio">ADR-010: Manter o relacionamento inativo por <code>Data Envio</code><a class="headerlink" href="#adr-010-manter-o-relacionamento-inativo-por-data-envio" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Data:</strong> 2025-10-24 (relacionamento criado); 2026-10-21 (decisão de mantê-lo)</li>
@@ -2518,7 +2548,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 de novembro de 2026 15:21:35 UTC">5 de novembro de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 de novembro de 2026 17:23:26 UTC">5 de novembro de 2026</span>
   </span>
 
     

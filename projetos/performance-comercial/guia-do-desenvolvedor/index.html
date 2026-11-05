@@ -1119,6 +1119,8 @@
       
         
       
+        
+      
     
     
     
@@ -1266,6 +1268,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../medidas-dax/04-auxiliares/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 auxiliares
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../medidas-dax/visuais-svg/" class="md-nav__link">
         
   
@@ -1294,14 +1324,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../medidas-dax/sem-pasta/" class="md-nav__link">
+      <a href="../medidas-dax/tooltip-rosca/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Sem pasta de exibição
+    Tooltip rosca
   
 
     
@@ -2400,11 +2430,11 @@
 <p>Prefira editar pelo Power BI Desktop e salvar. Editar o TMDL à mão funciona, mas confira no Desktop antes de commitar.</p>
 <div class="admonition warning">
 <p class="admonition-title">Renomear medidas fora do Power BI Desktop</p>
-<p>O Power BI Desktop atualiza os visuais do relatório quando você renomeia uma medida. Se a renomeação for feita editando o TMDL ou por uma ferramenta externa, os visuais continuam apontando para o nome antigo. Hoje o relatório tem 25 nomes antigos desse tipo (ver <a href="../medidas-dax/#nomes-antigos-de-medidas-no-relatorio">Nomes antigos de medidas</a>). Depois de renomear, abra o relatório e confira se algum visual mostra campo não encontrado.</p>
+<p>O Power BI Desktop atualiza os visuais do relatório quando você renomeia uma medida. Se a renomeação for feita editando o TMDL ou por uma ferramenta externa, os visuais continuam apontando para o nome antigo. Isso já aconteceu neste projeto com 25 medidas, corrigidas em 05/11/2026 (ver <a href="../medidas-dax/#nomes-antigos-de-medidas-no-relatorio">Nomes antigos de medidas</a>). Depois de renomear, abra o relatório e confira se algum visual mostra campo não encontrado.</p>
 </div>
 <h2 id="regras-para-o-modelo">Regras para o modelo<a class="headerlink" href="#regras-para-o-modelo" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Nenhuma medida fica sem pasta de exibição ao final de uma tarefa.</strong> Antes do commit, toda medida nova ou alterada está numa pasta. Hoje 9 medidas estão sem pasta (ver <a href="../medidas-dax/sem-pasta/">Sem pasta de exibição</a>); a documentação só registra isso.</li>
+<li><strong>Nenhuma medida fica sem pasta de exibição ao final de uma tarefa.</strong> Antes do commit, toda medida nova ou alterada está numa pasta. Hoje todas as medidas estão numa pasta; as auxiliares ficam em <a href="../medidas-dax/04-auxiliares/">04. Auxiliares</a> e as da dica da rosca em <a href="../medidas-dax/tooltip-rosca/">Tooltip Rosca</a>.</li>
 <li><strong>Não renomeie pastas de exibição nem guias sem necessidade.</strong> Renomear quebra o vínculo com a documentação sem avisar. Se precisar reorganizar, crie uma pasta nova, mova as medidas e registre no changelog.</li>
 <li>
 <p><strong>Documente a medida no próprio modelo.</strong> No TMDL, <code>///</code> antes de <code>measure</code> vira a descrição exibida no Power BI, e um comentário <code>//</code> na primeira linha da expressão explica a conta. Exemplo real do projeto:</p>
@@ -2599,8 +2629,8 @@
 <p><strong>Um filtro (segmentação) não filtra o visual.</strong> Verifique, no modelo, se o relacionamento existe, se está ativo e se aponta no sentido certo. Lembre que <code>Data Envio</code> está inativo.</p>
 <p><strong>Comparação com o ano anterior volta em branco.</strong> Confira se o relacionamento de <code>fVendas[Data Pedido]</code> com <code>dCalendario</code> está ativo, se o calendário cobre o período do dado (vai de 01/01/2018 a 31/12/2021) e se a coluna <code>Datas com Venda</code> está sendo usada como o modelo espera.</p>
 <div class="admonition info">
-<p class="admonition-title">Consultas não executadas</p>
-<p>As consultas DAX de diagnóstico desta seção são sugestões gerais e <strong>não foram executadas</strong> neste projeto. Rode cada uma no Power BI Desktop quando precisar e ajuste, se for o caso.</p>
+<p class="admonition-title">Resultado em 05/11/2026</p>
+<p>As consultas foram rodadas no modelo em 05/11/2026. As 7 dimensões (<code>dClientes</code>, <code>dProdutos</code>, <code>dVendedores</code>, <code>dUnidades</code>, <code>dStatus</code>, <code>dPagamento</code> e <code>dCalendario</code>) têm chave única. Nenhuma das 19.999 linhas de <code>fVendas</code> e das 528 linhas de <code>fMetas</code> fica sem correspondente nas dimensões ligadas a elas. Rode de novo quando os dados mudarem.</p>
 </div>
 <h2 id="ao-alterar-o-painel">Ao alterar o painel<a class="headerlink" href="#ao-alterar-o-painel" title="Permanent link">&para;</a></h2>
 <ol>
@@ -2644,7 +2674,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="21 de outubro de 2026 17:02:50 UTC">21 de outubro de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 de novembro de 2026 15:41:02 UTC">5 de novembro de 2026</span>
   </span>
 
     

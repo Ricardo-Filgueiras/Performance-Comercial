@@ -13,7 +13,7 @@
       
       
       
-        <link rel="prev" href="../medidas-dax/sem-pasta/">
+        <link rel="prev" href="../medidas-dax/tooltip-rosca/">
       
       
         <link rel="next" href="../decisoes-tecnicas/">
@@ -1119,6 +1119,8 @@
       
         
       
+        
+      
     
     
     
@@ -1266,6 +1268,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../medidas-dax/04-auxiliares/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 auxiliares
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../medidas-dax/visuais-svg/" class="md-nav__link">
         
   
@@ -1294,14 +1324,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../medidas-dax/sem-pasta/" class="md-nav__link">
+      <a href="../medidas-dax/tooltip-rosca/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Sem pasta de exibição
+    Tooltip rosca
   
 
     
@@ -2364,10 +2394,7 @@
 <p class="admonition-title">Dependência do nome do primeiro arquivo de metas</p>
 <p>A consulta <code>fMetas</code> usa o texto <code>Meta 2018.xlsx</code> como <strong>nome de coluna</strong> em duas etapas (tipo e extração do ano). Essa coluna recebe esse nome porque o arquivo <code>Meta 2018.xlsx</code> é o primeiro da pasta. Se ele for renomeado ou removido, a consulta falha. A coluna também só funciona para arquivos com nome no formato <code>Meta AAAA.xlsx</code>.</p>
 </div>
-<div class="admonition pendente">
-<p class="admonition-title">A confirmar</p>
-<p>A consulta <code>fMetas</code> lê 15 colunas de cada planilha de meta (<code>Column1</code> a <code>Column15</code>). Confirmar se todas as planilhas têm esse mesmo formato (Id do vendedor, nome do vendedor e os 12 meses).</p>
-</div>
+<p>A consulta <code>fMetas</code> lê até 15 colunas de cada planilha de meta (<code>Column1</code> a <code>Column15</code>). Conferido em 05/11/2026: as 4 planilhas (2018 a 2021) têm as mesmas 14 colunas com dados, que são o Id do vendedor, o nome do vendedor e os 12 meses. A de 2018 tem uma coluna vazia a mais e linhas em branco no fim, que a consulta descarta. O resultado tem 528 linhas: 11 vendedores, 12 meses e 4 anos.</p>
 <h2 id="parametros">Parâmetros<a class="headerlink" href="#parametros" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -2469,7 +2496,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 de novembro de 2026 15:21:35 UTC">5 de novembro de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 de novembro de 2026 15:41:02 UTC">5 de novembro de 2026</span>
   </span>
 
     
