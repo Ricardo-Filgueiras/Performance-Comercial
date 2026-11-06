@@ -6,10 +6,16 @@ O formato segue o [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/). O
 
 ## [Não publicado]
 
+Nada ainda.
+
+## [2.1.0] - 2026-11-06
+
+Tag `performance-comercial/v2.1.0`. Reúne a migração para o portal (21/10/2026) e as correções do relatório de 05/11/2026. **Nenhuma medida mudou de cálculo.**
+
 **Migração do projeto para o portal de documentação**, com a reescrita da documentação e a reorganização das pastas, em 21/10/2026. **Nenhuma medida DAX foi alterada.** Comparado com o commit `6cf9c4c`, o projeto Power BI só tem 14 arquivos de texto com mudança de conteúdo (22 linhas acrescentadas e 15 removidas), todas listadas em "Alterado".
 
-!!! pendente "Linha de base e tags"
-    Ponto de partida: a tag `performance-comercial/baseline-pre-documentacao`, criada em 05/11/2026 no commit `6cf9c4c`. O repositório ainda não tem a tag `performance-comercial/v2.0.0`. As datas e os commits abaixo vêm do histórico do Git.
+!!! info "Linha de base e tags"
+    Ponto de partida: a tag `performance-comercial/baseline-pre-documentacao`, criada em 05/11/2026 no commit `6cf9c4c`. A versão anterior tem a tag `performance-comercial/v2.0.0`, criada em 06/11/2026 no commit `23c7839`. As datas e os commits abaixo vêm do histórico do Git.
 
 ### Adicionado
 
@@ -57,7 +63,7 @@ Correções na **documentação** (o modelo não foi alterado):
 
 ## [2.0.0] - 2026-01-30
 
-Versão registrada na documentação anterior. No Git, o modelo dessa versão está no commit `23c7839`, de 02/02/2026. Não existe tag. Os itens abaixo vêm do changelog anterior e foram conferidos contra o modelo atual; o Git não permite separar essas mudanças das outras do mesmo commit.
+Versão registrada na documentação anterior. No Git, o modelo dessa versão está no commit `23c7839`, de 02/02/2026, marcado com a tag `performance-comercial/v2.0.0` (criada em 06/11/2026). Os itens abaixo vêm do changelog anterior e foram conferidos contra o modelo atual; o Git não permite separar essas mudanças das outras do mesmo commit.
 
 ### Adicionado
 

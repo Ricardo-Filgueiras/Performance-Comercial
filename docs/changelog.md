@@ -6,6 +6,12 @@ O formato segue o [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/). C
 
 ## [Não publicado]
 
+Nada ainda.
+
+## [1.0.0] - 2026-11-06
+
+Primeira versão do portal. Tag `portal/v1.0.0`.
+
 ### Adicionado
 
 - Estrutura inicial do portal, seguindo a skill `documentacao-bi` 0.1.0.
