@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "8311aee52292b649f64f",
   "position": {
     "x": 944,
@@ -113,7 +113,7 @@
             "fieldnames": {
               "expr": {
                 "Literal": {
-                  "Value": "'[{\"n\":\"Faturamento\",\"q\":\"_Medidas.Faturamento\"},{\"n\":\"Porcentagem Meta\",\"q\":\"_Medidas.Porcentagem Meta\"},{\"n\":\"Meta Cor\",\"q\":\"_Medidas.Meta Cor\"}]'"
+                  "Value": "'[{\"n\":\"01 Faturamento\",\"q\":\"_Medidas.01 Faturamento\"},{\"n\":\"41 Porcentagem Meta\",\"q\":\"_Medidas.41 Porcentagem Meta\"},{\"n\":\"66 Meta Cor\",\"q\":\"_Medidas.66 Meta Cor\"}]'"
                 }
               }
             }
