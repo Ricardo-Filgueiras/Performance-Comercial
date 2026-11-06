@@ -24,9 +24,9 @@ Documentação dos painéis Power BI deste repositório: o que cada painel resol
 
 | Projeto | Do que trata |
 |---|---|
-| Performance Comercial | Acompanhamento de faturamento, margem, resultado, comissão e metas por período, produto, cliente, unidade e vendedor. Projeto de portfólio, com dados fictícios. |
+| [Performance Comercial](projetos/performance-comercial/readme.md) | Acompanhamento de faturamento, margem, resultado, comissão e metas por período, produto, cliente, unidade e vendedor. Projeto de portfólio, com dados fictícios. |
 
-!!! pendente "Documentação em migração"
-    A documentação do projeto Performance Comercial está sendo reescrita no padrão do portal. Enquanto isso, as páginas anteriores continuam disponíveis no bloco **Documentação anterior** do menu.
+!!! warning "Dados fictícios"
+    Os valores do painel Performance Comercial são fictícios: as vendas vão de 01/01/2018 a 30/04/2021, e as metas cobrem 2018 a 2021 inteiros. Eles servem para demonstrar o modelo e as análises, e não representam resultados comerciais reais nem atuais.
 
 Para procurar uma medida, uma tabela ou uma guia, use a busca no topo.

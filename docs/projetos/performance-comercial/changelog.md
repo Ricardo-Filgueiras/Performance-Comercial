@@ -6,7 +6,24 @@ O formato segue o [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/). O
 
 ## [Não publicado]
 
-Nada ainda.
+**Guia Comercial: indicadores com contexto** (06/11/2026). A faixa de indicadores passou a mostrar a comparação com o ano anterior, a meta comparável e o período analisado, em letra legível.
+
+### Adicionado
+
+- `36 Margem YoY p.p.`: diferença da margem contra o ano anterior em pontos percentuais. Fica em branco quando não há ano anterior.
+- `43 Meta Comparavel` e `44 Porcentagem Meta Comparavel`: meta só dos meses com vendas (2021 tem vendas só até abril) e só quando a comparação faz sentido. Ficam em branco com filtro de unidade, forma de pagamento, cliente ou cidade, produto ou status, porque a meta existe só por vendedor e mês.
+- `55 Periodo Analisado`: primeiro e último mês com vendas no filtro, com o aviso de dados fictícios.
+- `67 HTML Cartoes KPI`: HTML da faixa de indicadores da guia Comercial, exibido num visual HTML Content (lite).
+
+### Alterado
+
+- Guia Comercial: o cartão nativo de faturamento, resultado e margem foi trocado por um visual HTML Content (lite) com a medida `67 HTML Cartoes KPI`, em 660 × 122 px. O cartão reservava uma área pequena e fixa para a imagem SVG, e o texto ficava com cerca de 6 px. As referências ao cartão antigo saíram de 4 marcadores, que guardavam só o estado de filtro dele.
+- `60 SVG Cartao Faturamento v1`, `61 SVG Cartao Margem v1` e `62 SVG Cartao Resultado v1` foram redesenhadas (duas linhas, cores em `rgb()`, margem em p.p., meta comparável, pedido de escolha de ano) e ficaram **sem uso** com a troca do cartão. Continuam no modelo.
+
+### Corrigido
+
+- Documentação: as vendas vão de 01/01/2018 a **30/04/2021**, e não até 31/12/2021. Corrigido no aviso de dados fictícios do portal, em [Como usar](como-usar.md) e em [Sobre esta documentação](readme.md).
+- Documentação: o aviso de "documentação em migração" da página inicial do portal estava desatualizado e foi trocado pelo aviso de dados fictícios.
 
 ## [2.1.0] - 2026-11-06
 

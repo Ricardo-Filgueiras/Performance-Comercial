@@ -62,10 +62,10 @@ Prefira editar pelo Power BI Desktop e salvar. Editar o TMDL à mão funciona, m
 | Faixa | Tipo | Exemplos |
 |---|---|---|
 | 01 a 13 | Principais | `01 Faturamento`, `10 Margem`, `12 Positivação Clientes` |
-| 20 a 35 | Comparações no tempo | `22 Faturamento LY`, `23 Faturamento YoY %` |
-| 40 a 42 | Metas | `40 Meta`, `41 Porcentagem Meta` |
-| 50 a 54 | Auxiliares e formatação | `50 Eixo Y max Grafico Comercial`, `52 Rank Cidade` |
-| 60 a 66 | Visuais SVG e cores | `60 SVG Cartao Faturamento v1`, `66 Meta Cor` |
+| 20 a 36 | Comparações no tempo | `22 Faturamento LY`, `23 Faturamento YoY %` |
+| 40 a 44 | Metas | `40 Meta`, `41 Porcentagem Meta` |
+| 50 a 55 | Auxiliares e formatação | `50 Eixo Y max Grafico Comercial`, `52 Rank Cidade` |
+| 60 a 67 | Visuais SVG, HTML e cores | `60 SVG Cartao Faturamento v1`, `66 Meta Cor` |
 | sem número | Tabela `zMetricas` | `Linha Atual`, `Seta para Cima` |
 
 Sufixos de tempo: `LY` (mesmo período do ano anterior), `LM` (mês anterior), `YoY` (variação contra o ano anterior) e `MoM` (variação contra o mês anterior). O acumulado no ano (YTD) é `Acumulado`, sem sufixo.

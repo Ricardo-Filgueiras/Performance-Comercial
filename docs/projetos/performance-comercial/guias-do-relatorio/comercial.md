@@ -6,7 +6,12 @@ Visão geral do desempenho comercial: quanto se faturou, com que resultado e mar
 
 ## Como ler
 
-- **Cartões de resumo:** faturamento, resultado e margem, cada um com a variação contra o ano anterior desenhada por uma medida SVG, com seta e cor.
+- **Faixa de indicadores:** faturamento, resultado e margem, desenhados em HTML pela medida [`67 HTML Cartoes KPI`](../medidas-dax/visuais-svg.md#67-html-cartoes-kpi) num visual HTML Content (lite). Cada indicador mostra:
+    - a variação contra o ano anterior, com seta e cor. Na margem, a variação é em pontos percentuais (`36 Margem YoY p.p.`). Com mais de um ano no filtro, aparece "Escolha um ano para comparar";
+    - no faturamento, o atingimento da meta comparável (`44 Porcentagem Meta Comparavel`), que considera só os meses com vendas e mostra "não se aplica a este filtro" com filtro de unidade, forma de pagamento, cidade, produto ou status, porque a meta existe só por vendedor e mês;
+    - no resultado e na margem, o valor do ano anterior.
+
+    No canto superior direito, o período analisado e o aviso de dados fictícios (`55 Periodo Analisado`).
 - **Evolução Faturamento:** gráfico de área do faturamento ao longo do tempo. Ao passar o mouse, a dica de ferramenta [evolução do faturamento](dica-evolucao-faturamento.md) mostra mês, faturamento, meta e porcentagem da meta.
 - **Rosca por gerente:** faturamento por gerente. A dica de ferramenta [gerente e vendedores](dica-gerente-vendedores.md) compara o faturamento atual com o do ano anterior.
 - **Barras por produto:** faturamento por categoria, produto e subcategoria. A dica de ferramenta [tabela de vendedores](dica-tabela-vendedores.md) detalha por vendedor.
@@ -41,7 +46,7 @@ Também existem: 2 botão(ões) sem ação definida, usado(s) apenas como rótul
     | Identificador | `98d137a6b23a0f270828` |
     | Visuais | 26 (mais 4 grupos) |
 
-    **Tipos de visual:** `actionButton` (13), `slicer` (5), `group` (4), `tableEx` (2), `areaChart` (1), `cardVisual` (1), `clusteredBarChart` (1), `donutChart` (1), `htmlContent443BE3AD55E043BF878BED274D3A6865` (1), `image` (1).
+    **Tipos de visual:** `actionButton` (13), `slicer` (5), `group` (4), `tableEx` (2), `areaChart` (1), `clusteredBarChart` (1), `donutChart` (1), `htmlContent443BE3AD55E043BF878BED274D3A6865` (2), `image` (1).
 
     **Medidas usadas:** [`01 Faturamento`](../medidas-dax/01-principais.md#01-faturamento), [`09 Resultado`](../medidas-dax/01-principais.md#09-resultado), [`10 Margem`](../medidas-dax/01-principais.md#10-margem), [`24 Faturamento MoM %`](../medidas-dax/02-temporais.md#24-faturamento-mom), [`50 Eixo Y max Grafico Comercial`](../medidas-dax/03-formatacoes.md#50-eixo-y-max-grafico-comercial), [`60 SVG Cartao Faturamento v1`](../medidas-dax/visuais-svg.md#60-svg-cartao-faturamento-v1), [`61 SVG Cartao Margem v1`](../medidas-dax/visuais-svg.md#61-svg-cartao-margem-v1), [`62 SVG Cartao Resultado v1`](../medidas-dax/visuais-svg.md#62-svg-cartao-resultado-v1), [`64 SVG Tabela HTML Content Lite v1`](../medidas-dax/visuais-svg.md#64-svg-tabela-html-content-lite-v1).
 

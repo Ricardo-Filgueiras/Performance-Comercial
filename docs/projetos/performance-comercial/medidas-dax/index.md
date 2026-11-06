@@ -7,13 +7,13 @@ Para cada medida: tabela onde está, formato, guias em que aparece, de quais med
 <!-- gerado:inicio catalogo -->
 | Pasta de exibição | Medidas | Página |
 |---|---:|---|
-| .Visuais SVG | 7 | [.Visuais SVG](visuais-svg.md) |
-| 01.Principais | 16 | [01.Principais](01-principais.md) |
-| 02. Temporais | 16 | [02. Temporais](02-temporais.md) |
+| .Visuais SVG | 8 | [.Visuais SVG](visuais-svg.md) |
+| 01.Principais | 18 | [01.Principais](01-principais.md) |
+| 02. Temporais | 17 | [02. Temporais](02-temporais.md) |
 | 03. Formatações | 2 | [03. Formatações](03-formatacoes.md) |
-| 04. Auxiliares | 3 | [04. Auxiliares](04-auxiliares.md) |
+| 04. Auxiliares | 4 | [04. Auxiliares](04-auxiliares.md) |
 | Tooltip Rosca | 6 | [Tooltip Rosca](tooltip-rosca.md) |
-| **Total** | 50 | |
+| **Total** | 55 | |
 
 ### Todas as medidas (A–Z)
 
@@ -48,14 +48,18 @@ Para cada medida: tabela onde está, formato, guias em que aparece, de quais med
 | [33 Comissao LY](02-temporais.md#33-comissao-ly) | 02. Temporais | `_Medidas` |
 | [34 Comissao YoY %](02-temporais.md#34-comissao-yoy) | 02. Temporais | `_Medidas` |
 | [35 Comissao MoM %](02-temporais.md#35-comissao-mom) | 02. Temporais | `_Medidas` |
+| [36 Margem YoY p.p.](02-temporais.md#36-margem-yoy-pp) | 02. Temporais | `_Medidas` |
 | [40 Meta](01-principais.md#40-meta) | 01.Principais | `_Medidas` |
 | [41 Porcentagem Meta](01-principais.md#41-porcentagem-meta) | 01.Principais | `_Medidas` |
 | [42 Diferença Meta](01-principais.md#42-diferenca-meta) | 01.Principais | `_Medidas` |
+| [43 Meta Comparavel](01-principais.md#43-meta-comparavel) | 01.Principais | `_Medidas` |
+| [44 Porcentagem Meta Comparavel](01-principais.md#44-porcentagem-meta-comparavel) | 01.Principais | `_Medidas` |
 | [50 Eixo Y max Grafico Comercial](03-formatacoes.md#50-eixo-y-max-grafico-comercial) | 03. Formatações | `_Medidas` |
 | [51 Faturamento formatação de texto](03-formatacoes.md#51-faturamento-formatacao-de-texto) | 03. Formatações | `_Medidas` |
 | [52 Rank Cidade](04-auxiliares.md#52-rank-cidade) | 04. Auxiliares | `_Medidas` |
 | [53 Max Y Visual 01 pg Vendedores](04-auxiliares.md#53-max-y-visual-01-pg-vendedores) | 04. Auxiliares | `_Medidas` |
 | [54 Nome Vendedor](04-auxiliares.md#54-nome-vendedor) | 04. Auxiliares | `_Medidas` |
+| [55 Periodo Analisado](04-auxiliares.md#55-periodo-analisado) | 04. Auxiliares | `_Medidas` |
 | [60 SVG Cartao Faturamento v1](visuais-svg.md#60-svg-cartao-faturamento-v1) | .Visuais SVG | `_Medidas` |
 | [61 SVG Cartao Margem v1](visuais-svg.md#61-svg-cartao-margem-v1) | .Visuais SVG | `_Medidas` |
 | [62 SVG Cartao Resultado v1](visuais-svg.md#62-svg-cartao-resultado-v1) | .Visuais SVG | `_Medidas` |
@@ -63,6 +67,7 @@ Para cada medida: tabela onde está, formato, guias em que aparece, de quais med
 | [64 SVG Tabela HTML Content Lite v1](visuais-svg.md#64-svg-tabela-html-content-lite-v1) | .Visuais SVG | `_Medidas` |
 | [65 SVG Percentual Meta Velocimetro](visuais-svg.md#65-svg-percentual-meta-velocimetro) | .Visuais SVG | `_Medidas` |
 | [66 Meta Cor](visuais-svg.md#66-meta-cor) | .Visuais SVG | `_Medidas` |
+| [67 HTML Cartoes KPI](visuais-svg.md#67-html-cartoes-kpi) | .Visuais SVG | `_Medidas` |
 | [Context Medida z](tooltip-rosca.md#context-medida-z) | Tooltip Rosca | `zMetricas` |
 | [Linha Anterior](tooltip-rosca.md#linha-anterior) | Tooltip Rosca | `zMetricas` |
 | [Linha Atual](tooltip-rosca.md#linha-atual) | Tooltip Rosca | `zMetricas` |

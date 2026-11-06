@@ -14,7 +14,7 @@ O que não dá para saber pelos arquivos está marcado como pendência e reunido
 | Relacionamentos | 10 (9 ativos e 1 inativo) |
 | Medidas DAX | 50 |
 | Guias do relatório | 12: 5 de análise e entrada, 3 dicas de ferramenta e 4 versões anteriores |
-| Período dos dados | 2018 a 2021 |
+| Período dos dados | Vendas de jan/2018 a abr/2021; metas de 2018 a 2021 |
 | Formato dos dados | Planilhas Excel, na pasta `data/` do repositório |
 
 Os números vêm do script de levantamento, rodado sobre o projeto em 21/10/2026.

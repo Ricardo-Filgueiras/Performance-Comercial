@@ -14,7 +14,7 @@ Dicionário de dados do modelo semântico `Performance Comercial.SemanticModel`:
 - **11 tabelas**: 11 de negócio e 0 de data automática.
 - **10 relacionamentos** entre tabelas de negócio (ativos: 9; inativos: 1).
 - **Modo de armazenamento:** import.
-- **50 medidas** em 6 pastas de exibição ([Medidas DAX](medidas-dax/index.md)).
+- **55 medidas** em 6 pastas de exibição ([Medidas DAX](medidas-dax/index.md)).
 - **Hierarquias:** 1. **Grupos de cálculo:** 0.
 - **Papéis de segurança (RLS):** nenhum papel definido no modelo.
 <!-- gerado:fim visao-geral -->
@@ -46,7 +46,7 @@ erDiagram
 <!-- gerado:inicio tabela:_Medidas -->
 - **Tipo (inferido):** auxiliar (só medidas)
 - **Origem:** consulta M (import) (ver [Fontes de dados](fontes-de-dados.md))
-- **Medidas:** 44 (ver [Medidas DAX](medidas-dax/index.md))
+- **Medidas:** 49 (ver [Medidas DAX](medidas-dax/index.md))
 
 Tabela sem colunas (contém apenas medidas).
 <!-- gerado:fim tabela:_Medidas -->

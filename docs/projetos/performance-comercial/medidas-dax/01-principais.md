@@ -2,7 +2,7 @@
 # 01.Principais
 
 <!-- gerado:inicio resumo -->
-Medidas da pasta de exibição `01.Principais`: **16**. Veja o [catálogo](index.md) para as outras pastas.
+Medidas da pasta de exibição `01.Principais`: **18**. Veja o [catálogo](index.md) para as outras pastas.
 <!-- gerado:fim resumo -->
 
 ## 01 Faturamento
@@ -17,7 +17,7 @@ Soma de `Qtde × Valor Unit` das vendas válidas (`Id Status = 1`). *(descriçã
 - **Formato:** `"R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00`
 - **Usada nas guias:** [Comercial ](../guias-do-relatorio/comercial.md), [Analítico](../guias-do-relatorio/analitico.md), [Mapa Calor](../guias-do-relatorio/mapa-calor.md), [Vendedores](../guias-do-relatorio/vendedores.md), *Comercial antes*, *Analítico antes*, *Mapa Calor antes*, *Vendedores antes*, *TooltiposGrafico01*, *TooltiposTabela*
 - **Depende de:** nenhuma medida
-- **É usada por:** [`03 Lucro Bruto`](#03-lucro-bruto), [`04 Margem Bruta`](#04-margem-bruta), [`09 Resultado`](#09-resultado), [`10 Margem`](#10-margem), [`20 Faturamento Acumulado`](02-temporais.md#20-faturamento-acumulado), [`21 Faturamento Acumulado LY`](02-temporais.md#21-faturamento-acumulado-ly), [`22 Faturamento LY`](02-temporais.md#22-faturamento-ly), [`23 Faturamento YoY %`](02-temporais.md#23-faturamento-yoy), [`24 Faturamento MoM %`](02-temporais.md#24-faturamento-mom), [`41 Porcentagem Meta`](#41-porcentagem-meta), [`42 Diferença Meta`](#42-diferenca-meta), [`50 Eixo Y max Grafico Comercial`](03-formatacoes.md#50-eixo-y-max-grafico-comercial), [`51 Faturamento formatação de texto`](03-formatacoes.md#51-faturamento-formatacao-de-texto), [`52 Rank Cidade`](04-auxiliares.md#52-rank-cidade), [`53 Max Y Visual 01 pg Vendedores`](04-auxiliares.md#53-max-y-visual-01-pg-vendedores), [`Context Medida z`](tooltip-rosca.md#context-medida-z), [`Linha Atual`](tooltip-rosca.md#linha-atual), [`Seta para Cima`](tooltip-rosca.md#seta-para-cima), [`Seta para baixo  ( limit Inferior )`](tooltip-rosca.md#seta-para-baixo-limit-inferior), [`Seta para baixo  ( limit sup )`](tooltip-rosca.md#seta-para-baixo-limit-sup)
+- **É usada por:** [`03 Lucro Bruto`](#03-lucro-bruto), [`04 Margem Bruta`](#04-margem-bruta), [`09 Resultado`](#09-resultado), [`10 Margem`](#10-margem), [`20 Faturamento Acumulado`](02-temporais.md#20-faturamento-acumulado), [`21 Faturamento Acumulado LY`](02-temporais.md#21-faturamento-acumulado-ly), [`22 Faturamento LY`](02-temporais.md#22-faturamento-ly), [`23 Faturamento YoY %`](02-temporais.md#23-faturamento-yoy), [`24 Faturamento MoM %`](02-temporais.md#24-faturamento-mom), [`41 Porcentagem Meta`](#41-porcentagem-meta), [`42 Diferença Meta`](#42-diferenca-meta), [`44 Porcentagem Meta Comparavel`](#44-porcentagem-meta-comparavel), [`50 Eixo Y max Grafico Comercial`](03-formatacoes.md#50-eixo-y-max-grafico-comercial), [`51 Faturamento formatação de texto`](03-formatacoes.md#51-faturamento-formatacao-de-texto), [`52 Rank Cidade`](04-auxiliares.md#52-rank-cidade), [`53 Max Y Visual 01 pg Vendedores`](04-auxiliares.md#53-max-y-visual-01-pg-vendedores), [`67 HTML Cartoes KPI`](visuais-svg.md#67-html-cartoes-kpi), [`Context Medida z`](tooltip-rosca.md#context-medida-z), [`Linha Atual`](tooltip-rosca.md#linha-atual), [`Seta para Cima`](tooltip-rosca.md#seta-para-cima), [`Seta para baixo  ( limit Inferior )`](tooltip-rosca.md#seta-para-baixo-limit-inferior), [`Seta para baixo  ( limit sup )`](tooltip-rosca.md#seta-para-baixo-limit-sup)
 
 ```dax
     CALCULATE(
@@ -200,9 +200,9 @@ Faturamento menos o abatimento (custo, despesa, impostos e comissão). *(descri�
 <!-- gerado:inicio medida:09 Resultado -->
 - **Tabela:** `_Medidas`
 - **Formato:** `"R$"\ #,0;-"R$"\ #,0;"R$"\ #,0`
-- **Usada nas guias:** [Comercial ](../guias-do-relatorio/comercial.md), [Analítico](../guias-do-relatorio/analitico.md), [Vendedores](../guias-do-relatorio/vendedores.md), *Comercial antes*, *Analítico antes*, *Vendedores antes*
+- **Usada nas guias:** [Analítico](../guias-do-relatorio/analitico.md), [Vendedores](../guias-do-relatorio/vendedores.md), *Comercial antes*, *Analítico antes*, *Vendedores antes*
 - **Depende de:** [`01 Faturamento`](#01-faturamento), [`08 Abatimento`](#08-abatimento)
-- **É usada por:** [`10 Margem`](#10-margem), [`29 Resultado LM`](02-temporais.md#29-resultado-lm), [`30 Resultado LY`](02-temporais.md#30-resultado-ly), [`31 Resultado YoY %`](02-temporais.md#31-resultado-yoy), [`32 Resultado MoM %`](02-temporais.md#32-resultado-mom)
+- **É usada por:** [`10 Margem`](#10-margem), [`29 Resultado LM`](02-temporais.md#29-resultado-lm), [`30 Resultado LY`](02-temporais.md#30-resultado-ly), [`31 Resultado YoY %`](02-temporais.md#31-resultado-yoy), [`32 Resultado MoM %`](02-temporais.md#32-resultado-mom), [`67 HTML Cartoes KPI`](visuais-svg.md#67-html-cartoes-kpi)
 
 ```dax
     [01 Faturamento] - [08 Abatimento]
@@ -220,7 +220,7 @@ Margem Líquida (%) = (Resultado / Faturamento) com tratamento de divisão por z
 - **Formato:** `0.00%;-0.00%;0.00%`
 - **Usada nas guias:** [Comercial ](../guias-do-relatorio/comercial.md), [Analítico](../guias-do-relatorio/analitico.md), [Vendedores](../guias-do-relatorio/vendedores.md), *Comercial antes*, *Analítico antes*, *Vendedores antes*, *TooltiposTabela*
 - **Depende de:** [`01 Faturamento`](#01-faturamento), [`09 Resultado`](#09-resultado)
-- **É usada por:** [`25 Margem LM`](02-temporais.md#25-margem-lm), [`26 Margem LY`](02-temporais.md#26-margem-ly), [`27 Margem YoY %`](02-temporais.md#27-margem-yoy), [`28 Margem MoM %`](02-temporais.md#28-margem-mom)
+- **É usada por:** [`25 Margem LM`](02-temporais.md#25-margem-lm), [`26 Margem LY`](02-temporais.md#26-margem-ly), [`27 Margem YoY %`](02-temporais.md#27-margem-yoy), [`28 Margem MoM %`](02-temporais.md#28-margem-mom), [`36 Margem YoY p.p.`](02-temporais.md#36-margem-yoy-pp), [`67 HTML Cartoes KPI`](visuais-svg.md#67-html-cartoes-kpi)
 
 ```dax
 // Margem Líquida = Resultado / Faturamento
@@ -308,7 +308,7 @@ Soma de `Valor Meta`, a meta de vendas dos vendedores. *(descrição deduzida do
 - **Formato:** `"R$"\ #,0;-"R$"\ #,0;"R$"\ #,0`
 - **Usada nas guias:** [Vendedores](../guias-do-relatorio/vendedores.md), *Vendedores antes*, *TooltiposGrafico01*
 - **Depende de:** nenhuma medida
-- **É usada por:** [`41 Porcentagem Meta`](#41-porcentagem-meta), [`42 Diferença Meta`](#42-diferenca-meta)
+- **É usada por:** [`41 Porcentagem Meta`](#41-porcentagem-meta), [`42 Diferença Meta`](#42-diferenca-meta), [`43 Meta Comparavel`](#43-meta-comparavel)
 
 ```dax
 SUM(fMetas[Valor Meta])
@@ -360,3 +360,41 @@ Diferença, em valor absoluto, entre a meta e o faturamento. *(descrição deduz
 ABS( [40 Meta] - [01 Faturamento] )
 ```
 <!-- gerado:fim medida:42 Diferença Meta -->
+
+## 43 Meta Comparavel
+
+Meta só dos meses com vendas, e só quando a comparação faz sentido. Fica em branco com filtro de unidade, forma de pagamento, cliente ou cidade, produto ou status, porque a meta existe só por vendedor e mês.
+
+<!-- gerado:inicio medida:43 Meta Comparavel -->
+- **Tabela:** `_Medidas`
+- **Formato:** `"R$"\ #,0;-"R$"\ #,0;"R$"\ #,0`
+- **Usada nas guias:** nenhum visual
+- **Depende de:** [`40 Meta`](#40-meta)
+- **É usada por:** [`44 Porcentagem Meta Comparavel`](#44-porcentagem-meta-comparavel)
+
+```dax
+VAR _filtroSemMeta =
+    ISFILTERED( dUnidades ) || ISFILTERED( dPagamento ) || ISFILTERED( dClientes ) || ISFILTERED( dProdutos ) || ISFILTERED( dStatus )
+RETURN
+    IF(
+        NOT _filtroSemMeta,
+        CALCULATE( [40 Meta], dCalendario[Datas com Venda] = TRUE() )
+    )
+```
+<!-- gerado:fim medida:43 Meta Comparavel -->
+
+## 44 Porcentagem Meta Comparavel
+
+Faturamento dividido pela meta comparável. Em branco quando a meta não se aplica ao filtro.
+
+<!-- gerado:inicio medida:44 Porcentagem Meta Comparavel -->
+- **Tabela:** `_Medidas`
+- **Formato:** `0.0%;-0.0%;0.0%`
+- **Usada nas guias:** nenhum visual
+- **Depende de:** [`01 Faturamento`](#01-faturamento), [`43 Meta Comparavel`](#43-meta-comparavel)
+- **É usada por:** [`60 SVG Cartao Faturamento v1`](visuais-svg.md#60-svg-cartao-faturamento-v1), [`67 HTML Cartoes KPI`](visuais-svg.md#67-html-cartoes-kpi)
+
+```dax
+DIVIDE( [01 Faturamento], [43 Meta Comparavel], BLANK() )
+```
+<!-- gerado:fim medida:44 Porcentagem Meta Comparavel -->

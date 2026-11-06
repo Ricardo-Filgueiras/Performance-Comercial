@@ -2,7 +2,7 @@
 # 02. Temporais
 
 <!-- gerado:inicio resumo -->
-Medidas da pasta de exibição `02. Temporais`: **16**. Veja o [catálogo](index.md) para as outras pastas.
+Medidas da pasta de exibição `02. Temporais`: **17**. Veja o [catálogo](index.md) para as outras pastas.
 <!-- gerado:fim resumo -->
 
 ## 20 Faturamento Acumulado
@@ -89,7 +89,7 @@ Variação percentual Year-over-Year do Faturamento
 - **Formato:** `0.00%;-0.00%;0.00%`
 - **Usada nas guias:** nenhum visual
 - **Depende de:** [`01 Faturamento`](01-principais.md#01-faturamento), [`22 Faturamento LY`](#22-faturamento-ly)
-- **É usada por:** [`60 SVG Cartao Faturamento v1`](visuais-svg.md#60-svg-cartao-faturamento-v1)
+- **É usada por:** [`60 SVG Cartao Faturamento v1`](visuais-svg.md#60-svg-cartao-faturamento-v1), [`67 HTML Cartoes KPI`](visuais-svg.md#67-html-cartoes-kpi)
 
 ```dax
 // Variação Year over Year do Faturamento
@@ -175,7 +175,7 @@ Margem líquida do mesmo período do ano anterior. *(descrição deduzida do có
 - **Formato:** `0.00%;-0.00%;0.00%`
 - **Usada nas guias:** nenhum visual
 - **Depende de:** [`10 Margem`](01-principais.md#10-margem)
-- **É usada por:** [`27 Margem YoY %`](#27-margem-yoy)
+- **É usada por:** [`27 Margem YoY %`](#27-margem-yoy), [`36 Margem YoY p.p.`](#36-margem-yoy-pp), [`61 SVG Cartao Margem v1`](visuais-svg.md#61-svg-cartao-margem-v1), [`67 HTML Cartoes KPI`](visuais-svg.md#67-html-cartoes-kpi)
 
 ```dax
 CALCULATE(
@@ -200,7 +200,7 @@ Variação percentual da margem líquida em relação ao mesmo período do ano a
 - **Formato:** `0.00%;-0.00%;0.00%`
 - **Usada nas guias:** nenhum visual
 - **Depende de:** [`10 Margem`](01-principais.md#10-margem), [`26 Margem LY`](#26-margem-ly)
-- **É usada por:** [`61 SVG Cartao Margem v1`](visuais-svg.md#61-svg-cartao-margem-v1), [`64 SVG Tabela HTML Content Lite v1`](visuais-svg.md#64-svg-tabela-html-content-lite-v1)
+- **É usada por:** [`64 SVG Tabela HTML Content Lite v1`](visuais-svg.md#64-svg-tabela-html-content-lite-v1)
 
 ```dax
 VAR MargemAtual = [10 Margem]
@@ -276,7 +276,7 @@ Resultado do mesmo período do ano anterior. *(descrição deduzida do código)*
 - **Formato:** `"R$"\ #,0;-"R$"\ #,0;"R$"\ #,0`
 - **Usada nas guias:** nenhum visual
 - **Depende de:** [`09 Resultado`](01-principais.md#09-resultado)
-- **É usada por:** [`31 Resultado YoY %`](#31-resultado-yoy)
+- **É usada por:** [`31 Resultado YoY %`](#31-resultado-yoy), [`62 SVG Cartao Resultado v1`](visuais-svg.md#62-svg-cartao-resultado-v1), [`67 HTML Cartoes KPI`](visuais-svg.md#67-html-cartoes-kpi)
 
 ```dax
 CALCULATE(
@@ -300,7 +300,7 @@ Variação percentual do resultado em relação ao mesmo período do ano anterio
 - **Formato:** `0.00%;-0.00%;0.00%`
 - **Usada nas guias:** nenhum visual
 - **Depende de:** [`09 Resultado`](01-principais.md#09-resultado), [`30 Resultado LY`](#30-resultado-ly)
-- **É usada por:** [`62 SVG Cartao Resultado v1`](visuais-svg.md#62-svg-cartao-resultado-v1)
+- **É usada por:** [`62 SVG Cartao Resultado v1`](visuais-svg.md#62-svg-cartao-resultado-v1), [`67 HTML Cartoes KPI`](visuais-svg.md#67-html-cartoes-kpi)
 
 ```dax
 VAR ResultadoAtual = [09 Resultado]
@@ -421,3 +421,25 @@ RETURN
     )
 ```
 <!-- gerado:fim medida:35 Comissao MoM % -->
+
+## 36 Margem YoY p.p.
+
+Diferença da margem contra o mesmo período do ano anterior, em pontos percentuais. Ex.: margem de 29,24% contra 27,80% dá +1,44 p.p.
+
+<!-- gerado:inicio medida:36 Margem YoY p.p. -->
+- **Tabela:** `_Medidas`
+- **Formato:** `+0.00" p.p.";-0.00" p.p.";0.00" p.p."`
+- **Usada nas guias:** nenhum visual
+- **Depende de:** [`10 Margem`](01-principais.md#10-margem), [`26 Margem LY`](#26-margem-ly)
+- **É usada por:** [`61 SVG Cartao Margem v1`](visuais-svg.md#61-svg-cartao-margem-v1), [`67 HTML Cartoes KPI`](visuais-svg.md#67-html-cartoes-kpi)
+
+```dax
+VAR _atual = [10 Margem]
+VAR _ly = [26 Margem LY]
+RETURN
+    IF(
+        NOT ISBLANK( _atual ) && NOT ISBLANK( _ly ),
+        ( _atual - _ly ) * 100
+    )
+```
+<!-- gerado:fim medida:36 Margem YoY p.p. -->

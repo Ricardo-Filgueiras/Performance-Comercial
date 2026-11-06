@@ -10,6 +10,7 @@ Ao responder uma pendência: atualize a página de origem, tire o aviso e mova a
 
 | # | Pendência | Página | Afeta números? | Dono | Prioridade |
 |---:|---|---|---|---|---|
+| 13 | `41 Porcentagem Meta` compara 2021 (vendas só até abril) com a meta do ano inteiro e mostra 32% em vez de 83%. Ela é usada na guia Vendedores e nas dicas. Decidir se passa a usar a meta comparável (`43`), o que muda números dessas guias | [Medidas DAX](medidas-dax/01-principais.md#41-porcentagem-meta) | sim | Desenvolvedor | média |
 | 5 | Revisar a descrição das 42 medidas escritas a partir do código (as 8 medidas com `///` usam o texto do modelo), em especial `50 Eixo Y max Grafico Comercial`, `53 Max Y Visual 01 pg Vendedores` e `65 SVG Percentual Meta Velocimetro` | [Medidas DAX](medidas-dax/index.md) | não | Desenvolvedor | média |
 | 6 | Revisar os textos "Para que serve" e "Como ler" das 8 páginas de guia, deduzidos dos visuais | [Guias do relatório](guias-do-relatorio/index.md) | não | Desenvolvedor | baixa |
 | 7 | Revisar as jornadas de uso, deduzidas dos visuais e não testadas com usuários | [Como usar](como-usar.md) | não | Desenvolvedor | baixa |
@@ -24,7 +25,7 @@ Problemas notados no modelo ou no relatório que a documentação não corrige (
 
 | # | Observação | Onde |
 |---:|---|---|
-| 2 | 8 medidas não têm nenhum uso, nem em visuais nem em outras medidas: `03 Lucro Bruto`, `04 Margem Bruta`, `25 Margem LM`, `28 Margem MoM %`, `29 Resultado LM`, `32 Resultado MoM %`, `35 Comissao MoM %` e `65 SVG Percentual Meta Velocimetro`. Manter ou remover é decisão do desenvolvedor | [Arquivo](arquivo/index.md#medidas-sem-uso-em-visuais) |
+| 2 | 11 medidas não têm nenhum uso, nem em visuais nem em outras medidas: `03 Lucro Bruto`, `04 Margem Bruta`, `25 Margem LM`, `28 Margem MoM %`, `29 Resultado LM`, `32 Resultado MoM %`, `35 Comissao MoM %` `65 SVG Percentual Meta Velocimetro` e, desde 06/11/2026, `60`, `61` e `62 SVG Cartao ... v1`, trocadas pela faixa em HTML. Manter ou remover é decisão do desenvolvedor | [Arquivo](arquivo/index.md#medidas-sem-uso-em-visuais) |
 | 3 | A medida `65 SVG Percentual Meta Velocimetro` tem como expressão apenas o valor `1` | [Visuais SVG](medidas-dax/visuais-svg.md#65-svg-percentual-meta-velocimetro) |
 | 4 | A consulta `fMetas` depende do nome do arquivo `Meta 2018.xlsx` e só entende arquivos nomeados `Meta AAAA.xlsx` | [Fontes de dados](fontes-de-dados.md#transformacoes-no-power-query) |
 | 5 | O calendário tem data final fixa (31/12/2021). Vendas posteriores ficariam sem data. Hoje não existem, e isso é intencional | [Modelo de dados](modelo-de-dados.md#dcalendario) |
@@ -49,7 +50,7 @@ Respostas do desenvolvedor durante a reescrita da documentação.
 | 6 | Ticket médio e as análises avançadas continuam no plano? | Sim, como planejado, sem data | 2026-10-21 |
 | 7 | Os valores unitários são multiplicados por `Qtde`? | Sim. Conferido no código das medidas | 2026-10-21 |
 | 8 | O relacionamento inativo por `Data Envio` pode sair? | Não, deve ficar | 2026-10-21 |
-| 9 | O período das vendas coincide com o calendário? | Sim, de 2018 a 2021. Não haverá dados depois de 31/12/2021 | 2026-10-21 |
+| 9 | O período das vendas coincide com o calendário? | Sim, de 2018 a 2021. Não haverá dados depois de 31/12/2021. **Correção em 06/11/2026:** as vendas vão só até 30/04/2021; o calendário e as metas vão até 31/12/2021 | 2026-10-21 |
 | 10 | Quais são os valores de `Status`? | Válidas (`1`) e Inválidas (`2`), lidos da planilha | 2026-10-21 |
 | 11 | O uso de `zMetricas` na dica `TooltipRosca` é intencional? | Sim | 2026-10-21 |
 | 12 | A numeração 80 a 99 continua reservada? | Sim | 2026-10-21 |

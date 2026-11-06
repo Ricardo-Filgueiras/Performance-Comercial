@@ -10,7 +10,7 @@ Esta página descreve as jornadas de quem usa o painel: em que momento da rotina
 - **Abrir o relatório:** use o [painel publicado](readme.md#links) ou abra o arquivo `.pbip` no Power BI Desktop (ver [Como atualizar o valor dos parâmetros](fontes-de-dados.md#como-atualizar-o-valor-dos-parametros)).
 - **Navegar:** comece pela [Capa](guias-do-relatorio/capa.md). O navegador de páginas leva às quatro guias de análise, e cada guia tem um menu de botões para as outras.
 - **Filtrar:** as guias de análise têm filtros por unidade, ano, mês, vendedor e forma de pagamento. Os filtros valem para os visuais da guia.
-- **Período dos dados:** de 2018 a 2021. Escolha o ano antes de ler os números.
+- **Período dos dados:** vendas de janeiro de 2018 a abril de 2021. Escolha o ano antes de ler os números; sem um ano escolhido, os cartões pedem a escolha em vez de comparar com o ano anterior.
 
 ## Conferir o resultado do período
 
@@ -75,4 +75,4 @@ Esta página descreve as jornadas de quem usa o painel: em que momento da rotina
 
 - Os valores consideram só as **vendas válidas**. A **quantidade de vendas** conta vendas válidas e inválidas, então não se refere ao mesmo conjunto que o faturamento (ver [Vendas válidas](regras-de-negocio.md#vendas-validas)).
 - As margens são **razões** em porcentagem. A variação da margem contra o ano anterior é relativa, e não a diferença em pontos percentuais.
-- Os dados são fictícios e vão só até 31/12/2021.
+- Os dados são fictícios. As vendas vão só até 30/04/2021, então 2021 é um ano parcial: as comparações com o ano anterior e com a meta usam só os mesmos meses (janeiro a abril).
