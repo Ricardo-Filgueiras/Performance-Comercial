@@ -64,7 +64,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
   
   
     
@@ -2193,12 +2193,20 @@
 <p>Visão geral do desempenho comercial: quanto se faturou, com que resultado e margem, como isso evoluiu no tempo e como se distribui por gerente, produto e cidade (<em>deduzido dos visuais</em>).</p>
 <h2 id="como-ler">Como ler<a class="headerlink" href="#como-ler" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Cartões de resumo:</strong> faturamento, resultado e margem, cada um com a variação contra o ano anterior desenhada por uma medida SVG, com seta e cor.</li>
-<li><strong>Evolução Faturamento:</strong> gráfico de área do faturamento ao longo do tempo. Ao passar o mouse, a dica de ferramenta <a href="../dica-evolucao-faturamento/">evolução do faturamento</a> mostra mês, faturamento, meta e porcentagem da meta.</li>
-<li><strong>Rosca por gerente:</strong> faturamento por gerente. A dica de ferramenta <a href="../dica-gerente-vendedores/">gerente e vendedores</a> compara o faturamento atual com o do ano anterior.</li>
-<li><strong>Barras por produto:</strong> faturamento por categoria, produto e subcategoria. A dica de ferramenta <a href="../dica-tabela-vendedores/">tabela de vendedores</a> detalha por vendedor.</li>
-<li><strong>Cidades:</strong> uma tabela personalizada em HTML/SVG, que mostra faturamento abreviado e variação da margem por cidade (e alterna os dois ao passar o mouse), mais duas tabelas por cidade: uma com cidade e faturamento e outra com cidade, faturamento e margem. Botões com marcadores alternam entre as visões de ranking e de desempenho por cidade.</li>
-<li><strong>Filtros:</strong> unidade, ano, mês, vendedor e forma de pagamento.</li>
+<li>
+<p><strong>Faixa de indicadores:</strong> faturamento, resultado e margem, desenhados em HTML pela medida <a href="../../medidas-dax/visuais-svg/#67-html-cartoes-kpi"><code>67 HTML Cartoes KPI</code></a> num visual HTML Content (lite). Cada indicador mostra:</p>
+<ul>
+<li>a variação contra o ano anterior, com seta e cor. Na margem, a variação é em pontos percentuais (<code>36 Margem YoY p.p.</code>). Com mais de um ano no filtro, aparece "Escolha um ano para comparar";</li>
+<li>no faturamento, o atingimento da meta comparável (<code>44 Porcentagem Meta Comparavel</code>), que considera só os meses com vendas e mostra "não se aplica a este filtro" com filtro de unidade, forma de pagamento, cidade, produto ou status, porque a meta existe só por vendedor e mês;</li>
+<li>no resultado e na margem, o valor do ano anterior.</li>
+</ul>
+<p>No canto superior direito, o período analisado e o aviso de dados fictícios (<code>55 Periodo Analisado</code>).
+- <strong>Evolução Faturamento:</strong> gráfico de área do faturamento ao longo do tempo. Ao passar o mouse, a dica de ferramenta <a href="../dica-evolucao-faturamento/">evolução do faturamento</a> mostra mês, faturamento, meta e porcentagem da meta.
+- <strong>Rosca por gerente:</strong> faturamento por gerente. A dica de ferramenta <a href="../dica-gerente-vendedores/">gerente e vendedores</a> compara o faturamento atual com o do ano anterior.
+- <strong>Barras por produto:</strong> faturamento por categoria, produto e subcategoria. A dica de ferramenta <a href="../dica-tabela-vendedores/">tabela de vendedores</a> detalha por vendedor.
+- <strong>Cidades:</strong> uma tabela personalizada em HTML/SVG, que mostra faturamento abreviado e variação da margem por cidade (e alterna os dois ao passar o mouse), mais duas tabelas por cidade: uma com cidade e faturamento e outra com cidade, faturamento e margem. Botões com marcadores alternam entre as visões de ranking e de desempenho por cidade.
+- <strong>Filtros:</strong> unidade, ano, mês, vendedor e forma de pagamento.</p>
+</li>
 </ul>
 <h2 id="navegacao">Navegação<a class="headerlink" href="#navegacao" title="Permanent link">&para;</a></h2>
 <table>
@@ -2288,7 +2296,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Tipos de visual:</strong> <code>actionButton</code> (13), <code>slicer</code> (5), <code>group</code> (4), <code>tableEx</code> (2), <code>areaChart</code> (1), <code>cardVisual</code> (1), <code>clusteredBarChart</code> (1), <code>donutChart</code> (1), <code>htmlContent443BE3AD55E043BF878BED274D3A6865</code> (1), <code>image</code> (1).</p>
+<p><strong>Tipos de visual:</strong> <code>actionButton</code> (13), <code>slicer</code> (5), <code>group</code> (4), <code>tableEx</code> (2), <code>areaChart</code> (1), <code>clusteredBarChart</code> (1), <code>donutChart</code> (1), <code>htmlContent443BE3AD55E043BF878BED274D3A6865</code> (2), <code>image</code> (1).</p>
 <p><strong>Medidas usadas:</strong> <a href="../../medidas-dax/01-principais/#01-faturamento"><code>01 Faturamento</code></a>, <a href="../../medidas-dax/01-principais/#09-resultado"><code>09 Resultado</code></a>, <a href="../../medidas-dax/01-principais/#10-margem"><code>10 Margem</code></a>, <a href="../../medidas-dax/02-temporais/#24-faturamento-mom"><code>24 Faturamento MoM %</code></a>, <a href="../../medidas-dax/03-formatacoes/#50-eixo-y-max-grafico-comercial"><code>50 Eixo Y max Grafico Comercial</code></a>, <a href="../../medidas-dax/visuais-svg/#60-svg-cartao-faturamento-v1"><code>60 SVG Cartao Faturamento v1</code></a>, <a href="../../medidas-dax/visuais-svg/#61-svg-cartao-margem-v1"><code>61 SVG Cartao Margem v1</code></a>, <a href="../../medidas-dax/visuais-svg/#62-svg-cartao-resultado-v1"><code>62 SVG Cartao Resultado v1</code></a>, <a href="../../medidas-dax/visuais-svg/#64-svg-tabela-html-content-lite-v1"><code>64 SVG Tabela HTML Content Lite v1</code></a>.</p>
 <p><strong>Colunas usadas:</strong></p>
 <table>
@@ -2349,7 +2357,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 de novembro de 2026 17:23:26 UTC">5 de novembro de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 de novembro de 2026 15:06:45 UTC">6 de novembro de 2026</span>
   </span>
 
     

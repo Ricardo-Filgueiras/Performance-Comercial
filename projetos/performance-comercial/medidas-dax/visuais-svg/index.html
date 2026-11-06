@@ -64,7 +64,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
   
   
     
@@ -1432,6 +1432,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#67-html-cartoes-kpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        67 HTML Cartoes KPI
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2259,6 +2270,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#67-html-cartoes-kpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        67 HTML Cartoes KPI
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2279,153 +2301,127 @@
 <!-- pasta: .Visuais SVG -->
 <h1 id="visuais-svg">.Visuais SVG<a class="headerlink" href="#visuais-svg" title="Permanent link">&para;</a></h1>
 <!-- gerado:inicio resumo -->
-<p>Medidas da pasta de exibição <code>.Visuais SVG</code>: <strong>7</strong>. Veja o <a href="../">catálogo</a> para as outras pastas.</p>
+<p>Medidas da pasta de exibição <code>.Visuais SVG</code>: <strong>8</strong>. Veja o <a href="../">catálogo</a> para as outras pastas.</p>
 <!-- gerado:fim resumo -->
 
 <h2 id="60-svg-cartao-faturamento-v1">60 SVG Cartao Faturamento v1<a class="headerlink" href="#60-svg-cartao-faturamento-v1" title="Permanent link">&para;</a></h2>
-<p>Desenha, em SVG, a variação do faturamento contra o ano anterior (<code>23 Faturamento YoY %</code>), com seta e cor. <em>(descrição deduzida do código)</em></p>
+<p><strong>Sem uso desde 06/11/2026.</strong> O cartão da guia Comercial que mostrava esta imagem foi trocado pela faixa de KPIs em HTML, desenhada pela <a href="#67-html-cartoes-kpi"><code>67 HTML Cartoes KPI</code></a>. A medida continua no modelo; a versão atual desenha duas linhas em 219 × 38, conforme a descrição do modelo abaixo.</p>
 <!-- gerado:inicio medida:60 SVG Cartao Faturamento v1 -->
 <ul>
 <li><strong>Tabela:</strong> <code>_Medidas</code></li>
 <li><strong>Formato:</strong> padrão</li>
-<li><strong>Usada nas guias:</strong> <a href="../../guias-do-relatorio/comercial/">Comercial </a>, <a href="../../guias-do-relatorio/vendedores/">Vendedores</a>, <em>Comercial antes</em>, <em>Vendedores antes</em></li>
-<li><strong>Depende de:</strong> <a href="../02-temporais/#23-faturamento-yoy"><code>23 Faturamento YoY %</code></a></li>
+<li><strong>Usada nas guias:</strong> <a href="../../guias-do-relatorio/vendedores/">Vendedores</a>, <em>Comercial antes</em>, <em>Vendedores antes</em></li>
+<li><strong>Depende de:</strong> <a href="../02-temporais/#23-faturamento-yoy"><code>23 Faturamento YoY %</code></a>, <a href="../01-principais/#44-porcentagem-meta-comparavel"><code>44 Porcentagem Meta Comparavel</code></a></li>
 <li><strong>É usada por:</strong> nenhuma medida</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">VAR</span><span class="w"> </span>_percent = [23 Faturamento YoY %]
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">VAR</span><span class="w"> </span>_format = FORMAT( _percent + 0 , &quot; +0.00 %; -0.00 %; -&quot;)
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">VAR</span><span class="w"> </span>_seta = 
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nf">SWITCH</span><span class="p">(</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nf">TRUE</span><span class="p">(),</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span>_percent &gt; 0 , &quot;▲&quot;,
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span>_percent &lt; 0 , &quot;▼&quot;,
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="s">&quot; - &quot;</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">)</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="nb">VAR</span><span class="w"> </span>_cor_seta = 
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nf">SWITCH</span><span class="p">(</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="nf">TRUE</span><span class="p">(),</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span>_percent &gt; 0 , &quot;Green&quot;,
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span>_percent &lt; 0 , &quot;red&quot;,
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="s">&quot;#ffffff&quot;</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">)</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="nb">VAR</span><span class="w"> </span>_text =
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="s">&quot;data:image/svg+xml,</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="s">    &lt;svg  viewBox=&#39;0 0 190 50&#39; fill=&#39;none&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;&gt;</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="s">        &lt;g id=&#39;varia&amp;#195;&amp;#167;&amp;#195;&amp;#163;o&#39;&gt;</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="s">            &lt;text id=&#39;rot_cat&#39; fill=&#39;white&#39; xml:space=&#39;preserve&#39; style=&#39;white-space: pre&#39; font-family=&#39;Segoe UI&#39; font-size=&#39;12&#39; font-weight=&#39;400&#39; letter-spacing=&#39;0em&#39;&gt;</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="s">                &lt;tspan x=&#39;88&#39; y=&#39;40.9688&#39;&gt;Vs. Ano Anterior&lt;/tspan&gt;</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="s">            &lt;/text&gt;</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="s">            &lt;text id=&#39;rot_dados&#39; fill=&#39;&quot;</span>&amp; _cor_seta &amp;&quot;&#39; xml:space=&#39;preserve&#39; style=&#39;white-space: pre&#39; font-family=&#39;Segoe UI&#39; font-size=&#39;14&#39; font-weight=&#39;600&#39; letter-spacing=&#39;0em&#39;&gt;
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">                </span>&lt;tspan x=&#39;88&#39; y=&#39;21.2969&#39;&gt;&quot;&amp; _format &amp;&quot;&lt;/tspan&gt;
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">            </span>&lt;/text&gt;
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">            </span>&lt;text id=&#39;seta&#39; fill=&#39;&quot;&amp; _cor_seta &amp;&quot;&#39; xml:space=&#39;preserve&#39; style=&#39;white-space: pre&#39; font-family=&#39;Segoe UI&#39; font-size=&#39;14&#39; font-weight=&#39;600&#39; letter-spacing=&#39;0em&#39;&gt;
-<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">                </span>&lt;tspan x=&#39;68&#39; y=&#39;31.2969&#39;&gt;&quot;&amp; _seta &amp;&quot;&lt;/tspan&gt;
-<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">            </span>&lt;/text&gt;
-<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">        </span>&lt;/g&gt;
-<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">    </span>&lt;/svg&gt;
-<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">    </span><span class="s">&quot;</span>
-<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>
-<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="s">RETURN </span>
-<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="s">    _text</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">-- A comparação com o ano anterior só é mostrada com um ano no filtro</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">VAR</span><span class="w"> </span>_umAno = HASONEVALUE( dCalendario[Ano] )
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">VAR</span><span class="w"> </span>_percent = IF( _umAno, [23 Faturamento YoY %] )
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">VAR</span><span class="w"> </span>_pctMeta = [44 Porcentagem Meta Comparavel]
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1">-- Cores em rgb(): o caractere # quebraria a imagem data:image/svg+xml</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nb">VAR</span><span class="w"> </span>_cor =
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nf">SWITCH</span><span class="p">(</span><span class="w"> </span><span class="nf">TRUE</span><span class="p">(),</span><span class="w"> </span>_percent &gt; 0, &quot;rgb(63,185,80)&quot;, _percent &lt; 0, &quot;rgb(248,81,73)&quot;, &quot;rgb(214,215,227)&quot; )
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nb">VAR</span><span class="w"> </span>_seta = SWITCH( TRUE(), _percent &gt; 0, &quot;▲ &quot;, _percent &lt; 0, &quot;▼ &quot;, &quot;&quot; )
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="nb">VAR</span><span class="w"> </span>_linha1 =
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="nf">SWITCH</span><span class="p">(</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">        </span><span class="nf">TRUE</span><span class="p">(),</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="nf">NOT</span><span class="w"> </span>_umAno, &quot;Escolha um ano para comparar&quot;,
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="nf">ISBLANK</span><span class="p">(</span><span class="w"> </span>_percent ), &quot;Sem ano anterior&quot;,
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">        </span>_seta &amp; FORMAT( _percent, &quot;+0.0 %;-0.0 %;0.0 %&quot; ) &amp; &quot; vs. ano anterior&quot;
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="p">)</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="nb">VAR</span><span class="w"> </span>_corMeta =
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="nf">SWITCH</span><span class="p">(</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">        </span><span class="nf">TRUE</span><span class="p">(),</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">        </span><span class="nf">ISBLANK</span><span class="p">(</span><span class="w"> </span>_pctMeta ), &quot;rgb(139,148,158)&quot;,
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">        </span>_pctMeta &gt;= 1, &quot;rgb(63,185,80)&quot;,
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">        </span>_pctMeta &gt;= 0.9, &quot;rgb(227,179,65)&quot;,
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">        </span><span class="s">&quot;rgb(248,81,73)&quot;</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="p">)</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="nb">VAR</span><span class="w"> </span>_linha2 =
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">    </span><span class="nf">IF</span><span class="p">(</span><span class="w"> </span><span class="nf">ISBLANK</span><span class="p">(</span><span class="w"> </span>_pctMeta ), &quot;Meta: não se aplica a este filtro&quot;, &quot;Meta: &quot; &amp; FORMAT( _pctMeta, &quot;0.0 %&quot; ) &amp; &quot; atingida&quot; )
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="nb">RETURN</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="s">&quot;data:image/svg+xml,&lt;svg viewBox=&#39;0 0 219 38&#39; fill=&#39;none&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;&gt;&quot;</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">        </span>&amp; &quot;&lt;g font-family=&#39;Segoe UI&#39; text-anchor=&#39;start&#39;&gt;&quot;
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">        </span>&amp; &quot;&lt;text x=&#39;1&#39; y=&#39;14&#39; fill=&#39;&quot; &amp; _cor &amp; &quot;&#39; font-size=&#39;13&#39; font-weight=&#39;600&#39;&gt;&quot; &amp; _linha1 &amp; &quot;&lt;/text&gt;&quot;
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">        </span>&amp; &quot;&lt;text x=&#39;1&#39; y=&#39;32&#39; fill=&#39;&quot; &amp; _corMeta &amp; &quot;&#39; font-size=&#39;11&#39;&gt;&quot; &amp; _linha2 &amp; &quot;&lt;/text&gt;&quot;
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">        </span>&amp; &quot;&lt;/g&gt;&lt;/svg&gt;&quot;
 </code></pre></div>
 <!-- gerado:fim medida:60 SVG Cartao Faturamento v1 -->
 
 <h2 id="61-svg-cartao-margem-v1">61 SVG Cartao Margem v1<a class="headerlink" href="#61-svg-cartao-margem-v1" title="Permanent link">&para;</a></h2>
-<p>Desenha, em SVG, a variação da margem contra o ano anterior (<code>27 Margem YoY %</code>), com seta e cor. <em>(descrição deduzida do código)</em></p>
+<p><strong>Sem uso desde 06/11/2026.</strong> O cartão da guia Comercial que mostrava esta imagem foi trocado pela faixa de KPIs em HTML, desenhada pela <a href="#67-html-cartoes-kpi"><code>67 HTML Cartoes KPI</code></a>. A medida continua no modelo; a versão atual desenha duas linhas em 219 × 38, conforme a descrição do modelo abaixo.</p>
 <!-- gerado:inicio medida:61 SVG Cartao Margem v1 -->
 <ul>
 <li><strong>Tabela:</strong> <code>_Medidas</code></li>
 <li><strong>Formato:</strong> padrão</li>
-<li><strong>Usada nas guias:</strong> <a href="../../guias-do-relatorio/comercial/">Comercial </a>, <a href="../../guias-do-relatorio/vendedores/">Vendedores</a>, <em>Comercial antes</em>, <em>Vendedores antes</em></li>
-<li><strong>Depende de:</strong> <a href="../02-temporais/#27-margem-yoy"><code>27 Margem YoY %</code></a></li>
+<li><strong>Usada nas guias:</strong> <a href="../../guias-do-relatorio/vendedores/">Vendedores</a>, <em>Comercial antes</em>, <em>Vendedores antes</em></li>
+<li><strong>Depende de:</strong> <a href="../02-temporais/#26-margem-ly"><code>26 Margem LY</code></a>, <a href="../02-temporais/#36-margem-yoy-pp"><code>36 Margem YoY p.p.</code></a></li>
 <li><strong>É usada por:</strong> nenhuma medida</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">VAR</span><span class="w"> </span>_percent = [27 Margem YoY %]
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">VAR</span><span class="w"> </span>_format = FORMAT( _percent + 0 , &quot;+0.00 %;-0.00 %;-&quot;)
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">VAR</span><span class="w"> </span>_seta = 
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nf">SWITCH</span><span class="p">(</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nf">TRUE</span><span class="p">(),</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span>_percent &gt; 0 , &quot;▲&quot;,
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span>_percent &lt; 0 , &quot;▼&quot;,
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="s">&quot; - &quot;</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">)</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="nb">VAR</span><span class="w"> </span>_cor_seta = 
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="nf">SWITCH</span><span class="p">(</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="nf">TRUE</span><span class="p">(),</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span>_percent &gt; 0 , &quot;Green&quot;,
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span>_percent &lt; 0 , &quot;red&quot;,
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="s">&quot;#ffffff&quot;</span>
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="p">)</span>
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="nb">VAR</span><span class="w"> </span>_text =
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">    </span><span class="s">&quot;data:image/svg+xml,</span>
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="s">    &lt;svg  viewBox=&#39;0 0 190 50&#39; fill=&#39;none&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;&gt;</span>
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="s">        &lt;g id=&#39;varia&amp;#195;&amp;#167;&amp;#195;&amp;#163;o&#39;&gt;</span>
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="s">            &lt;text id=&#39;rot_cat&#39; fill=&#39;white&#39; xml:space=&#39;preserve&#39; style=&#39;white-space: pre&#39; font-family=&#39;Segoe UI&#39; font-size=&#39;12&#39; font-weight=&#39;400&#39; letter-spacing=&#39;0em&#39;&gt;</span>
-<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="s">                &lt;tspan x=&#39;88&#39; y=&#39;40.9688&#39;&gt;Vs. Ano Anterior&lt;/tspan&gt;</span>
-<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="s">            &lt;/text&gt;</span>
-<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="s">            &lt;text id=&#39;rot_dados&#39; fill=&#39;&quot;</span>&amp; _cor_seta &amp;&quot;&#39; xml:space=&#39;preserve&#39; style=&#39;white-space: pre&#39; font-family=&#39;Segoe UI&#39; font-size=&#39;14&#39; font-weight=&#39;600&#39; letter-spacing=&#39;0em&#39;&gt;
-<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">                </span>&lt;tspan x=&#39;88&#39; y=&#39;21.2969&#39;&gt;&quot;&amp; _format &amp;&quot;&lt;/tspan&gt;
-<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="w">            </span>&lt;/text&gt;
-<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">            </span>&lt;text id=&#39;seta&#39; fill=&#39;&quot;&amp; _cor_seta &amp;&quot;&#39; xml:space=&#39;preserve&#39; style=&#39;white-space: pre&#39; font-family=&#39;Segoe UI&#39; font-size=&#39;14&#39; font-weight=&#39;600&#39; letter-spacing=&#39;0em&#39;&gt;
-<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w">                </span>&lt;tspan x=&#39;68&#39; y=&#39;31.2969&#39;&gt;&quot;&amp; _seta &amp;&quot;&lt;/tspan&gt;
-<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="w">            </span>&lt;/text&gt;
-<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="w">        </span>&lt;/g&gt;
-<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="w">    </span>&lt;/svg&gt;
-<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="w">    </span><span class="s">&quot;</span>
-<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>
-<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="s">RETURN </span>
-<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="s">    _text</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">-- A comparação com o ano anterior só é mostrada com um ano no filtro</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">VAR</span><span class="w"> </span>_umAno = HASONEVALUE( dCalendario[Ano] )
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">VAR</span><span class="w"> </span>_pp = IF( _umAno, [36 Margem YoY p.p.] )
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">VAR</span><span class="w"> </span>_ly = IF( _umAno, [26 Margem LY] )
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1">-- Cores em rgb(): o caractere # quebraria a imagem data:image/svg+xml</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nb">VAR</span><span class="w"> </span>_cor =
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="nf">SWITCH</span><span class="p">(</span><span class="w"> </span><span class="nf">TRUE</span><span class="p">(),</span><span class="w"> </span>_pp &gt; 0, &quot;rgb(63,185,80)&quot;, _pp &lt; 0, &quot;rgb(248,81,73)&quot;, &quot;rgb(214,215,227)&quot; )
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="nb">VAR</span><span class="w"> </span>_seta = SWITCH( TRUE(), _pp &gt; 0, &quot;▲ &quot;, _pp &lt; 0, &quot;▼ &quot;, &quot;&quot; )
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="nb">VAR</span><span class="w"> </span>_linha1 =
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="nf">SWITCH</span><span class="p">(</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="nf">TRUE</span><span class="p">(),</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span><span class="nf">NOT</span><span class="w"> </span>_umAno, &quot;Escolha um ano para comparar&quot;,
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">        </span><span class="nf">ISBLANK</span><span class="p">(</span><span class="w"> </span>_pp ), &quot;Sem ano anterior&quot;,
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">        </span>_seta &amp; FORMAT( _pp, &quot;+0.00;-0.00;0.00&quot; ) &amp; &quot; p.p. vs. ano anterior&quot;
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="p">)</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="nb">VAR</span><span class="w"> </span>_linha2 = IF( ISBLANK( _ly ), &quot;&quot;, &quot;Ano anterior: &quot; &amp; FORMAT( _ly, &quot;0.00 %&quot; ) )
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="nb">RETURN</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">    </span><span class="s">&quot;data:image/svg+xml,&lt;svg viewBox=&#39;0 0 219 38&#39; fill=&#39;none&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;&gt;&quot;</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">        </span>&amp; &quot;&lt;g font-family=&#39;Segoe UI&#39; text-anchor=&#39;start&#39;&gt;&quot;
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">        </span>&amp; &quot;&lt;text x=&#39;1&#39; y=&#39;14&#39; fill=&#39;&quot; &amp; _cor &amp; &quot;&#39; font-size=&#39;13&#39; font-weight=&#39;600&#39;&gt;&quot; &amp; _linha1 &amp; &quot;&lt;/text&gt;&quot;
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">        </span>&amp; &quot;&lt;text x=&#39;1&#39; y=&#39;32&#39; fill=&#39;rgb(214,215,227)&#39; font-size=&#39;11&#39;&gt;&quot; &amp; _linha2 &amp; &quot;&lt;/text&gt;&quot;
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">        </span>&amp; &quot;&lt;/g&gt;&lt;/svg&gt;&quot;
 </code></pre></div>
 <!-- gerado:fim medida:61 SVG Cartao Margem v1 -->
 
 <h2 id="62-svg-cartao-resultado-v1">62 SVG Cartao Resultado v1<a class="headerlink" href="#62-svg-cartao-resultado-v1" title="Permanent link">&para;</a></h2>
-<p>Desenha, em SVG, a variação do resultado contra o ano anterior (<code>31 Resultado YoY %</code>), com seta e cor. <em>(descrição deduzida do código)</em></p>
+<p><strong>Sem uso desde 06/11/2026.</strong> O cartão da guia Comercial que mostrava esta imagem foi trocado pela faixa de KPIs em HTML, desenhada pela <a href="#67-html-cartoes-kpi"><code>67 HTML Cartoes KPI</code></a>. A medida continua no modelo; a versão atual desenha duas linhas em 219 × 38, conforme a descrição do modelo abaixo.</p>
 <!-- gerado:inicio medida:62 SVG Cartao Resultado v1 -->
 <ul>
 <li><strong>Tabela:</strong> <code>_Medidas</code></li>
 <li><strong>Formato:</strong> padrão</li>
-<li><strong>Usada nas guias:</strong> <a href="../../guias-do-relatorio/comercial/">Comercial </a>, <a href="../../guias-do-relatorio/vendedores/">Vendedores</a>, <em>Comercial antes</em>, <em>Vendedores antes</em></li>
-<li><strong>Depende de:</strong> <a href="../02-temporais/#31-resultado-yoy"><code>31 Resultado YoY %</code></a></li>
+<li><strong>Usada nas guias:</strong> <a href="../../guias-do-relatorio/vendedores/">Vendedores</a>, <em>Comercial antes</em>, <em>Vendedores antes</em></li>
+<li><strong>Depende de:</strong> <a href="../02-temporais/#30-resultado-ly"><code>30 Resultado LY</code></a>, <a href="../02-temporais/#31-resultado-yoy"><code>31 Resultado YoY %</code></a></li>
 <li><strong>É usada por:</strong> nenhuma medida</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">VAR</span><span class="w"> </span>_percent = [31 Resultado YoY %]
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">VAR</span><span class="w"> </span>_format = FORMAT( _percent + 0 , &quot;+0.00 %;-0.00 %;-&quot;)
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">VAR</span><span class="w"> </span>_seta = 
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nf">SWITCH</span><span class="p">(</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="nf">TRUE</span><span class="p">(),</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span>_percent &gt; 0 , &quot;▲&quot;,
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span>_percent &lt; 0 , &quot;▼&quot;,
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="s">&quot; - &quot;</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">)</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="nb">VAR</span><span class="w"> </span>_cor_seta = 
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="nf">SWITCH</span><span class="p">(</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="nf">TRUE</span><span class="p">(),</span>
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span>_percent &gt; 0 , &quot;Green&quot;,
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span>_percent &lt; 0 , &quot;red&quot;,
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="s">&quot;#ffffff&quot;</span>
-<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="p">)</span>
-<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
-<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="nb">VAR</span><span class="w"> </span>_text =
-<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">    </span><span class="s">&quot;data:image/svg+xml,</span>
-<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="s">    &lt;svg  viewBox=&#39;0 0 190 50&#39; fill=&#39;none&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;&gt;</span>
-<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="s">        &lt;g id=&#39;varia&amp;#195;&amp;#167;&amp;#195;&amp;#163;o&#39;&gt;</span>
-<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="s">            &lt;text id=&#39;rot_cat&#39; fill=&#39;white&#39; xml:space=&#39;preserve&#39; style=&#39;white-space: pre&#39; font-family=&#39;Segoe UI&#39; font-size=&#39;12&#39; font-weight=&#39;400&#39; letter-spacing=&#39;0em&#39;&gt;</span>
-<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="s">                &lt;tspan x=&#39;88&#39; y=&#39;40.9688&#39;&gt;Vs. Ano Anterior&lt;/tspan&gt;</span>
-<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="s">            &lt;/text&gt;</span>
-<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="s">            &lt;text id=&#39;rot_dados&#39; fill=&#39;&quot;</span>&amp; _cor_seta &amp;&quot;&#39; xml:space=&#39;preserve&#39; style=&#39;white-space: pre&#39; font-family=&#39;Segoe UI&#39; font-size=&#39;14&#39; font-weight=&#39;600&#39; letter-spacing=&#39;0em&#39;&gt;
-<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">                </span>&lt;tspan x=&#39;88&#39; y=&#39;21.2969&#39;&gt;&quot;&amp; _format &amp;&quot;&lt;/tspan&gt;
-<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">            </span>&lt;/text&gt;
-<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">            </span>&lt;text id=&#39;seta&#39; fill=&#39;&quot;&amp; _cor_seta &amp;&quot;&#39; xml:space=&#39;preserve&#39; style=&#39;white-space: pre&#39; font-family=&#39;Segoe UI&#39; font-size=&#39;14&#39; font-weight=&#39;600&#39; letter-spacing=&#39;0em&#39;&gt;
-<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">                </span>&lt;tspan x=&#39;68&#39; y=&#39;31.2969&#39;&gt;&quot;&amp; _seta &amp;&quot;&lt;/tspan&gt;
-<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">            </span>&lt;/text&gt;
-<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="w">        </span>&lt;/g&gt;
-<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="w">    </span>&lt;/svg&gt;
-<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="w">    </span><span class="s">&quot;</span>
-<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>
-<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="s">RETURN </span>
-<a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a><span class="s">    _text</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">-- A comparação com o ano anterior só é mostrada com um ano no filtro</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">VAR</span><span class="w"> </span>_umAno = HASONEVALUE( dCalendario[Ano] )
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">VAR</span><span class="w"> </span>_percent = IF( _umAno, [31 Resultado YoY %] )
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nb">VAR</span><span class="w"> </span>_ly = IF( _umAno, [30 Resultado LY] )
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1">-- Cores em rgb(): o caractere # quebraria a imagem data:image/svg+xml</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nb">VAR</span><span class="w"> </span>_cor =
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nf">SWITCH</span><span class="p">(</span><span class="w"> </span><span class="nf">TRUE</span><span class="p">(),</span><span class="w"> </span>_percent &gt; 0, &quot;rgb(63,185,80)&quot;, _percent &lt; 0, &quot;rgb(248,81,73)&quot;, &quot;rgb(214,215,227)&quot; )
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nb">VAR</span><span class="w"> </span>_seta = SWITCH( TRUE(), _percent &gt; 0, &quot;▲ &quot;, _percent &lt; 0, &quot;▼ &quot;, &quot;&quot; )
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="nb">VAR</span><span class="w"> </span>_linha1 =
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="nf">SWITCH</span><span class="p">(</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">        </span><span class="nf">TRUE</span><span class="p">(),</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">        </span><span class="nf">NOT</span><span class="w"> </span>_umAno, &quot;Escolha um ano para comparar&quot;,
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">        </span><span class="nf">ISBLANK</span><span class="p">(</span><span class="w"> </span>_percent ), &quot;Sem ano anterior&quot;,
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">        </span>_seta &amp; FORMAT( _percent, &quot;+0.0 %;-0.0 %;0.0 %&quot; ) &amp; &quot; vs. ano anterior&quot;
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="p">)</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="nb">VAR</span><span class="w"> </span>_lyTexto =
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">    </span><span class="nf">SWITCH</span><span class="p">(</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">        </span><span class="nf">TRUE</span><span class="p">(),</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">        </span><span class="nf">ABS</span><span class="p">(</span><span class="w"> </span>_ly ) &gt;= 1E9, FORMAT( _ly / 1E9, &quot;0.00&quot; ) &amp; &quot; bi&quot;,
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">        </span><span class="nf">ABS</span><span class="p">(</span><span class="w"> </span>_ly ) &gt;= 1E6, FORMAT( _ly / 1E6, &quot;0.0&quot; ) &amp; &quot; mi&quot;,
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">        </span><span class="nf">FORMAT</span><span class="p">(</span><span class="w"> </span>_ly / 1E3, &quot;0&quot; ) &amp; &quot; mil&quot;
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">    </span><span class="p">)</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="nb">VAR</span><span class="w"> </span>_linha2 = IF( ISBLANK( _ly ), &quot;&quot;, &quot;Ano anterior: R$ &quot; &amp; _lyTexto )
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="nb">RETURN</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">    </span><span class="s">&quot;data:image/svg+xml,&lt;svg viewBox=&#39;0 0 219 38&#39; fill=&#39;none&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;&gt;&quot;</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">        </span>&amp; &quot;&lt;g font-family=&#39;Segoe UI&#39; text-anchor=&#39;start&#39;&gt;&quot;
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">        </span>&amp; &quot;&lt;text x=&#39;1&#39; y=&#39;14&#39; fill=&#39;&quot; &amp; _cor &amp; &quot;&#39; font-size=&#39;13&#39; font-weight=&#39;600&#39;&gt;&quot; &amp; _linha1 &amp; &quot;&lt;/text&gt;&quot;
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">        </span>&amp; &quot;&lt;text x=&#39;1&#39; y=&#39;32&#39; fill=&#39;rgb(214,215,227)&#39; font-size=&#39;11&#39;&gt;&quot; &amp; _linha2 &amp; &quot;&lt;/text&gt;&quot;
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">        </span>&amp; &quot;&lt;/g&gt;&lt;/svg&gt;&quot;
 </code></pre></div>
 <!-- gerado:fim medida:62 SVG Cartao Resultado v1 -->
 
@@ -2586,6 +2582,89 @@
 </code></pre></div>
 <!-- gerado:fim medida:66 Meta Cor -->
 
+<h2 id="67-html-cartoes-kpi">67 HTML Cartoes KPI<a class="headerlink" href="#67-html-cartoes-kpi" title="Permanent link">&para;</a></h2>
+<p>HTML da faixa de KPIs da guia Comercial, para o visual HTML Content (lite): faturamento, resultado e margem, cada um com a comparação contra o ano anterior (só com um ano no filtro), a meta comparável no faturamento e o período analisado. Os tamanhos de fonte são em px reais.</p>
+<!-- gerado:inicio medida:67 HTML Cartoes KPI -->
+<ul>
+<li><strong>Tabela:</strong> <code>_Medidas</code></li>
+<li><strong>Formato:</strong> padrão</li>
+<li><strong>Usada nas guias:</strong> <a href="../../guias-do-relatorio/comercial/">Comercial </a></li>
+<li><strong>Depende de:</strong> <a href="../01-principais/#01-faturamento"><code>01 Faturamento</code></a>, <a href="../01-principais/#09-resultado"><code>09 Resultado</code></a>, <a href="../01-principais/#10-margem"><code>10 Margem</code></a>, <a href="../02-temporais/#23-faturamento-yoy"><code>23 Faturamento YoY %</code></a>, <a href="../02-temporais/#26-margem-ly"><code>26 Margem LY</code></a>, <a href="../02-temporais/#30-resultado-ly"><code>30 Resultado LY</code></a>, <a href="../02-temporais/#31-resultado-yoy"><code>31 Resultado YoY %</code></a>, <a href="../02-temporais/#36-margem-yoy-pp"><code>36 Margem YoY p.p.</code></a>, <a href="../01-principais/#44-porcentagem-meta-comparavel"><code>44 Porcentagem Meta Comparavel</code></a>, <a href="../04-auxiliares/#55-periodo-analisado"><code>55 Periodo Analisado</code></a></li>
+<li><strong>É usada por:</strong> nenhuma medida</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">VAR</span><span class="w"> </span>_umAno = HASONEVALUE( dCalendario[Ano] )
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="c1">-- Valores</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nb">VAR</span><span class="w"> </span>_fat = [01 Faturamento]
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nb">VAR</span><span class="w"> </span>_res = [09 Resultado]
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="nb">VAR</span><span class="w"> </span>_mg = [10 Margem]
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nb">VAR</span><span class="w"> </span>_fatP = IF( _umAno, [23 Faturamento YoY %] )
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="nb">VAR</span><span class="w"> </span>_resP = IF( _umAno, [31 Resultado YoY %] )
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="nb">VAR</span><span class="w"> </span>_resLY = IF( _umAno, [30 Resultado LY] )
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="nb">VAR</span><span class="w"> </span>_mgPP = IF( _umAno, [36 Margem YoY p.p.] )
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="nb">VAR</span><span class="w"> </span>_mgLY = IF( _umAno, [26 Margem LY] )
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="nb">VAR</span><span class="w"> </span>_meta = [44 Porcentagem Meta Comparavel]
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="nb">VAR</span><span class="w"> </span>_periodo = [55 Periodo Analisado]
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="c1">-- Cores</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="nb">VAR</span><span class="w"> </span>_verde = &quot;#3FB950&quot;
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="nb">VAR</span><span class="w"> </span>_vermelho = &quot;#F85149&quot;
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="nb">VAR</span><span class="w"> </span>_amarelo = &quot;#E3B341&quot;
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="nb">VAR</span><span class="w"> </span>_neutro = &quot;#D6D7E3&quot;
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="nb">VAR</span><span class="w"> </span>_apagado = &quot;#8B949E&quot;
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="c1">-- Textos de valor</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="nb">VAR</span><span class="w"> </span>_fatTxt =
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="w">    </span><span class="nf">SWITCH</span><span class="p">(</span><span class="w"> </span><span class="nf">TRUE</span><span class="p">(),</span><span class="w"> </span><span class="nf">ABS</span><span class="p">(</span><span class="w"> </span>_fat ) &gt;= 1E9, FORMAT( _fat / 1E9, &quot;0.00&quot; ) &amp; &quot; bi&quot;, ABS( _fat ) &gt;= 1E6, FORMAT( _fat / 1E6, &quot;0.0&quot; ) &amp; &quot; mi&quot;, FORMAT( _fat / 1E3, &quot;0&quot; ) &amp; &quot; mil&quot; )
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="nb">VAR</span><span class="w"> </span>_resTxt =
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="w">    </span><span class="nf">SWITCH</span><span class="p">(</span><span class="w"> </span><span class="nf">TRUE</span><span class="p">(),</span><span class="w"> </span><span class="nf">ABS</span><span class="p">(</span><span class="w"> </span>_res ) &gt;= 1E9, FORMAT( _res / 1E9, &quot;0.00&quot; ) &amp; &quot; bi&quot;, ABS( _res ) &gt;= 1E6, FORMAT( _res / 1E6, &quot;0.0&quot; ) &amp; &quot; mi&quot;, FORMAT( _res / 1E3, &quot;0&quot; ) &amp; &quot; mil&quot; )
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="nb">VAR</span><span class="w"> </span>_resLYTxt =
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="w">    </span><span class="nf">SWITCH</span><span class="p">(</span><span class="w"> </span><span class="nf">TRUE</span><span class="p">(),</span><span class="w"> </span><span class="nf">ABS</span><span class="p">(</span><span class="w"> </span>_resLY ) &gt;= 1E9, FORMAT( _resLY / 1E9, &quot;0.00&quot; ) &amp; &quot; bi&quot;, ABS( _resLY ) &gt;= 1E6, FORMAT( _resLY / 1E6, &quot;0.0&quot; ) &amp; &quot; mi&quot;, FORMAT( _resLY / 1E3, &quot;0&quot; ) &amp; &quot; mil&quot; )
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="c1">-- Linha de comparação: seta, valor e cor</span>
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="nb">VAR</span><span class="w"> </span>_cmpFat =
+<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="w">    </span><span class="nf">SWITCH</span><span class="p">(</span>
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a><span class="w">        </span><span class="nf">TRUE</span><span class="p">(),</span>
+<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a><span class="w">        </span><span class="nf">NOT</span><span class="w"> </span>_umAno, &quot;&lt;span style=&#39;color:&quot; &amp; _neutro &amp; &quot;&#39;&gt;Escolha um ano para comparar&lt;/span&gt;&quot;,
+<a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a><span class="w">        </span><span class="nf">ISBLANK</span><span class="p">(</span><span class="w"> </span>_fatP ), &quot;&lt;span style=&#39;color:&quot; &amp; _neutro &amp; &quot;&#39;&gt;Sem ano anterior&lt;/span&gt;&quot;,
+<a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a><span class="w">        </span><span class="s">&quot;&lt;span style=&#39;color:&quot;</span><span class="w"> </span>&amp; IF( _fatP &gt;= 0, _verde, _vermelho ) &amp; &quot;&#39;&gt;&quot; &amp; IF( _fatP &gt;= 0, &quot;▲ &quot;, &quot;▼ &quot; ) &amp; FORMAT( _fatP, &quot;+0.0 %;-0.0 %&quot; ) &amp; &quot; vs. ano anterior&lt;/span&gt;&quot;
+<a id="__codelineno-7-33" name="__codelineno-7-33" href="#__codelineno-7-33"></a><span class="w">    </span><span class="p">)</span>
+<a id="__codelineno-7-34" name="__codelineno-7-34" href="#__codelineno-7-34"></a><span class="nb">VAR</span><span class="w"> </span>_cmpRes =
+<a id="__codelineno-7-35" name="__codelineno-7-35" href="#__codelineno-7-35"></a><span class="w">    </span><span class="nf">SWITCH</span><span class="p">(</span>
+<a id="__codelineno-7-36" name="__codelineno-7-36" href="#__codelineno-7-36"></a><span class="w">        </span><span class="nf">TRUE</span><span class="p">(),</span>
+<a id="__codelineno-7-37" name="__codelineno-7-37" href="#__codelineno-7-37"></a><span class="w">        </span><span class="nf">NOT</span><span class="w"> </span>_umAno, &quot;&lt;span style=&#39;color:&quot; &amp; _neutro &amp; &quot;&#39;&gt;Escolha um ano para comparar&lt;/span&gt;&quot;,
+<a id="__codelineno-7-38" name="__codelineno-7-38" href="#__codelineno-7-38"></a><span class="w">        </span><span class="nf">ISBLANK</span><span class="p">(</span><span class="w"> </span>_resP ), &quot;&lt;span style=&#39;color:&quot; &amp; _neutro &amp; &quot;&#39;&gt;Sem ano anterior&lt;/span&gt;&quot;,
+<a id="__codelineno-7-39" name="__codelineno-7-39" href="#__codelineno-7-39"></a><span class="w">        </span><span class="s">&quot;&lt;span style=&#39;color:&quot;</span><span class="w"> </span>&amp; IF( _resP &gt;= 0, _verde, _vermelho ) &amp; &quot;&#39;&gt;&quot; &amp; IF( _resP &gt;= 0, &quot;▲ &quot;, &quot;▼ &quot; ) &amp; FORMAT( _resP, &quot;+0.0 %;-0.0 %&quot; ) &amp; &quot; vs. ano anterior&lt;/span&gt;&quot;
+<a id="__codelineno-7-40" name="__codelineno-7-40" href="#__codelineno-7-40"></a><span class="w">    </span><span class="p">)</span>
+<a id="__codelineno-7-41" name="__codelineno-7-41" href="#__codelineno-7-41"></a><span class="nb">VAR</span><span class="w"> </span>_cmpMg =
+<a id="__codelineno-7-42" name="__codelineno-7-42" href="#__codelineno-7-42"></a><span class="w">    </span><span class="nf">SWITCH</span><span class="p">(</span>
+<a id="__codelineno-7-43" name="__codelineno-7-43" href="#__codelineno-7-43"></a><span class="w">        </span><span class="nf">TRUE</span><span class="p">(),</span>
+<a id="__codelineno-7-44" name="__codelineno-7-44" href="#__codelineno-7-44"></a><span class="w">        </span><span class="nf">NOT</span><span class="w"> </span>_umAno, &quot;&lt;span style=&#39;color:&quot; &amp; _neutro &amp; &quot;&#39;&gt;Escolha um ano para comparar&lt;/span&gt;&quot;,
+<a id="__codelineno-7-45" name="__codelineno-7-45" href="#__codelineno-7-45"></a><span class="w">        </span><span class="nf">ISBLANK</span><span class="p">(</span><span class="w"> </span>_mgPP ), &quot;&lt;span style=&#39;color:&quot; &amp; _neutro &amp; &quot;&#39;&gt;Sem ano anterior&lt;/span&gt;&quot;,
+<a id="__codelineno-7-46" name="__codelineno-7-46" href="#__codelineno-7-46"></a><span class="w">        </span><span class="s">&quot;&lt;span style=&#39;color:&quot;</span><span class="w"> </span>&amp; IF( _mgPP &gt;= 0, _verde, _vermelho ) &amp; &quot;&#39;&gt;&quot; &amp; IF( _mgPP &gt;= 0, &quot;▲ &quot;, &quot;▼ &quot; ) &amp; FORMAT( _mgPP, &quot;+0.00;-0.00&quot; ) &amp; &quot; p.p. vs. ano anterior&lt;/span&gt;&quot;
+<a id="__codelineno-7-47" name="__codelineno-7-47" href="#__codelineno-7-47"></a><span class="w">    </span><span class="p">)</span>
+<a id="__codelineno-7-48" name="__codelineno-7-48" href="#__codelineno-7-48"></a><span class="c1">-- Linha de detalhe</span>
+<a id="__codelineno-7-49" name="__codelineno-7-49" href="#__codelineno-7-49"></a><span class="nb">VAR</span><span class="w"> </span>_detFat =
+<a id="__codelineno-7-50" name="__codelineno-7-50" href="#__codelineno-7-50"></a><span class="w">    </span><span class="nf">IF</span><span class="p">(</span>
+<a id="__codelineno-7-51" name="__codelineno-7-51" href="#__codelineno-7-51"></a><span class="w">        </span><span class="nf">ISBLANK</span><span class="p">(</span><span class="w"> </span>_meta ),
+<a id="__codelineno-7-52" name="__codelineno-7-52" href="#__codelineno-7-52"></a><span class="w">        </span><span class="s">&quot;&lt;span style=&#39;color:&quot;</span><span class="w"> </span>&amp; _apagado &amp; &quot;&#39;&gt;Meta: não se aplica a este filtro&lt;/span&gt;&quot;,
+<a id="__codelineno-7-53" name="__codelineno-7-53" href="#__codelineno-7-53"></a><span class="w">        </span><span class="s">&quot;&lt;span style=&#39;color:&quot;</span><span class="w"> </span>&amp; SWITCH( TRUE(), _meta &gt;= 1, _verde, _meta &gt;= 0.9, _amarelo, _vermelho ) &amp; &quot;&#39;&gt;Meta: &quot; &amp; FORMAT( _meta, &quot;0.0 %&quot; ) &amp; &quot; atingida&lt;/span&gt;&quot;
+<a id="__codelineno-7-54" name="__codelineno-7-54" href="#__codelineno-7-54"></a><span class="w">    </span><span class="p">)</span>
+<a id="__codelineno-7-55" name="__codelineno-7-55" href="#__codelineno-7-55"></a><span class="nb">VAR</span><span class="w"> </span>_detRes = IF( ISBLANK( _resLY ), &quot;&amp;nbsp;&quot;, &quot;Ano anterior: R$ &quot; &amp; _resLYTxt )
+<a id="__codelineno-7-56" name="__codelineno-7-56" href="#__codelineno-7-56"></a><span class="nb">VAR</span><span class="w"> </span>_detMg = IF( ISBLANK( _mgLY ), &quot;&amp;nbsp;&quot;, &quot;Ano anterior: &quot; &amp; FORMAT( _mgLY, &quot;0.00 %&quot; ) )
+<a id="__codelineno-7-57" name="__codelineno-7-57" href="#__codelineno-7-57"></a><span class="c1">-- Blocos</span>
+<a id="__codelineno-7-58" name="__codelineno-7-58" href="#__codelineno-7-58"></a><span class="nb">VAR</span><span class="w"> </span>_bloco = &quot;&lt;div style=&#39;flex:1;padding:0 14px;border-left:1px solid rgba(255,255,255,.12)&#39;&gt;&quot;
+<a id="__codelineno-7-59" name="__codelineno-7-59" href="#__codelineno-7-59"></a><span class="nb">VAR</span><span class="w"> </span>_rot = &quot;&lt;div style=&#39;font-size:13px;font-weight:300;color:#C9CCE0&#39;&gt;&quot;
+<a id="__codelineno-7-60" name="__codelineno-7-60" href="#__codelineno-7-60"></a><span class="nb">VAR</span><span class="w"> </span>_val = &quot;&lt;div style=&#39;font-size:26px;font-weight:600;line-height:32px;color:#FFFFFF&#39;&gt;&quot;
+<a id="__codelineno-7-61" name="__codelineno-7-61" href="#__codelineno-7-61"></a><span class="nb">VAR</span><span class="w"> </span>_cmp = &quot;&lt;div style=&#39;font-size:13px;font-weight:600;margin-top:2px&#39;&gt;&quot;
+<a id="__codelineno-7-62" name="__codelineno-7-62" href="#__codelineno-7-62"></a><span class="nb">VAR</span><span class="w"> </span>_det = &quot;&lt;div style=&#39;font-size:12px;color:#C9CCE0;margin-top:2px&#39;&gt;&quot;
+<a id="__codelineno-7-63" name="__codelineno-7-63" href="#__codelineno-7-63"></a><span class="nb">RETURN</span>
+<a id="__codelineno-7-64" name="__codelineno-7-64" href="#__codelineno-7-64"></a><span class="w">    </span><span class="s">&quot;&lt;div style=&#39;font-family:Segoe UI,sans-serif;color:#FFFFFF;height:100%;box-sizing:border-box;padding:6px 4px&#39;&gt;&quot;</span>
+<a id="__codelineno-7-65" name="__codelineno-7-65" href="#__codelineno-7-65"></a><span class="w">        </span>&amp; &quot;&lt;div style=&#39;font-size:11px;color:&quot; &amp; _apagado &amp; &quot;;text-align:right;padding:0 14px 4px&#39;&gt;&quot; &amp; _periodo &amp; &quot;&lt;/div&gt;&quot;
+<a id="__codelineno-7-66" name="__codelineno-7-66" href="#__codelineno-7-66"></a><span class="w">        </span>&amp; &quot;&lt;div style=&#39;display:flex&#39;&gt;&quot;
+<a id="__codelineno-7-67" name="__codelineno-7-67" href="#__codelineno-7-67"></a><span class="w">        </span>&amp; &quot;&lt;div style=&#39;flex:1;padding:0 14px&#39;&gt;&quot; &amp; _rot &amp; &quot;Faturamento&lt;/div&gt;&quot; &amp; _val &amp; &quot;R$ &quot; &amp; _fatTxt &amp; &quot;&lt;/div&gt;&quot; &amp; _cmp &amp; _cmpFat &amp; &quot;&lt;/div&gt;&quot; &amp; _det &amp; _detFat &amp; &quot;&lt;/div&gt;&lt;/div&gt;&quot;
+<a id="__codelineno-7-68" name="__codelineno-7-68" href="#__codelineno-7-68"></a><span class="w">        </span>&amp; _bloco &amp; _rot &amp; &quot;Resultado&lt;/div&gt;&quot; &amp; _val &amp; &quot;R$ &quot; &amp; _resTxt &amp; &quot;&lt;/div&gt;&quot; &amp; _cmp &amp; _cmpRes &amp; &quot;&lt;/div&gt;&quot; &amp; _det &amp; _detRes &amp; &quot;&lt;/div&gt;&lt;/div&gt;&quot;
+<a id="__codelineno-7-69" name="__codelineno-7-69" href="#__codelineno-7-69"></a><span class="w">        </span>&amp; _bloco &amp; _rot &amp; &quot;Margem&lt;/div&gt;&quot; &amp; _val &amp; FORMAT( _mg, &quot;0.00 %&quot; ) &amp; &quot;&lt;/div&gt;&quot; &amp; _cmp &amp; _cmpMg &amp; &quot;&lt;/div&gt;&quot; &amp; _det &amp; _detMg &amp; &quot;&lt;/div&gt;&lt;/div&gt;&quot;
+<a id="__codelineno-7-70" name="__codelineno-7-70" href="#__codelineno-7-70"></a><span class="w">        </span>&amp; &quot;&lt;/div&gt;&lt;/div&gt;&quot;
+</code></pre></div>
+<!-- gerado:fim medida:67 HTML Cartoes KPI -->
+
 
 
 
@@ -2607,7 +2686,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 de novembro de 2026 15:41:02 UTC">5 de novembro de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 de novembro de 2026 15:06:45 UTC">6 de novembro de 2026</span>
   </span>
 
     
